@@ -39,6 +39,23 @@ Core CLI Usage
   ```
   asntools --compile --asnfiles path/to/file1.asn --asnfiles path/to/file2.asn --input-dir asn_sources
   ```
+- Use a compile setup file (e.g., checked into your repo) to list ASN.1 and field description sources:
+  ```
+  {
+    "asnfiles": [
+      "/data/specs/NR-RRC-Definitions.asn",
+      "/data/specs/LPP.asn"
+    ],
+    "field_descriptions": [
+      "/data/specs/field_descriptions.json",
+      "/data/custom/overrides.json"
+    ]
+  }
+  ```
+  Then run:
+  ```
+  asntools --compile --compile-setup compile_setup.json
+  ```
 - Search ASN text:
   ```
   asntools --grep "RACH-Config"
