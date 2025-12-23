@@ -1,0 +1,96 @@
+Introduction
+As satellite-based Non-Terrestrial Networks (NTN) become increasingly important for global connectivity, their reliance on Global Navigation Satellite Systems (GNSS) for user equipment (UE) positioning presents challenges. In particular, GNSS dependency can limit NTN accessibility, especially in environments where GNSS signals are weak, jammed, or spoofed. This article explores the technical background, challenges, and proposed solutions for GNSS-resilient NTN access, focusing on enhancements to the Physical Random Access Channel (PRACH) procedure.
+
+Background
+GNSS Dependency in NTN
+
+Link Budget Considerations: In some deployment scenarios, the link budget of NR NTN (New Radio Non-Terrestrial Networks) can exceed that of GNSS systems. This means UEs may receive NTN signals but not GNSS, preventing access unless alternative location information is available.
+Jamming and Spoofing: Certain geographies experience widespread GNSS jamming/spoofing, further complicating reliable access.
+Standardization Efforts:
+
+Release 16: Studied Doppler and time-varying drift, documenting solutions in TR 38.821. Some aspects, like PRACH study and closed-loop signaling, were not fully developed.
+Release 17: Assumed UEs have GNSS capability for simplification, but this is increasingly seen as limiting.
+Future Work: In June 2025, a new study item (RP-251863) was approved to address GNSS-resilient NR-NTN operation.
+
+
+
+
+Initial Access Using PRACH: Challenges
+Terrestrial Networks (TN)
+
+Timing Advance (TA): Small across UEs, easily corrected by current PRACH design.
+Doppler Shift: Negligible, so no frequency correction is needed in Random-Access Response (RAR).
+
+NTN “with GNSS”
+
+Residual TA/Doppler: Small after UE acquires GNSS fix and satellite ephemeris, similar or better than TN.
+
+NTN “without GNSS”
+
+Unknown Location: UE not knowing its location leads to large TA variations and significant Doppler shifts during PRACH transmissions.
+Design Limitations: Current 5G NR PRACH was not designed to handle these large uncertainties, testing its operational limits.
+
+
+NTN in Ku/Ka Band: Technical Insights
+
+Industry Interest: Multiple companies are exploring GNSS-resilient NTN solutions in Ku/Ka bands.
+Multi-Satellite Positioning: Challenging in high bands due to path loss and frequent beam scanning requirements.
+PRACH Format Limitations:
+
+Short Format PRACH: Cannot resolve delay ambiguity due to small cyclic prefix (CP) length.
+Long Format PRACH: Phase noise does not affect detection, but timing resolution may be insufficient for higher numerologies (e.g., 120 kHz).
+
+
+Solution Direction: A short PRACH format is needed, pre-compensated in time and frequency, with corrections received in the RAR of the first (long-format) PRACH.
+
+
+Proposed Solutions
+Multi-Step PRACH Procedure
+
+Multiple Preamble Transmissions: UE sends multiple Msg-1 preambles, receiving feedback (RAR/Msg-2) between transmissions. Msg-3 is sent upon receiving an UL grant.
+Accumulated Corrections: Each RAR may contain timing/frequency adjustments, which the UE accumulates for future transmissions.
+Flexible Formats: Preamble format and numerology may differ across transmissions (e.g., long format for first Msg-1, short format for subsequent ones).
+Configuration Options: Formats/numerologies can be pre-configured, signaled via system information, or indicated in RAR.
+
+Example Sequence
+
+UE transmits first Msg-1 (long PRACH).
+Receives RAR with time/frequency corrections.
+Periodic long and short PRACH resources are used.
+RAR with Msg-3 grant triggers Msg-3 transmission.
+UE may transmit a second Msg-1 (short PRACH) if needed.
+
+Additional Proposals
+
+RO Groups: Network defines Random Access Occasion (RO) groups with multiple types, each with specific format, numerology, and periodicity.
+Preamble ID Reuse: UE may use the same preamble ID for subsequent transmissions.
+Failure Handling: If no RAR is received for the latest preamble ID, UE declares failure and stops further Msg-1 transmissions.
+UL Grant Configuration: Network can configure RACH occasion for first Msg-1 and provide UL grant for subsequent transmissions.
+Transmission Limits: UE may be limited to a maximum number of Msg-1 transmissions before declaring failure (e.g., 2 attempts: one long, one short).
+
+
+Detailed Procedure (Appendix)
+
+First PRACH Sequence: UE transmits first PRACH (or pair with different roots), monitors first RAR, applies timing/frequency adjustments for second PRACH.
+Second PRACH Sequence: Uses short format and higher numerology.
+Preamble ID: Same ID may be used for both sequences.
+RO Grouping: Both PRACH sequences treated as a single RO group for one random access attempt.
+Failure Declaration: If RAR is missed or failure detected, UE does not transmit second PRACH.
+RAR Indications: First RAR may include Msg-3 grant and offsets; if not, UE transmits second PRACH as per network instructions.
+Resource Configuration: UE must be configured with PRACH resources for both transmissions.
+
+
+Conclusion
+GNSS-resilient NTN access requires enhancements to the PRACH procedure to handle large timing and frequency uncertainties. By introducing multi-step preamble transmissions, flexible formats, and accumulated corrections, the proposed solutions aim to ensure robust initial access even when GNSS is unavailable. These innovations are critical for expanding NTN coverage and reliability in challenging environments.
+
+
+Proposal 1: UE performs multiple preamble(Msg 1) transmissions with feedback from network in between consecutive transmissions via RAR(Msg 2). On receiving an RAR with a Msg-3 UL grant, UE transmits Msg-3.
+Proposal 2: Each RAR may contain a timing and/or frequency adjustment command which UE accumulates and applies for all future Msg 1 transmissions and Msg-3 transmission.
+Proposal 3: Preamble format and numerologies used to transmit Msg-1 may be different across transmissions. Example: Long format with 2 roots for 1st Msg-1 Tx and short format with 1 root for subsequent Msg-1 Tx
+Proposal 4: The formats or numerologies to cycle through can be 
+Pre configured in standards
+Indicated by the network through common signalling such as system information or in Rach config
+Indicated in the RAR
+Proposal 6: UE may use the same preamble id as in the first Msg-1 transmission (e.g. 0-63) to generate the sequence of the subsequent PRACH preambles. 
+Proposal 7: If UE does not receive an RAR corresponding to the preamble ID of its most recent Msg-1 transmission, UE declares random access attempt failure and does not transmit any more Msg-1 in the same attempt.
+Proposal 9: UE may be configured with a maximum number of Msg-1 transmissions in the same attempt before declaring failure. 

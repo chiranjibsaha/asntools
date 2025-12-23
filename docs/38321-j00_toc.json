@@ -1,0 +1,2358 @@
+{
+  "metadata": {
+    "document": "38321-j00",
+    "generated": "2025-12-15T13:38:35.740190",
+    "total_headers": 328,
+    "generator": "Step 6: TOC JSON Extractor"
+  },
+  "statistics": {
+    "total_headers": 328,
+    "level_counts": {
+      "h6": 5,
+      "h1": 8,
+      "h2": 54,
+      "h3": 119,
+      "h4": 126,
+      "h5": 16
+    }
+  },
+  "table_of_contents": [
+    {
+      "clause_id": null,
+      "clause_title": "<br>Contents",
+      "level": 6,
+      "id": "br-contents",
+      "children": []
+    },
+    {
+      "clause_id": null,
+      "clause_title": "<br>Foreword",
+      "level": 1,
+      "id": "br-foreword",
+      "children": []
+    },
+    {
+      "clause_id": null,
+      "clause_title": "<br>1     Scope",
+      "level": 1,
+      "id": "br-1-scope",
+      "children": []
+    },
+    {
+      "clause_id": "2",
+      "clause_title": "References",
+      "level": 1,
+      "id": "2-references",
+      "children": []
+    },
+    {
+      "clause_id": "3",
+      "clause_title": "Definitions, symbols and abbreviations",
+      "level": 1,
+      "id": "3-definitions-symbols-and-abbreviations",
+      "children": [
+        {
+          "clause_id": "3.1",
+          "clause_title": "Definitions",
+          "level": 2,
+          "id": "3-1-definitions",
+          "children": []
+        },
+        {
+          "clause_id": "3.2",
+          "clause_title": "Abbreviations",
+          "level": 2,
+          "id": "3-2-abbreviations",
+          "children": []
+        }
+      ]
+    },
+    {
+      "clause_id": "4",
+      "clause_title": "General",
+      "level": 1,
+      "id": "4-general",
+      "children": [
+        {
+          "clause_id": "4.1",
+          "clause_title": "Introduction",
+          "level": 2,
+          "id": "4-1-introduction",
+          "children": []
+        },
+        {
+          "clause_id": "4.2",
+          "clause_title": "MAC architecture",
+          "level": 2,
+          "id": "4-2-mac-architecture",
+          "children": [
+            {
+              "clause_id": "4.2.1",
+              "clause_title": "General",
+              "level": 3,
+              "id": "4-2-1-general",
+              "children": []
+            },
+            {
+              "clause_id": "4.2.2",
+              "clause_title": "MAC Entities",
+              "level": 3,
+              "id": "4-2-2-mac-entities",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "4.3",
+          "clause_title": "Services",
+          "level": 2,
+          "id": "4-3-services",
+          "children": [
+            {
+              "clause_id": "4.3.1",
+              "clause_title": "Services provided to upper layers",
+              "level": 3,
+              "id": "4-3-1-services-provided-to-upper-layers",
+              "children": []
+            },
+            {
+              "clause_id": "4.3.2",
+              "clause_title": "Services expected from physical layer",
+              "level": 3,
+              "id": "4-3-2-services-expected-from-physical-layer",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "4.4",
+          "clause_title": "Functions",
+          "level": 2,
+          "id": "4-4-functions",
+          "children": []
+        },
+        {
+          "clause_id": "4.5",
+          "clause_title": "Channel structure",
+          "level": 2,
+          "id": "4-5-channel-structure",
+          "children": [
+            {
+              "clause_id": "4.5.1",
+              "clause_title": "General",
+              "level": 3,
+              "id": "4-5-1-general",
+              "children": []
+            },
+            {
+              "clause_id": "4.5.2",
+              "clause_title": "Transport Channels",
+              "level": 3,
+              "id": "4-5-2-transport-channels",
+              "children": []
+            },
+            {
+              "clause_id": "4.5.3",
+              "clause_title": "Logical Channels",
+              "level": 3,
+              "id": "4-5-3-logical-channels",
+              "children": []
+            },
+            {
+              "clause_id": "4.5.4",
+              "clause_title": "Mapping of Transport Channels to Logical Channels",
+              "level": 3,
+              "id": "4-5-4-mapping-of-transport-channels-to-logical-channels",
+              "children": [
+                {
+                  "clause_id": "4.5.4.1",
+                  "clause_title": "General",
+                  "level": 4,
+                  "id": "4-5-4-1-general",
+                  "children": []
+                },
+                {
+                  "clause_id": "4.5.4.2",
+                  "clause_title": "Uplink mapping",
+                  "level": 4,
+                  "id": "4-5-4-2-uplink-mapping",
+                  "children": []
+                },
+                {
+                  "clause_id": "4.5.4.3",
+                  "clause_title": "Downlink mapping",
+                  "level": 4,
+                  "id": "4-5-4-3-downlink-mapping",
+                  "children": []
+                },
+                {
+                  "clause_id": "4.5.4.4",
+                  "clause_title": "Sidelink mapping",
+                  "level": 4,
+                  "id": "4-5-4-4-sidelink-mapping",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "clause_id": "5",
+      "clause_title": "MAC procedures",
+      "level": 1,
+      "id": "5-mac-procedures",
+      "children": [
+        {
+          "clause_id": "5.1",
+          "clause_title": "Random Access procedure",
+          "level": 2,
+          "id": "5-1-random-access-procedure",
+          "children": [
+            {
+              "clause_id": "5.1.1",
+              "clause_title": "Random Access procedure initialization",
+              "level": 3,
+              "id": "5-1-1-random-access-procedure-initialization",
+              "children": []
+            },
+            {
+              "clause_id": null,
+              "clause_title": "5.1.1a     Initialization of variables specific to Random Access type",
+              "level": 3,
+              "id": "5-1-1a-initialization-of-variables-specific-to-random-access-type",
+              "children": []
+            },
+            {
+              "clause_id": null,
+              "clause_title": "5.1.1b     Selection of the set of Random Access resources for the Random Access procedure",
+              "level": 3,
+              "id": "5-1-1b-selection-of-the-set-of-random-access-resources-for-the-random-access-procedure",
+              "children": []
+            },
+            {
+              "clause_id": null,
+              "clause_title": "5.1.1c     Availability of the set of Random Access resources",
+              "level": 3,
+              "id": "5-1-1c-availability-of-the-set-of-random-access-resources",
+              "children": []
+            },
+            {
+              "clause_id": null,
+              "clause_title": "5.1.1d     Selection of the set of Random Access resources based on feature prioritization",
+              "level": 3,
+              "id": "5-1-1d-selection-of-the-set-of-random-access-resources-based-on-feature-prioritization",
+              "children": []
+            },
+            {
+              "clause_id": null,
+              "clause_title": "5.1.1e     Selection of Msg1 repetition for SI request",
+              "level": 3,
+              "id": "5-1-1e-selection-of-msg1-repetition-for-si-request",
+              "children": []
+            },
+            {
+              "clause_id": "5.1.2",
+              "clause_title": "Random Access Resource selection",
+              "level": 3,
+              "id": "5-1-2-random-access-resource-selection",
+              "children": []
+            },
+            {
+              "clause_id": null,
+              "clause_title": "5.1.2a     Random Access Resource selection for 2-step RA type",
+              "level": 3,
+              "id": "5-1-2a-random-access-resource-selection-for-2-step-ra-type",
+              "children": []
+            },
+            {
+              "clause_id": "5.1.3",
+              "clause_title": "Random Access Preamble transmission",
+              "level": 3,
+              "id": "5-1-3-random-access-preamble-transmission",
+              "children": []
+            },
+            {
+              "clause_id": null,
+              "clause_title": "5.1.3a     MSGA transmission",
+              "level": 3,
+              "id": "5-1-3a-msga-transmission",
+              "children": []
+            },
+            {
+              "clause_id": "5.1.4",
+              "clause_title": "Random Access Response reception",
+              "level": 3,
+              "id": "5-1-4-random-access-response-reception",
+              "children": []
+            },
+            {
+              "clause_id": null,
+              "clause_title": "5.1.4a     MSGB reception and contention resolution for 2-step RA type",
+              "level": 3,
+              "id": "5-1-4a-msgb-reception-and-contention-resolution-for-2-step-ra-type",
+              "children": []
+            },
+            {
+              "clause_id": "5.1.5",
+              "clause_title": "Contention Resolution",
+              "level": 3,
+              "id": "5-1-5-contention-resolution",
+              "children": []
+            },
+            {
+              "clause_id": "5.1.6",
+              "clause_title": "Completion of the Random Access procedure",
+              "level": 3,
+              "id": "5-1-6-completion-of-the-random-access-procedure",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "5.2",
+          "clause_title": "Maintenance of Uplink Time Alignment",
+          "level": 2,
+          "id": "5-2-maintenance-of-uplink-time-alignment",
+          "children": []
+        },
+        {
+          "clause_id": null,
+          "clause_title": "5.2a     Maintenance of UL Synchronization",
+          "level": 2,
+          "id": "5-2a-maintenance-of-ul-synchronization",
+          "children": []
+        },
+        {
+          "clause_id": null,
+          "clause_title": "5.2b     Maintenance of UL Synchronization for CLTM candidate cell",
+          "level": 2,
+          "id": "5-2b-maintenance-of-ul-synchronization-for-cltm-candidate-cell",
+          "children": []
+        },
+        {
+          "clause_id": "5.3",
+          "clause_title": "DL-SCH data transfer",
+          "level": 2,
+          "id": "5-3-dl-sch-data-transfer",
+          "children": [
+            {
+              "clause_id": "5.3.1",
+              "clause_title": "DL Assignment reception",
+              "level": 3,
+              "id": "5-3-1-dl-assignment-reception",
+              "children": []
+            },
+            {
+              "clause_id": "5.3.2",
+              "clause_title": "HARQ operation",
+              "level": 3,
+              "id": "5-3-2-harq-operation",
+              "children": [
+                {
+                  "clause_id": "5.3.2.1",
+                  "clause_title": "HARQ Entity",
+                  "level": 4,
+                  "id": "5-3-2-1-harq-entity",
+                  "children": []
+                },
+                {
+                  "clause_id": "5.3.2.2",
+                  "clause_title": "HARQ process",
+                  "level": 4,
+                  "id": "5-3-2-2-harq-process",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "5.3.3",
+              "clause_title": "Disassembly and demultiplexing",
+              "level": 3,
+              "id": "5-3-3-disassembly-and-demultiplexing",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "5.4",
+          "clause_title": "UL-SCH data transfer",
+          "level": 2,
+          "id": "5-4-ul-sch-data-transfer",
+          "children": [
+            {
+              "clause_id": "5.4.1",
+              "clause_title": "UL Grant reception",
+              "level": 3,
+              "id": "5-4-1-ul-grant-reception",
+              "children": []
+            },
+            {
+              "clause_id": "5.4.2",
+              "clause_title": "HARQ operation",
+              "level": 3,
+              "id": "5-4-2-harq-operation",
+              "children": [
+                {
+                  "clause_id": "5.4.2.1",
+                  "clause_title": "HARQ Entity",
+                  "level": 4,
+                  "id": "5-4-2-1-harq-entity",
+                  "children": []
+                },
+                {
+                  "clause_id": "5.4.2.2",
+                  "clause_title": "HARQ process",
+                  "level": 4,
+                  "id": "5-4-2-2-harq-process",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "5.4.3",
+              "clause_title": "Multiplexing and assembly",
+              "level": 3,
+              "id": "5-4-3-multiplexing-and-assembly",
+              "children": [
+                {
+                  "clause_id": "5.4.3.1",
+                  "clause_title": "Logical Channel Prioritization",
+                  "level": 4,
+                  "id": "5-4-3-1-logical-channel-prioritization",
+                  "children": [
+                    {
+                      "clause_id": "5.4.3.1.1",
+                      "clause_title": "General",
+                      "level": 5,
+                      "id": "5-4-3-1-1-general",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "5.4.3.1.2",
+                      "clause_title": "Selection of logical channels",
+                      "level": 5,
+                      "id": "5-4-3-1-2-selection-of-logical-channels",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "5.4.3.1.3",
+                      "clause_title": "Allocation of resources",
+                      "level": 5,
+                      "id": "5-4-3-1-3-allocation-of-resources",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "clause_id": "5.4.3.2",
+                  "clause_title": "Multiplexing of MAC Control Elements and MAC SDUs",
+                  "level": 4,
+                  "id": "5-4-3-2-multiplexing-of-mac-control-elements-and-mac-sdus",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "5.4.4",
+              "clause_title": "Scheduling Request",
+              "level": 3,
+              "id": "5-4-4-scheduling-request",
+              "children": []
+            },
+            {
+              "clause_id": "5.4.5",
+              "clause_title": "Buffer Status Reporting",
+              "level": 3,
+              "id": "5-4-5-buffer-status-reporting",
+              "children": []
+            },
+            {
+              "clause_id": "5.4.6",
+              "clause_title": "Power Headroom Reporting",
+              "level": 3,
+              "id": "5-4-6-power-headroom-reporting",
+              "children": []
+            },
+            {
+              "clause_id": "5.4.7",
+              "clause_title": "Pre-emptive Buffer Status Reporting",
+              "level": 3,
+              "id": "5-4-7-pre-emptive-buffer-status-reporting",
+              "children": []
+            },
+            {
+              "clause_id": "5.4.8",
+              "clause_title": "Timing Advance Reporting",
+              "level": 3,
+              "id": "5-4-8-timing-advance-reporting",
+              "children": []
+            },
+            {
+              "clause_id": "5.4.9",
+              "clause_title": "Delay status reporting",
+              "level": 3,
+              "id": "5-4-9-delay-status-reporting",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "5.5",
+          "clause_title": "PCH reception",
+          "level": 2,
+          "id": "5-5-pch-reception",
+          "children": []
+        },
+        {
+          "clause_id": "5.6",
+          "clause_title": "BCH reception",
+          "level": 2,
+          "id": "5-6-bch-reception",
+          "children": []
+        },
+        {
+          "clause_id": "5.7",
+          "clause_title": "Discontinuous Reception (DRX)",
+          "level": 2,
+          "id": "5-7-discontinuous-reception-drx",
+          "children": []
+        },
+        {
+          "clause_id": null,
+          "clause_title": "5.7a     Discontinuous Reception (DRX) for MBS Broadcast",
+          "level": 2,
+          "id": "5-7a-discontinuous-reception-drx-for-mbs-broadcast",
+          "children": []
+        },
+        {
+          "clause_id": null,
+          "clause_title": "5.7b     Discontinuous Reception (DRX) for MBS Multicast",
+          "level": 2,
+          "id": "5-7b-discontinuous-reception-drx-for-mbs-multicast",
+          "children": []
+        },
+        {
+          "clause_id": "5.8",
+          "clause_title": "Transmission and reception without dynamic scheduling",
+          "level": 2,
+          "id": "5-8-transmission-and-reception-without-dynamic-scheduling",
+          "children": [
+            {
+              "clause_id": "5.8.1",
+              "clause_title": "Downlink",
+              "level": 3,
+              "id": "5-8-1-downlink",
+              "children": []
+            },
+            {
+              "clause_id": null,
+              "clause_title": "5.8.1a     Downlink for Multicast",
+              "level": 3,
+              "id": "5-8-1a-downlink-for-multicast",
+              "children": []
+            },
+            {
+              "clause_id": "5.8.2",
+              "clause_title": "Uplink",
+              "level": 3,
+              "id": "5-8-2-uplink",
+              "children": []
+            },
+            {
+              "clause_id": "5.8.3",
+              "clause_title": "Sidelink",
+              "level": 3,
+              "id": "5-8-3-sidelink",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "5.9",
+          "clause_title": "Activation/Deactivation of SCells",
+          "level": 2,
+          "id": "5-9-activation-deactivation-of-scells",
+          "children": []
+        },
+        {
+          "clause_id": "5.10",
+          "clause_title": "Activation/Deactivation of PDCP duplication",
+          "level": 2,
+          "id": "5-10-activation-deactivation-of-pdcp-duplication",
+          "children": []
+        },
+        {
+          "clause_id": "5.11",
+          "clause_title": "MAC reconfiguration",
+          "level": 2,
+          "id": "5-11-mac-reconfiguration",
+          "children": []
+        },
+        {
+          "clause_id": "5.12",
+          "clause_title": "MAC Reset",
+          "level": 2,
+          "id": "5-12-mac-reset",
+          "children": []
+        },
+        {
+          "clause_id": null,
+          "clause_title": "5.12a     Void",
+          "level": 2,
+          "id": "5-12a-void",
+          "children": []
+        },
+        {
+          "clause_id": "5.13",
+          "clause_title": "Handling of unknown, unforeseen and erroneous protocol data",
+          "level": 2,
+          "id": "5-13-handling-of-unknown-unforeseen-and-erroneous-protocol-data",
+          "children": []
+        },
+        {
+          "clause_id": "5.14",
+          "clause_title": "Handling of measurement gaps",
+          "level": 2,
+          "id": "5-14-handling-of-measurement-gaps",
+          "children": []
+        },
+        {
+          "clause_id": "5.15",
+          "clause_title": "Bandwidth Part (BWP) operation",
+          "level": 2,
+          "id": "5-15-bandwidth-part-bwp-operation",
+          "children": [
+            {
+              "clause_id": "5.15.1",
+              "clause_title": "Downlink and Uplink",
+              "level": 3,
+              "id": "5-15-1-downlink-and-uplink",
+              "children": []
+            },
+            {
+              "clause_id": "5.15.2",
+              "clause_title": "Sidelink",
+              "level": 3,
+              "id": "5-15-2-sidelink",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "5.16",
+          "clause_title": "SUL operation",
+          "level": 2,
+          "id": "5-16-sul-operation",
+          "children": []
+        },
+        {
+          "clause_id": "5.17",
+          "clause_title": "Beam Failure Detection and Recovery procedure",
+          "level": 2,
+          "id": "5-17-beam-failure-detection-and-recovery-procedure",
+          "children": []
+        },
+        {
+          "clause_id": "5.18",
+          "clause_title": "Handling of MAC CEs",
+          "level": 2,
+          "id": "5-18-handling-of-mac-ces",
+          "children": [
+            {
+              "clause_id": "5.18.1",
+              "clause_title": "General",
+              "level": 3,
+              "id": "5-18-1-general",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.2",
+              "clause_title": "Activation/Deactivation of Semi-persistent CSI-RS/CSI-IM resource set",
+              "level": 3,
+              "id": "5-18-2-activation-deactivation-of-semi-persistent-csi-rs-csi-im-resource-set",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.3",
+              "clause_title": "Aperiodic CSI Trigger State Subselection",
+              "level": 3,
+              "id": "5-18-3-aperiodic-csi-trigger-state-subselection",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.4",
+              "clause_title": "Activation/Deactivation of UE-specific PDSCH TCI state",
+              "level": 3,
+              "id": "5-18-4-activation-deactivation-of-ue-specific-pdsch-tci-state",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.5",
+              "clause_title": "Indication of TCI state for UE-specific PDCCH",
+              "level": 3,
+              "id": "5-18-5-indication-of-tci-state-for-ue-specific-pdcch",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.6",
+              "clause_title": "Activation/Deactivation of Semi-persistent CSI reporting on PUCCH",
+              "level": 3,
+              "id": "5-18-6-activation-deactivation-of-semi-persistent-csi-reporting-on-pucch",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.7",
+              "clause_title": "Activation/Deactivation of Semi-persistent SRS and Indication of spatial relation of SP/AP SRS",
+              "level": 3,
+              "id": "5-18-7-activation-deactivation-of-semi-persistent-srs-and-indication-of-spatial-relation-of-sp-ap-srs",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.8",
+              "clause_title": "Activation/Deactivation of spatial relation of PUCCH resource",
+              "level": 3,
+              "id": "5-18-8-activation-deactivation-of-spatial-relation-of-pucch-resource",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.9",
+              "clause_title": "Activation/Deactivation of semi-persistent ZP CSI-RS resource set",
+              "level": 3,
+              "id": "5-18-9-activation-deactivation-of-semi-persistent-zp-csi-rs-resource-set",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.10",
+              "clause_title": "Recommended Bit Rate",
+              "level": 3,
+              "id": "5-18-10-recommended-bit-rate",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.11",
+              "clause_title": "Void",
+              "level": 3,
+              "id": "5-18-11-void",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.12",
+              "clause_title": "Void",
+              "level": 3,
+              "id": "5-18-12-void",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.13",
+              "clause_title": "Void",
+              "level": 3,
+              "id": "5-18-13-void",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.14",
+              "clause_title": "Update of Pathloss Reference RS of SRS",
+              "level": 3,
+              "id": "5-18-14-update-of-pathloss-reference-rs-of-srs",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.15",
+              "clause_title": "Update of Pathloss Reference RS of PUSCH",
+              "level": 3,
+              "id": "5-18-15-update-of-pathloss-reference-rs-of-pusch",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.16",
+              "clause_title": "Indication of spatial relation of SRS resource for a Serving Cell set",
+              "level": 3,
+              "id": "5-18-16-indication-of-spatial-relation-of-srs-resource-for-a-serving-cell-set",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.17",
+              "clause_title": "Activation/Deactivation of Semi-Persistent Positioning SRS",
+              "level": 3,
+              "id": "5-18-17-activation-deactivation-of-semi-persistent-positioning-srs",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.18",
+              "clause_title": "Timing offset adjustments for IAB",
+              "level": 3,
+              "id": "5-18-18-timing-offset-adjustments-for-iab",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.19",
+              "clause_title": "Guard symbols for IAB",
+              "level": 3,
+              "id": "5-18-19-guard-symbols-for-iab",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.20",
+              "clause_title": "Positioning Measurement Gap Activation/Deactivation Command",
+              "level": 3,
+              "id": "5-18-20-positioning-measurement-gap-activation-deactivation-command",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.21",
+              "clause_title": "PPW Activation/Deactivation Command",
+              "level": 3,
+              "id": "5-18-21-ppw-activation-deactivation-command",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.22",
+              "clause_title": "Update of PUCCH Power Control Set for multiple=\"multiple\" TRP PUCCH repetition",
+              "level": 3,
+              "id": "5-18-22-update-of-pucch-power-control-set-for-multiple-trp-pucch-repetition",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.23",
+              "clause_title": "Unified TCI States Activation/Deactivation MAC CE",
+              "level": 3,
+              "id": "5-18-23-unified-tci-states-activation-deactivation-mac-ce",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.24",
+              "clause_title": "Update of Differential Koffset",
+              "level": 3,
+              "id": "5-18-24-update-of-differential-koffset",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.25",
+              "clause_title": "BFD-RS Indication MAC CE",
+              "level": 3,
+              "id": "5-18-25-bfd-rs-indication-mac-ce",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.26",
+              "clause_title": "Restricted and recommended beam indication for IAB",
+              "level": 3,
+              "id": "5-18-26-restricted-and-recommended-beam-indication-for-iab",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.27",
+              "clause_title": "DL TX power adjustment for IAB",
+              "level": 3,
+              "id": "5-18-27-dl-tx-power-adjustment-for-iab",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.28",
+              "clause_title": "UL PSD range adjustment for IAB",
+              "level": 3,
+              "id": "5-18-28-ul-psd-range-adjustment-for-iab",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.29",
+              "clause_title": "Timing case indication for IAB",
+              "level": 3,
+              "id": "5-18-29-timing-case-indication-for-iab",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.30",
+              "clause_title": "Case-6 Timing Request",
+              "level": 3,
+              "id": "5-18-30-case-6-timing-request",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.31",
+              "clause_title": "Backhaul Link Beam Indication for NCR",
+              "level": 3,
+              "id": "5-18-31-backhaul-link-beam-indication-for-ncr",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.32",
+              "clause_title": "Access Link Beam Indication for NCR",
+              "level": 3,
+              "id": "5-18-32-access-link-beam-indication-for-ncr",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.33",
+              "clause_title": "Enhanced Unified TCI States Activation/Deactivation MAC CE",
+              "level": 3,
+              "id": "5-18-33-enhanced-unified-tci-states-activation-deactivation-mac-ce",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.34",
+              "clause_title": "Activation/deactivation of PSI-based SDU discard",
+              "level": 3,
+              "id": "5-18-34-activation-deactivation-of-psi-based-sdu-discard",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.35",
+              "clause_title": "(Enhanced) LTM Cell Switch Command",
+              "level": 3,
+              "id": "5-18-35-enhanced-ltm-cell-switch-command",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.36",
+              "clause_title": "Candidate Cell TCI States Activation/Deactivation",
+              "level": 3,
+              "id": "5-18-36-candidate-cell-tci-states-activation-deactivation",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.37",
+              "clause_title": "Activation/Deactivation of Aggregated Semi-Persistent Positioning SRS",
+              "level": 3,
+              "id": "5-18-37-activation-deactivation-of-aggregated-semi-persistent-positioning-srs",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.38",
+              "clause_title": "Activation/Deactivation of Semi-Persistent CSI-RS/CSI-IM resource set for candidate cell",
+              "level": 3,
+              "id": "5-18-38-activation-deactivation-of-semi-persistent-csi-rs-csi-im-resource-set-for-candidate-cell",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.39",
+              "clause_title": "Update of Pathloss Offset",
+              "level": 3,
+              "id": "5-18-39-update-of-pathloss-offset",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.40",
+              "clause_title": "UL Rate Control",
+              "level": 3,
+              "id": "5-18-40-ul-rate-control",
+              "children": []
+            },
+            {
+              "clause_id": "5.18.41",
+              "clause_title": "Activation/deactivation of semi-persistent CLI measurement resource set",
+              "level": 3,
+              "id": "5-18-41-activation-deactivation-of-semi-persistent-cli-measurement-resource-set",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "5.19",
+          "clause_title": "Data inactivity monitoring",
+          "level": 2,
+          "id": "5-19-data-inactivity-monitoring",
+          "children": []
+        },
+        {
+          "clause_id": "5.20",
+          "clause_title": "Void",
+          "level": 2,
+          "id": "5-20-void",
+          "children": []
+        },
+        {
+          "clause_id": "5.21",
+          "clause_title": "LBT operation",
+          "level": 2,
+          "id": "5-21-lbt-operation",
+          "children": [
+            {
+              "clause_id": "5.21.1",
+              "clause_title": "General",
+              "level": 3,
+              "id": "5-21-1-general",
+              "children": []
+            },
+            {
+              "clause_id": "5.21.2",
+              "clause_title": "LBT failure detection and recovery procedure",
+              "level": 3,
+              "id": "5-21-2-lbt-failure-detection-and-recovery-procedure",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "5.22",
+          "clause_title": "SL-SCH Data transfer and SL-PRS transmission",
+          "level": 2,
+          "id": "5-22-sl-sch-data-transfer-and-sl-prs-transmission",
+          "children": [
+            {
+              "clause_id": "5.22.1",
+              "clause_title": "SL-SCH Data and SL-PRS transmission",
+              "level": 3,
+              "id": "5-22-1-sl-sch-data-and-sl-prs-transmission",
+              "children": [
+                {
+                  "clause_id": "5.22.1.1",
+                  "clause_title": "SL Grant reception and SCI transmission",
+                  "level": 4,
+                  "id": "5-22-1-1-sl-grant-reception-and-sci-transmission",
+                  "children": []
+                },
+                {
+                  "clause_id": "5.22.1.2",
+                  "clause_title": "TX resource (re-)selection check",
+                  "level": 4,
+                  "id": "5-22-1-2-tx-resource-re-selection-check",
+                  "children": []
+                },
+                {
+                  "clause_id": null,
+                  "clause_title": "5.22.1.2a     Re-evaluation and Pre-emption",
+                  "level": 4,
+                  "id": "5-22-1-2a-re-evaluation-and-pre-emption",
+                  "children": []
+                },
+                {
+                  "clause_id": null,
+                  "clause_title": "5.22.1.2b     Re-selection for using a received resource conflict indication",
+                  "level": 4,
+                  "id": "5-22-1-2b-re-selection-for-using-a-received-resource-conflict-indication",
+                  "children": []
+                },
+                {
+                  "clause_id": null,
+                  "clause_title": "5.22.1.2c     Resource re-selection from SL LBT Failure indication",
+                  "level": 4,
+                  "id": "5-22-1-2c-resource-re-selection-from-sl-lbt-failure-indication",
+                  "children": []
+                },
+                {
+                  "clause_id": "5.22.1.3",
+                  "clause_title": "Sidelink HARQ operation and SL-PRS transmission",
+                  "level": 4,
+                  "id": "5-22-1-3-sidelink-harq-operation-and-sl-prs-transmission",
+                  "children": [
+                    {
+                      "clause_id": "5.22.1.3.1",
+                      "clause_title": "Sidelink HARQ Entity",
+                      "level": 5,
+                      "id": "5-22-1-3-1-sidelink-harq-entity",
+                      "children": []
+                    },
+                    {
+                      "clause_id": null,
+                      "clause_title": "5.22.1.3.1a     Sidelink process not associated with Dedicated SL-PRS resource pool",
+                      "level": 5,
+                      "id": "5-22-1-3-1a-sidelink-process-not-associated-with-dedicated-sl-prs-resource-pool",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "5.22.1.3.2",
+                      "clause_title": "PSFCH reception",
+                      "level": 5,
+                      "id": "5-22-1-3-2-psfch-reception",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "5.22.1.3.3",
+                      "clause_title": "HARQ-based Sidelink RLF detection",
+                      "level": 5,
+                      "id": "5-22-1-3-3-harq-based-sidelink-rlf-detection",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "5.22.1.3.4",
+                      "clause_title": "Processing of sidelink grant on Dedicated SL-PRS resource pool",
+                      "level": 5,
+                      "id": "5-22-1-3-4-processing-of-sidelink-grant-on-dedicated-sl-prs-resource-pool",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "5.22.1.3.5",
+                      "clause_title": "Sidelink process associated with Dedicated SL-PRS resource pool",
+                      "level": 5,
+                      "id": "5-22-1-3-5-sidelink-process-associated-with-dedicated-sl-prs-resource-pool",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "clause_id": "5.22.1.4",
+                  "clause_title": "Multiplexing and assembly",
+                  "level": 4,
+                  "id": "5-22-1-4-multiplexing-and-assembly",
+                  "children": [
+                    {
+                      "clause_id": "5.22.1.4.0",
+                      "clause_title": "General",
+                      "level": 5,
+                      "id": "5-22-1-4-0-general",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "5.22.1.4.1",
+                      "clause_title": "Logical channel prioritization",
+                      "level": 5,
+                      "id": "5-22-1-4-1-logical-channel-prioritization",
+                      "children": [
+                        {
+                          "clause_id": "5.22.1.4.1.1",
+                          "clause_title": "General",
+                          "level": 6,
+                          "id": "5-22-1-4-1-1-general",
+                          "children": []
+                        },
+                        {
+                          "clause_id": "5.22.1.4.1.2",
+                          "clause_title": "Selection of logical channels and SL-PRS",
+                          "level": 6,
+                          "id": "5-22-1-4-1-2-selection-of-logical-channels-and-sl-prs",
+                          "children": []
+                        },
+                        {
+                          "clause_id": "5.22.1.4.1.3",
+                          "clause_title": "Allocation of sidelink resources",
+                          "level": 6,
+                          "id": "5-22-1-4-1-3-allocation-of-sidelink-resources",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "clause_id": "5.22.1.4.2",
+                      "clause_title": "Multiplexing of MAC Control Elements and MAC SDUs",
+                      "level": 5,
+                      "id": "5-22-1-4-2-multiplexing-of-mac-control-elements-and-mac-sdus",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "clause_id": "5.22.1.5",
+                  "clause_title": "Scheduling Request",
+                  "level": 4,
+                  "id": "5-22-1-5-scheduling-request",
+                  "children": []
+                },
+                {
+                  "clause_id": "5.22.1.6",
+                  "clause_title": "Buffer Status Reporting",
+                  "level": 4,
+                  "id": "5-22-1-6-buffer-status-reporting",
+                  "children": []
+                },
+                {
+                  "clause_id": "5.22.1.7",
+                  "clause_title": "CSI Reporting",
+                  "level": 4,
+                  "id": "5-22-1-7-csi-reporting",
+                  "children": []
+                },
+                {
+                  "clause_id": "5.22.1.8",
+                  "clause_title": "Void",
+                  "level": 4,
+                  "id": "5-22-1-8-void",
+                  "children": []
+                },
+                {
+                  "clause_id": "5.22.1.9",
+                  "clause_title": "IUC-Request transmission",
+                  "level": 4,
+                  "id": "5-22-1-9-iuc-request-transmission",
+                  "children": []
+                },
+                {
+                  "clause_id": "5.22.1.10",
+                  "clause_title": "IUC-Information Reporting",
+                  "level": 4,
+                  "id": "5-22-1-10-iuc-information-reporting",
+                  "children": [
+                    {
+                      "clause_id": "5.22.1.10.1",
+                      "clause_title": "General",
+                      "level": 5,
+                      "id": "5-22-1-10-1-general",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "5.22.1.10.2",
+                      "clause_title": "Reception of IUC-Information Reporting",
+                      "level": 5,
+                      "id": "5-22-1-10-2-reception-of-iuc-information-reporting",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "clause_id": "5.22.1.11",
+                  "clause_title": "TX carrier (re-)selection",
+                  "level": 4,
+                  "id": "5-22-1-11-tx-carrier-re-selection",
+                  "children": []
+                },
+                {
+                  "clause_id": "5.22.1.12",
+                  "clause_title": "SL-PRS Resource Request",
+                  "level": 4,
+                  "id": "5-22-1-12-sl-prs-resource-request",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "5.22.2",
+              "clause_title": "SL-SCH Data and SL-PRS reception",
+              "level": 3,
+              "id": "5-22-2-sl-sch-data-and-sl-prs-reception",
+              "children": [
+                {
+                  "clause_id": "5.22.2.1",
+                  "clause_title": "SCI reception",
+                  "level": 4,
+                  "id": "5-22-2-1-sci-reception",
+                  "children": []
+                },
+                {
+                  "clause_id": "5.22.2.2",
+                  "clause_title": "Sidelink HARQ operation and SL-PRS reception on Shared SL-PRS resource pool",
+                  "level": 4,
+                  "id": "5-22-2-2-sidelink-harq-operation-and-sl-prs-reception-on-shared-sl-prs-resource-pool",
+                  "children": [
+                    {
+                      "clause_id": "5.22.2.2.1",
+                      "clause_title": "Sidelink HARQ Entity",
+                      "level": 5,
+                      "id": "5-22-2-2-1-sidelink-harq-entity",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "5.22.2.2.2",
+                      "clause_title": "Sidelink process",
+                      "level": 5,
+                      "id": "5-22-2-2-2-sidelink-process",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "clause_id": "5.22.2.3",
+                  "clause_title": "Disassembly and demultiplexing",
+                  "level": 4,
+                  "id": "5-22-2-3-disassembly-and-demultiplexing",
+                  "children": []
+                },
+                {
+                  "clause_id": "5.22.2.4",
+                  "clause_title": "SL-PRS reception on Dedicated SL-PRS resource pool",
+                  "level": 4,
+                  "id": "5-22-2-4-sl-prs-reception-on-dedicated-sl-prs-resource-pool",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "clause_id": "5.23",
+          "clause_title": "SL-BCH data transfer",
+          "level": 2,
+          "id": "5-23-sl-bch-data-transfer",
+          "children": [
+            {
+              "clause_id": "5.23.1",
+              "clause_title": "SL-BCH data transmission",
+              "level": 3,
+              "id": "5-23-1-sl-bch-data-transmission",
+              "children": []
+            },
+            {
+              "clause_id": "5.23.2",
+              "clause_title": "SL-BCH data reception",
+              "level": 3,
+              "id": "5-23-2-sl-bch-data-reception",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "5.24",
+          "clause_title": "Handling of PRS Processing Window",
+          "level": 2,
+          "id": "5-24-handling-of-prs-processing-window",
+          "children": []
+        },
+        {
+          "clause_id": "5.25",
+          "clause_title": "Positioning Measurement Gap Activation/Deactivation Request",
+          "level": 2,
+          "id": "5-25-positioning-measurement-gap-activation-deactivation-request",
+          "children": []
+        },
+        {
+          "clause_id": "5.26",
+          "clause_title": "Positioning SRS transmission in RRC_INACTIVE",
+          "level": 2,
+          "id": "5-26-positioning-srs-transmission-in-rrc-inactive",
+          "children": [
+            {
+              "clause_id": "5.26.1",
+              "clause_title": "General",
+              "level": 3,
+              "id": "5-26-1-general",
+              "children": []
+            },
+            {
+              "clause_id": "5.26.2",
+              "clause_title": "TA validation for SRS transmission in RRC_INACTIVE",
+              "level": 3,
+              "id": "5-26-2-ta-validation-for-srs-transmission-in-rrc-inactive",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "5.27",
+          "clause_title": "Small Data Transmission",
+          "level": 2,
+          "id": "5-27-small-data-transmission",
+          "children": [
+            {
+              "clause_id": "5.27.1",
+              "clause_title": "General",
+              "level": 3,
+              "id": "5-27-1-general",
+              "children": []
+            },
+            {
+              "clause_id": "5.27.2",
+              "clause_title": "TA Validation for CG-SDT",
+              "level": 3,
+              "id": "5-27-2-ta-validation-for-cg-sdt",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "5.28",
+          "clause_title": "Sidelink Discontinuous Reception (DRX)",
+          "level": 2,
+          "id": "5-28-sidelink-discontinuous-reception-drx",
+          "children": [
+            {
+              "clause_id": "5.28.1",
+              "clause_title": "General",
+              "level": 3,
+              "id": "5-28-1-general",
+              "children": []
+            },
+            {
+              "clause_id": "5.28.2",
+              "clause_title": "Behaviour of UE receiving SL-SCH Data",
+              "level": 3,
+              "id": "5-28-2-behaviour-of-ue-receiving-sl-sch-data",
+              "children": []
+            },
+            {
+              "clause_id": "5.28.3",
+              "clause_title": "Behaviour of UE transmitting SL-SCH Data",
+              "level": 3,
+              "id": "5-28-3-behaviour-of-ue-transmitting-sl-sch-data",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "5.29",
+          "clause_title": "Activation/Deactivation of SCG",
+          "level": 2,
+          "id": "5-29-activation-deactivation-of-scg",
+          "children": []
+        },
+        {
+          "clause_id": "5.30",
+          "clause_title": "Handling of FR2 UL gap",
+          "level": 2,
+          "id": "5-30-handling-of-fr2-ul-gap",
+          "children": []
+        },
+        {
+          "clause_id": "5.31",
+          "clause_title": "Sidelink LBT operation",
+          "level": 2,
+          "id": "5-31-sidelink-lbt-operation",
+          "children": [
+            {
+              "clause_id": "5.31.1",
+              "clause_title": "General",
+              "level": 3,
+              "id": "5-31-1-general",
+              "children": []
+            },
+            {
+              "clause_id": "5.31.2",
+              "clause_title": "Sidelink LBT failure detection and recovery procedure",
+              "level": 3,
+              "id": "5-31-2-sidelink-lbt-failure-detection-and-recovery-procedure",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "5.32",
+          "clause_title": "Void",
+          "level": 2,
+          "id": "5-32-void",
+          "children": []
+        },
+        {
+          "clause_id": "5.33",
+          "clause_title": "First PUSCH transmission of RACH-less handover",
+          "level": 2,
+          "id": "5-33-first-pusch-transmission-of-rach-less-handover",
+          "children": []
+        },
+        {
+          "clause_id": "5.34",
+          "clause_title": "Cell-Level Energy Saving",
+          "level": 2,
+          "id": "5-34-cell-level-energy-saving",
+          "children": [
+            {
+              "clause_id": "5.34.1",
+              "clause_title": "General",
+              "level": 3,
+              "id": "5-34-1-general",
+              "children": []
+            },
+            {
+              "clause_id": "5.34.2",
+              "clause_title": "Cell Discontinuous Transmission",
+              "level": 3,
+              "id": "5-34-2-cell-discontinuous-transmission",
+              "children": []
+            },
+            {
+              "clause_id": "5.34.3",
+              "clause_title": "Cell Discontinuous Reception",
+              "level": 3,
+              "id": "5-34-3-cell-discontinuous-reception",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "5.35",
+          "clause_title": "L1 measurement and event triggered report",
+          "level": 2,
+          "id": "5-35-l1-measurement-and-event-triggered-report",
+          "children": [
+            {
+              "clause_id": "5.35.1",
+              "clause_title": "Introduction",
+              "level": 3,
+              "id": "5-35-1-introduction",
+              "children": []
+            },
+            {
+              "clause_id": "5.35.2",
+              "clause_title": "Performing measurement",
+              "level": 3,
+              "id": "5-35-2-performing-measurement",
+              "children": []
+            },
+            {
+              "clause_id": "5.35.3",
+              "clause_title": "Measurement report triggering",
+              "level": 3,
+              "id": "5-35-3-measurement-report-triggering",
+              "children": [
+                {
+                  "clause_id": "5.35.3.1",
+                  "clause_title": "General",
+                  "level": 4,
+                  "id": "5-35-3-1-general",
+                  "children": []
+                },
+                {
+                  "clause_id": "5.35.3.2",
+                  "clause_title": "Event LTM2 (Beam of serving cell becomes worse than threshold)",
+                  "level": 4,
+                  "id": "5-35-3-2-event-ltm2-beam-of-serving-cell-becomes-worse-than-threshold",
+                  "children": []
+                },
+                {
+                  "clause_id": "5.35.3.3",
+                  "clause_title": "Event LTM3 (Beam of candidate cell becomes offset better than beam of serving cell)",
+                  "level": 4,
+                  "id": "5-35-3-3-event-ltm3-beam-of-candidate-cell-becomes-offset-better-than-beam-of-serving-cell",
+                  "children": []
+                },
+                {
+                  "clause_id": "5.35.3.4",
+                  "clause_title": "Event LTM4 (Beam of candidate cell becomes better than absolute threshold)",
+                  "level": 4,
+                  "id": "5-35-3-4-event-ltm4-beam-of-candidate-cell-becomes-better-than-absolute-threshold",
+                  "children": []
+                },
+                {
+                  "clause_id": "5.35.3.5",
+                  "clause_title": "Event LTM5 (Beam of serving cell becomes worse than threshold1 and Beam of candidate cell becomes better than threshold2)",
+                  "level": 4,
+                  "id": "5-35-3-5-event-ltm5-beam-of-serving-cell-becomes-worse-than-threshold1-and-beam-of-candidate-cell-becomes-better-than-threshold2",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "5.35.4",
+              "clause_title": "Measurement report",
+              "level": 3,
+              "id": "5-35-4-measurement-report",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "5.36",
+          "clause_title": "Conditional LTM",
+          "level": 2,
+          "id": "5-36-conditional-ltm",
+          "children": [
+            {
+              "clause_id": "5.36.1",
+              "clause_title": "Introduction",
+              "level": 3,
+              "id": "5-36-1-introduction",
+              "children": []
+            },
+            {
+              "clause_id": "5.36.2",
+              "clause_title": "L1 measurement based Conditional LTM triggering condition evaluation",
+              "level": 3,
+              "id": "5-36-2-l1-measurement-based-conditional-ltm-triggering-condition-evaluation",
+              "children": []
+            },
+            {
+              "clause_id": "5.36.3",
+              "clause_title": "Conditional LTM execution",
+              "level": 3,
+              "id": "5-36-3-conditional-ltm-execution",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "clause_id": "6",
+      "clause_title": "Protocol Data Units, formats and parameters",
+      "level": 1,
+      "id": "6-protocol-data-units-formats-and-parameters",
+      "children": [
+        {
+          "clause_id": "6.1",
+          "clause_title": "Protocol Data Units",
+          "level": 2,
+          "id": "6-1-protocol-data-units",
+          "children": [
+            {
+              "clause_id": "6.1.1",
+              "clause_title": "General",
+              "level": 3,
+              "id": "6-1-1-general",
+              "children": []
+            },
+            {
+              "clause_id": "6.1.2",
+              "clause_title": "MAC PDU (DL-SCH and UL-SCH except transparent MAC and Random Access Response)",
+              "level": 3,
+              "id": "6-1-2-mac-pdu-dl-sch-and-ul-sch-except-transparent-mac-and-random-access-response",
+              "children": []
+            },
+            {
+              "clause_id": "6.1.3",
+              "clause_title": "MAC Control Elements (CEs)",
+              "level": 3,
+              "id": "6-1-3-mac-control-elements-ces",
+              "children": [
+                {
+                  "clause_id": "6.1.3.1",
+                  "clause_title": "Buffer Status Report MAC CEs",
+                  "level": 4,
+                  "id": "6-1-3-1-buffer-status-report-mac-ces",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.2",
+                  "clause_title": "C-RNTI MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-2-c-rnti-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.3",
+                  "clause_title": "UE Contention Resolution Identity MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-3-ue-contention-resolution-identity-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.4",
+                  "clause_title": "Timing Advance Command MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-4-timing-advance-command-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": null,
+                  "clause_title": "6.1.3.4a     Absolute Timing Advance Command MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-4a-absolute-timing-advance-command-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3",
+                  "clause_title": "4b    LTM Candidate Timing Advance Command MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-4b-ltm-candidate-timing-advance-command-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.5",
+                  "clause_title": "DRX Command MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-5-drx-command-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.6",
+                  "clause_title": "Long DRX Command MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-6-long-drx-command-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.7",
+                  "clause_title": "Configured Grant Confirmation MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-7-configured-grant-confirmation-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.8",
+                  "clause_title": "Single Entry PHR MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-8-single-entry-phr-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.9",
+                  "clause_title": "Multiple Entry PHR MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-9-multiple-entry-phr-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.10",
+                  "clause_title": "SCell Activation/Deactivation MAC CEs",
+                  "level": 4,
+                  "id": "6-1-3-10-scell-activation-deactivation-mac-ces",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.11",
+                  "clause_title": "Duplication Activation/Deactivation MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-11-duplication-activation-deactivation-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.12",
+                  "clause_title": "SP CSI-RS/CSI-IM Resource Set Activation/Deactivation MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-12-sp-csi-rs-csi-im-resource-set-activation-deactivation-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": null,
+                  "clause_title": "6.1.3.12a     SP CSI-RS/CSI-IM Resource Set Activation/Deactivation for Candidate Cell MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-12a-sp-csi-rs-csi-im-resource-set-activation-deactivation-for-candidate-cell-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.13",
+                  "clause_title": "Aperiodic CSI Trigger State Subselection MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-13-aperiodic-csi-trigger-state-subselection-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.14",
+                  "clause_title": "TCI States Activation/Deactivation for UE-specific PDSCH MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-14-tci-states-activation-deactivation-for-ue-specific-pdsch-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.15",
+                  "clause_title": "TCI State Indication for UE-specific PDCCH MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-15-tci-state-indication-for-ue-specific-pdcch-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.16",
+                  "clause_title": "SP CSI reporting on PUCCH Activation/Deactivation MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-16-sp-csi-reporting-on-pucch-activation-deactivation-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.17",
+                  "clause_title": "SP SRS Activation/Deactivation MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-17-sp-srs-activation-deactivation-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.18",
+                  "clause_title": "PUCCH spatial relation Activation/Deactivation MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-18-pucch-spatial-relation-activation-deactivation-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.19",
+                  "clause_title": "SP ZP CSI-RS Resource Set Activation/Deactivation MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-19-sp-zp-csi-rs-resource-set-activation-deactivation-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.20",
+                  "clause_title": "Recommended bit rate MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-20-recommended-bit-rate-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.21",
+                  "clause_title": "Timing Delta MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-21-timing-delta-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.22",
+                  "clause_title": "Guard Symbols MAC CEs",
+                  "level": 4,
+                  "id": "6-1-3-22-guard-symbols-mac-ces",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.23",
+                  "clause_title": "BFR MAC CEs",
+                  "level": 4,
+                  "id": "6-1-3-23-bfr-mac-ces",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.24",
+                  "clause_title": "Enhanced TCI States Activation/Deactivation for UE-specific PDSCH MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-24-enhanced-tci-states-activation-deactivation-for-ue-specific-pdsch-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.25",
+                  "clause_title": "Enhanced PUCCH Spatial Relation Activation/Deactivation MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-25-enhanced-pucch-spatial-relation-activation-deactivation-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.26",
+                  "clause_title": "Enhanced SP/AP SRS Spatial Relation Indication MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-26-enhanced-sp-ap-srs-spatial-relation-indication-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.27",
+                  "clause_title": "SRS Pathloss Reference RS Update MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-27-srs-pathloss-reference-rs-update-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.28",
+                  "clause_title": "PUSCH Pathloss Reference RS Update MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-28-pusch-pathloss-reference-rs-update-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.29",
+                  "clause_title": "Serving Cell Set based SRS Spatial Relation Indication MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-29-serving-cell-set-based-srs-spatial-relation-indication-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.30",
+                  "clause_title": "LBT failure MAC CEs",
+                  "level": 4,
+                  "id": "6-1-3-30-lbt-failure-mac-ces",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.31",
+                  "clause_title": "Multiple Entry Configured Grant Confirmation MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-31-multiple-entry-configured-grant-confirmation-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.32",
+                  "clause_title": "Duplication RLC Activation/Deactivation MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-32-duplication-rlc-activation-deactivation-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.33",
+                  "clause_title": "Sidelink Buffer Status Report MAC CEs",
+                  "level": 4,
+                  "id": "6-1-3-33-sidelink-buffer-status-report-mac-ces",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.34",
+                  "clause_title": "Sidelink Configured Grant Confirmation MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-34-sidelink-configured-grant-confirmation-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.35",
+                  "clause_title": "Sidelink CSI Reporting MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-35-sidelink-csi-reporting-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.36",
+                  "clause_title": "SP Positioning SRS Activation/Deactivation MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-36-sp-positioning-srs-activation-deactivation-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.37",
+                  "clause_title": "Guard Symbols MAC CEs for Case-6 and Case-7 timing modes",
+                  "level": 4,
+                  "id": "6-1-3-37-guard-symbols-mac-ces-for-case-6-and-case-7-timing-modes",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.38",
+                  "clause_title": "Case-7 Timing advance offset MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-38-case-7-timing-advance-offset-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.39",
+                  "clause_title": "Case-6 Timing Request MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-39-case-6-timing-request-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.40",
+                  "clause_title": "Positioning Measurement Gap Activation/Deactivation Request MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-40-positioning-measurement-gap-activation-deactivation-request-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.41",
+                  "clause_title": "Positioning Measurement Gap Activation/Deactivation Command MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-41-positioning-measurement-gap-activation-deactivation-command-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.42",
+                  "clause_title": "PPW Activation/Deactivation Command MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-42-ppw-activation-deactivation-command-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.43",
+                  "clause_title": "Enhanced BFR MAC CEs",
+                  "level": 4,
+                  "id": "6-1-3-43-enhanced-bfr-mac-ces",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.44",
+                  "clause_title": "Enhanced TCI States Indication for UE-specific PDCCH MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-44-enhanced-tci-states-indication-for-ue-specific-pdcch-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.45",
+                  "clause_title": "PUCCH spatial relation Activation/Deactivation for multiple=\"multiple\" TRP PUCCH repetition MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-45-pucch-spatial-relation-activation-deactivation-for-multiple-trp-pucch-repetition-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.46",
+                  "clause_title": "PUCCH Power Control Set Update for multiple=\"multiple\" TRP PUCCH repetition MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-46-pucch-power-control-set-update-for-multiple-trp-pucch-repetition-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.47",
+                  "clause_title": "Unified TCI States Activation/Deactivation MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-47-unified-tci-states-activation-deactivation-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.48",
+                  "clause_title": "Enhanced Single Entry PHR MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-48-enhanced-single-entry-phr-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.49",
+                  "clause_title": "Enhanced Multiple Entry PHR MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-49-enhanced-multiple-entry-phr-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.50",
+                  "clause_title": "Enhanced Single Entry PHR for multiple=\"multiple\" TRP MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-50-enhanced-single-entry-phr-for-multiple-trp-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.51",
+                  "clause_title": "Enhanced Multiple Entry PHR for multiple=\"multiple\" TRP MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-51-enhanced-multiple-entry-phr-for-multiple-trp-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.52",
+                  "clause_title": "Sidelink DRX Command MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-52-sidelink-drx-command-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.53",
+                  "clause_title": "Sidelink Inter-UE Coordination Information MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-53-sidelink-inter-ue-coordination-information-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.54",
+                  "clause_title": "Sidelink Inter-UE Coordination Request MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-54-sidelink-inter-ue-coordination-request-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.55",
+                  "clause_title": "Enhanced SCell Activation/Deactivation MAC CEs",
+                  "level": 4,
+                  "id": "6-1-3-55-enhanced-scell-activation-deactivation-mac-ces",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.56",
+                  "clause_title": "Timing Advance Report MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-56-timing-advance-report-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.57",
+                  "clause_title": "Differential Koffset MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-57-differential-koffset-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.58",
+                  "clause_title": "BFD-RS Indication MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-58-bfd-rs-indication-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.59",
+                  "clause_title": "SP/AP SRS TCI State Indication MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-59-sp-ap-srs-tci-state-indication-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.60",
+                  "clause_title": "Serving Cell Set based SRS TCI State Indication MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-60-serving-cell-set-based-srs-tci-state-indication-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.61",
+                  "clause_title": "Child IAB-DU Restricted Beam Indication MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-61-child-iab-du-restricted-beam-indication-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.62",
+                  "clause_title": "IAB-MT Recommended Beam Indication MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-62-iab-mt-recommended-beam-indication-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.63",
+                  "clause_title": "DL TX Power Adjustment and Desired DL TX Power Adjustment MAC CEs",
+                  "level": 4,
+                  "id": "6-1-3-63-dl-tx-power-adjustment-and-desired-dl-tx-power-adjustment-mac-ces",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.64",
+                  "clause_title": "Desired IAB-MT PSD range MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-64-desired-iab-mt-psd-range-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.65",
+                  "clause_title": "Timing Case Indication MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-65-timing-case-indication-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.66",
+                  "clause_title": "NCR Downlink Backhaul Link Beam Indication MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-66-ncr-downlink-backhaul-link-beam-indication-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.67",
+                  "clause_title": "NCR Uplink Backhaul Link Beam Indication MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-67-ncr-uplink-backhaul-link-beam-indication-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.68",
+                  "clause_title": "NCR Access Link Beam Indication MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-68-ncr-access-link-beam-indication-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.69",
+                  "clause_title": "SL LBT failure MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-69-sl-lbt-failure-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.70",
+                  "clause_title": "Enhanced Unified TCI States Activation/Deactivation MAC CE for Joint TCI States",
+                  "level": 4,
+                  "id": "6-1-3-70-enhanced-unified-tci-states-activation-deactivation-mac-ce-for-joint-tci-states",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.71",
+                  "clause_title": "Enhanced Unified TCI States Activation/Deactivation MAC CE for Separate TCI States",
+                  "level": 4,
+                  "id": "6-1-3-71-enhanced-unified-tci-states-activation-deactivation-mac-ce-for-separate-tci-states",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.72",
+                  "clause_title": "Delay Status Report MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-72-delay-status-report-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.73",
+                  "clause_title": "PSI-Based SDU Discard Activation/Deactivation MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-73-psi-based-sdu-discard-activation-deactivation-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.74",
+                  "clause_title": "SL-PRS Resource Request MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-74-sl-prs-resource-request-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.75",
+                  "clause_title": "LTM Cell Switch Command MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-75-ltm-cell-switch-command-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": null,
+                  "clause_title": "6.1.3.75a     Enhanced LTM Cell Switch Command MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-75a-enhanced-ltm-cell-switch-command-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.76",
+                  "clause_title": "Candidate Cell TCI States Activation/Deactivation MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-76-candidate-cell-tci-states-activation-deactivation-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.77",
+                  "clause_title": "Cross-RRH TCI State Indication for UE-specific PDCCH MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-77-cross-rrh-tci-state-indication-for-ue-specific-pdcch-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.78",
+                  "clause_title": "Single Entry PHR with assumed PUSCH MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-78-single-entry-phr-with-assumed-pusch-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.79",
+                  "clause_title": "Multiple Entry PHR with assumed PUSCH MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-79-multiple-entry-phr-with-assumed-pusch-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.80",
+                  "clause_title": "Enhanced SP CSI reporting on PUCCH Activation/Deactivation MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-80-enhanced-sp-csi-reporting-on-pucch-activation-deactivation-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.81",
+                  "clause_title": "Enhanced Single Entry PHR for multiple=\"multiple\" TRP STx2P MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-81-enhanced-single-entry-phr-for-multiple-trp-stx2p-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.82",
+                  "clause_title": "Enhanced Multiple Entry PHR for multiple=\"multiple\" TRP STx2P MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-82-enhanced-multiple-entry-phr-for-multiple-trp-stx2p-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.83",
+                  "clause_title": "Aggregated SP Positioning SRS Activation/Deactivation MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-83-aggregated-sp-positioning-srs-activation-deactivation-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.84",
+                  "clause_title": "Event Triggered L1 Measurement Report MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-84-event-triggered-l1-measurement-report-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.85",
+                  "clause_title": "Pathloss Offset Update MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-85-pathloss-offset-update-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.86",
+                  "clause_title": "UL Rate Control MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-86-ul-rate-control-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.87",
+                  "clause_title": "SP CLI Measurement Resource Set Activation/Deactivation MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-87-sp-cli-measurement-resource-set-activation-deactivation-mac-ce",
+                  "children": []
+                },
+                {
+                  "clause_id": "6.1.3.88",
+                  "clause_title": "On-demand SSB Activation/Deactivation MAC CE",
+                  "level": 4,
+                  "id": "6-1-3-88-on-demand-ssb-activation-deactivation-mac-ce",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "6.1.4",
+              "clause_title": "MAC PDU (transparent MAC)",
+              "level": 3,
+              "id": "6-1-4-mac-pdu-transparent-mac",
+              "children": []
+            },
+            {
+              "clause_id": "6.1.5",
+              "clause_title": "MAC PDU (Random Access Response)",
+              "level": 3,
+              "id": "6-1-5-mac-pdu-random-access-response",
+              "children": []
+            },
+            {
+              "clause_id": "6.1.5",
+              "clause_title": "a    MAC PDU (MSGB)",
+              "level": 3,
+              "id": "6-1-5-a-mac-pdu-msgb",
+              "children": []
+            },
+            {
+              "clause_id": "6.1.6",
+              "clause_title": "MAC PDU (SL-SCH)",
+              "level": 3,
+              "id": "6-1-6-mac-pdu-sl-sch",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "6.2",
+          "clause_title": "Formats and parameters",
+          "level": 2,
+          "id": "6-2-formats-and-parameters",
+          "children": [
+            {
+              "clause_id": "6.2.1",
+              "clause_title": "MAC subheader for DL-SCH and UL-SCH",
+              "level": 3,
+              "id": "6-2-1-mac-subheader-for-dl-sch-and-ul-sch",
+              "children": []
+            },
+            {
+              "clause_id": "6.2.2",
+              "clause_title": "MAC subheader for Random Access Response",
+              "level": 3,
+              "id": "6-2-2-mac-subheader-for-random-access-response",
+              "children": []
+            },
+            {
+              "clause_id": "6.2.2",
+              "clause_title": "a    MAC subheader for MSGB",
+              "level": 3,
+              "id": "6-2-2-a-mac-subheader-for-msgb",
+              "children": []
+            },
+            {
+              "clause_id": "6.2.3",
+              "clause_title": "MAC payload for Random Access Response",
+              "level": 3,
+              "id": "6-2-3-mac-payload-for-random-access-response",
+              "children": []
+            },
+            {
+              "clause_id": "6.2.3",
+              "clause_title": "a    MAC payload for MSGB",
+              "level": 3,
+              "id": "6-2-3-a-mac-payload-for-msgb",
+              "children": []
+            },
+            {
+              "clause_id": "6.2.4",
+              "clause_title": "MAC subheader for SL-SCH",
+              "level": 3,
+              "id": "6-2-4-mac-subheader-for-sl-sch",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "clause_id": "7",
+      "clause_title": "Variables and constants",
+      "level": 1,
+      "id": "7-variables-and-constants",
+      "children": [
+        {
+          "clause_id": "7.1",
+          "clause_title": "RNTI values",
+          "level": 2,
+          "id": "7-1-rnti-values",
+          "children": []
+        },
+        {
+          "clause_id": "7.2",
+          "clause_title": "Backoff Parameter values",
+          "level": 2,
+          "id": "7-2-backoff-parameter-values",
+          "children": []
+        },
+        {
+          "clause_id": "7.3",
+          "clause_title": "DELTA_PREAMBLE values",
+          "level": 2,
+          "id": "7-3-delta-preamble-values",
+          "children": []
+        },
+        {
+          "clause_id": "7.4",
+          "clause_title": "PRACH Mask Index values",
+          "level": 2,
+          "id": "7-4-prach-mask-index-values",
+          "children": [
+            {
+              "clause_id": null,
+              "clause_title": "<br>Annex  A (informative):Change history<br>",
+              "level": 6,
+              "id": "br-annex-a-informative-change-history-br",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

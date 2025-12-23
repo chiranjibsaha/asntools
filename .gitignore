@@ -1,0 +1,35 @@
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+*.swp
+*.swo
+
+.venv/
+.env
+.envrc
+.pytest_cache/
+.mypy_cache/
+.tox/
+coverage.xml
+htmlcov/
+dist/
+build/
+*.egg-info/
+.eggs/
+*.log
+
+# IDE/editor
+.vscode/
+.idea/
+
+# Generated ASN.1 artifacts
+pycrate_asn1dir/NR_RRC_Definitions.py
+pycrate_asn1dir/NR_RRC_Definitions.json
+
+# Large archives not tracked
+asntools.zip
+
+# macOS metadata
+.DS_Store

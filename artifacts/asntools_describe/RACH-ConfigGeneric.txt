@@ -1,0 +1,18 @@
+{
+  "query": "RACH-ConfigGeneric",
+  "ie_name": "RACH-ConfigGeneric",
+  "fields": {
+    "msg1-FDM": "The number of PRACH transmission occasions FDMed in one time instance. (see TS 38.211 [16], clause 6.3.3.2).",
+    "msg1-FrequencyStart": "Offset of lowest PRACH transmission occasion in frequency domain with respective to PRB 0. The value is configured so that the corresponding RACH resource is entirely within the bandwidth of the UL BWP. (see TS 38.211 [16], clause 6.3.3.2).",
+    "powerRampingStep": "Power ramping steps for PRACH (see TS 38.321 [3],5.1.3). This field is set to the same value for different repetition numbers associated with a specific FeatureCombination.",
+    "prach-ConfigurationFrameOffset-IAB": "Frame offset for ROs defined in the baseline configuration indicated by prach-ConfigurationIndex and is used only by the IAB-MT. (see TS 38.211 [16], clause 6.3.3.2).",
+    "prach-ConfigurationIndex": "PRACH configuration index. For prach-ConfigurationIndex configured under beamFailureRecoveryConfig, the prach-ConfigurationIndex can only correspond to the short preamble format, (see TS 38.211 [16], clause 6.3.3.2). If the field prach-ConfigurationIndex-v1610 is present, the UE shall ignore the value provided in prach-ConfigurationIndex (without suffix).",
+    "prach-ConfigurationPeriodScaling-IAB": "Scaling factor to extend the periodicity of the baseline configuration indicated by prach-ConfigurationIndex and is used only by the IAB-MT. Value scf1 corresponds to scaling factor of 1 and so on. (see TS 38.211 [16], clause 6.3.3.2).",
+    "prach-ConfigurationSOffset-IAB": "Subframe/Slot offset for ROs defined in the baseline configuration indicated by prach-ConfigurationIndex and is used only by the IAB-MT. (see TS 38.211 [16], clause 6.3.3.2).",
+    "preambleReceivedTargetPower": "The target power level at the network receiver side (see TS 38.213 [13], clause 7.4, TS 38.321 [3], clauses 5.1.2, 5.1.3). Only multiples of 2 dBm may be chosen (e.g. -202, -200, -198, ...). This field is set to the same value for different repetition numbers associated with a specific FeatureCombination.",
+    "preambleTransMax": "Max number of RA preamble transmission performed before declaring a failure (see TS 38.321 [3], clauses 5.1.4, 5.1.5). The UE shall ignore this field in case rach-ConfigGeneric is included within an EarlyUL-SyncConfig IE.",
+    "ra-ResponseWindow": "Msg2 (RAR) window length in number of slots. The network configures a value lower than or equal to 10 ms when Msg2 is transmitted in licensed spectrum and a value lower than or equal to 40 ms when Msg2 is transmitted with shared spectrum channel access (see TS 38.321 [3], clause 5.1.4). UE ignores the field if included in SCellConfig. If ra-ResponseWindow-v1610 or ra-ResponseWindow-v1700 is signalled, UE shall ignore the ra-ResponseWindow (without suffix). The field ra-ResponseWindow-v1700 is applicable to SCS 480 kHz and SCS 960 kHz. The UE shall ignore this field in case rach-ConfigGeneric is included within an EarlyUL-SyncConfig IE.",
+    "zeroCorrelationZoneConfig": "N-CS configuration, see Table 6.3.3.1-5 in TS 38.211 [16]."
+  },
+  "variants": []
+}

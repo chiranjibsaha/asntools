@@ -1,0 +1,74 @@
+#### –     *RACH-ConfigGeneric* [#](#rach-configgeneric)
+
+The IE *RACH-ConfigGeneric* is used to specify the random-access parameters both for regular random access as well as for beam failure recovery.
+
+*RACH-ConfigGeneric* information element
+
+ASN.1📋
+
+```
+`-- TAG-RACH-CONFIGGENERIC-START
+ RACH-ConfigGeneric ::=              SEQUENCE {    prach-ConfigurationIndex            INTEGER (0..255),
+msg1-FDM                            ENUMERATED {one, two, four, eight},
+msg1-FrequencyStart                 INTEGER (0..maxNrofPhysicalResourceBlocks-1),
+zeroCorrelationZoneConfig           INTEGER(0..15),
+preambleReceivedTargetPower         INTEGER (-202..-60),
+preambleTransMax                    ENUMERATED {n3, n4, n5, n6, n7, n8, n10, n20, n50, n100, n200},
+powerRampingStep                    ENUMERATED {dB0, dB2, dB4, dB6},
+ra-ResponseWindow                   ENUMERATED {sl1, sl2, sl4, sl8, sl10, sl20, sl40, sl80},
+...,
+[[    prach-ConfigurationPeriodScaling-IAB-r16    ENUMERATED {scf1,scf2,scf4,scf8,scf16,scf32,scf64}              OPTIONAL,
+-- Need R    prach-ConfigurationFrameOffset-IAB-r16      INTEGER (0..63)                                                 OPTIONAL,
+-- Need R    prach-ConfigurationSOffset-IAB-r16          INTEGER (0..39)                                                 OPTIONAL,
+-- Need R    ra-ResponseWindow-v1610                     ENUMERATED { sl60, sl160}                                       OPTIONAL,
+-- Need R    prach-ConfigurationIndex-v1610              INTEGER (256..262)                                              OPTIONAL    -- Need R    ]],
+[[    ra-ResponseWindow-v1700                     ENUMERATED {sl240, sl320, sl640, sl960, sl1280, sl1920, sl2560} OPTIONAL    -- Need R    ]]} -- TAG-RACH-CONFIGGENERIC-STOP`
+```
+
+ 
+
+*RACH-ConfigGeneric *field descriptions
+
+***msg1-FDM***
+
+The number of PRACH transmission occasions FDMed in one time instance. (see TS 38.211 [16], clause 6.3.3.2).
+
+***msg1-FrequencyStart***
+
+Offset of lowest PRACH transmission occasion in frequency domain with respective to PRB 0. The value is configured so that the corresponding RACH resource is entirely within the bandwidth of the UL BWP. (see TS 38.211 [16], clause 6.3.3.2).
+
+***powerRampingStep***
+
+Power ramping steps for PRACH (see TS 38.321 [3],5.1.3). This field is set to the same value for different repetition numbers associated with a specific *FeatureCombination.*
+
+***prach-ConfigurationFrameOffset-IAB***
+
+Frame offset for ROs defined in the baseline configuration indicated by *prach-ConfigurationIndex *and is used only by the IAB-MT. (see TS 38.211 [16], clause 6.3.3.2).
+
+***prach-ConfigurationIndex***
+
+PRACH configuration index. For *prach-ConfigurationIndex* configured under *beamFailureRecoveryConfig*, the *prach-ConfigurationIndex* can only correspond to the short preamble format, (see TS 38.211 [16], clause 6.3.3.2). If the field *prach-ConfigurationIndex-v1610* is present, the UE shall ignore the value provided in *prach-ConfigurationIndex* (without suffix).
+
+***prach-ConfigurationPeriodScaling-IAB***
+
+Scaling factor to extend the periodicity of the baseline configuration indicated by *prach-ConfigurationIndex *and is used only by the IAB-MT*. *Value scf1 corresponds to scaling factor of 1 and so on. (see TS 38.211 [16], clause 6.3.3.2).
+
+***prach-ConfigurationSOffset-IAB***
+
+Subframe/Slot offset for ROs defined in the baseline configuration indicated by *prach-ConfigurationIndex *and is used only by the IAB-MT*. *(see TS 38.211 [16], clause 6.3.3.2).
+
+***preambleReceivedTargetPower***
+
+The target power level at the network receiver side (see TS 38.213 [13], clause 7.4, TS 38.321 [3], clauses 5.1.2, 5.1.3). Only multiples of 2 dBm may be chosen (e.g. -202, -200, -198, ...). This field is set to the same value for different repetition numbers associated with a specific *FeatureCombination*.
+
+***preambleTransMax***
+
+Max number of RA preamble transmission performed before declaring a failure (see TS 38.321 [3], clauses 5.1.4, 5.1.5). The UE shall ignore this field in case *rach-ConfigGeneric* is included within an *EarlyUL-SyncConfig* IE.
+
+***ra-ResponseWindow***
+
+Msg2 (RAR) window length in number of slots. The network configures a value lower than or equal to 10 ms when Msg2 is transmitted in licensed spectrum and a value lower than or equal to 40 ms when Msg2 is transmitted with shared spectrum channel access (see TS 38.321 [3], clause 5.1.4). UE ignores the field if included in *SCellConfig*. If *ra-ResponseWindow-v1610* or *ra-ResponseWindow-v17**00* is signalled, UE shall ignore the *ra-ResponseWindow *(without suffix). The field *ra-ResponseWindow-v17**00* is applicable to SCS 480 kHz and SCS 960 kHz. The UE shall ignore this field in case *rach-ConfigGeneric* is included within an *EarlyUL-SyncConfig* IE.
+
+***zeroCorrelationZoneConfig***
+
+N-CS configuration, see Table 6.3.3.1-5 in TS 38.211 [16].

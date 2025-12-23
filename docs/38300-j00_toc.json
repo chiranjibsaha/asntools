@@ -1,0 +1,4387 @@
+{
+  "metadata": {
+    "document": "38300-j00",
+    "generated": "2025-12-15T13:34:34.830102",
+    "total_headers": 605,
+    "generator": "Step 6: TOC JSON Extractor"
+  },
+  "statistics": {
+    "total_headers": 605,
+    "level_counts": {
+      "h6": 9,
+      "h1": 34,
+      "h2": 116,
+      "h3": 206,
+      "h4": 199,
+      "h5": 41
+    }
+  },
+  "table_of_contents": [
+    {
+      "clause_id": null,
+      "clause_title": "<br>Contents",
+      "level": 6,
+      "id": "br-contents",
+      "children": []
+    },
+    {
+      "clause_id": null,
+      "clause_title": "<br>Foreword",
+      "level": 1,
+      "id": "br-foreword",
+      "children": []
+    },
+    {
+      "clause_id": "1",
+      "clause_title": "Scope",
+      "level": 1,
+      "id": "1-scope",
+      "children": []
+    },
+    {
+      "clause_id": "2",
+      "clause_title": "References",
+      "level": 1,
+      "id": "2-references",
+      "children": []
+    },
+    {
+      "clause_id": "3",
+      "clause_title": "Abbreviations and Definitions",
+      "level": 1,
+      "id": "3-abbreviations-and-definitions",
+      "children": [
+        {
+          "clause_id": "3.1",
+          "clause_title": "Abbreviations",
+          "level": 2,
+          "id": "3-1-abbreviations",
+          "children": []
+        },
+        {
+          "clause_id": "3.2",
+          "clause_title": "Definitions",
+          "level": 2,
+          "id": "3-2-definitions",
+          "children": []
+        }
+      ]
+    },
+    {
+      "clause_id": "4",
+      "clause_title": "Overall Architecture and Functional Split",
+      "level": 1,
+      "id": "4-overall-architecture-and-functional-split",
+      "children": [
+        {
+          "clause_id": "4.1",
+          "clause_title": "Overall Architecture",
+          "level": 2,
+          "id": "4-1-overall-architecture",
+          "children": []
+        },
+        {
+          "clause_id": "4.2",
+          "clause_title": "Functional Split",
+          "level": 2,
+          "id": "4-2-functional-split",
+          "children": []
+        },
+        {
+          "clause_id": "4.3",
+          "clause_title": "Network Interfaces",
+          "level": 2,
+          "id": "4-3-network-interfaces",
+          "children": [
+            {
+              "clause_id": "4.3.1",
+              "clause_title": "NG Interface",
+              "level": 3,
+              "id": "4-3-1-ng-interface",
+              "children": [
+                {
+                  "clause_id": "4.3.1.1",
+                  "clause_title": "NG User Plane",
+                  "level": 4,
+                  "id": "4-3-1-1-ng-user-plane",
+                  "children": []
+                },
+                {
+                  "clause_id": "4.3.1.2",
+                  "clause_title": "NG Control Plane",
+                  "level": 4,
+                  "id": "4-3-1-2-ng-control-plane",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "4.3.2",
+              "clause_title": "Xn Interface",
+              "level": 3,
+              "id": "4-3-2-xn-interface",
+              "children": [
+                {
+                  "clause_id": "4.3.2.1",
+                  "clause_title": "Xn User Plane",
+                  "level": 4,
+                  "id": "4-3-2-1-xn-user-plane",
+                  "children": []
+                },
+                {
+                  "clause_id": "4.3.2.2",
+                  "clause_title": "Xn Control Plane",
+                  "level": 4,
+                  "id": "4-3-2-2-xn-control-plane",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "clause_id": "4.4",
+          "clause_title": "Radio Protocol Architecture",
+          "level": 2,
+          "id": "4-4-radio-protocol-architecture",
+          "children": [
+            {
+              "clause_id": "4.4.1",
+              "clause_title": "User Plane",
+              "level": 3,
+              "id": "4-4-1-user-plane",
+              "children": []
+            },
+            {
+              "clause_id": "4.4.2",
+              "clause_title": "Control Plane",
+              "level": 3,
+              "id": "4-4-2-control-plane",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "4.5",
+          "clause_title": "Multi-Radio Dual Connectivity",
+          "level": 2,
+          "id": "4-5-multi-radio-dual-connectivity",
+          "children": []
+        },
+        {
+          "clause_id": "4.6",
+          "clause_title": "Radio Access Network Sharing",
+          "level": 2,
+          "id": "4-6-radio-access-network-sharing",
+          "children": []
+        },
+        {
+          "clause_id": "4.7",
+          "clause_title": "Integrated Access and Backhaul",
+          "level": 2,
+          "id": "4-7-integrated-access-and-backhaul",
+          "children": [
+            {
+              "clause_id": "4.7.1",
+              "clause_title": "Architecture",
+              "level": 3,
+              "id": "4-7-1-architecture",
+              "children": []
+            },
+            {
+              "clause_id": "4.7.2",
+              "clause_title": "Protocol Stacks",
+              "level": 3,
+              "id": "4-7-2-protocol-stacks",
+              "children": []
+            },
+            {
+              "clause_id": "4.7.3",
+              "clause_title": "User-plane Aspects",
+              "level": 3,
+              "id": "4-7-3-user-plane-aspects",
+              "children": [
+                {
+                  "clause_id": "4.7.3.1",
+                  "clause_title": "Backhaul transport",
+                  "level": 4,
+                  "id": "4-7-3-1-backhaul-transport",
+                  "children": []
+                },
+                {
+                  "clause_id": "4.7.3.2",
+                  "clause_title": "Flow and Congestion Control",
+                  "level": 4,
+                  "id": "4-7-3-2-flow-and-congestion-control",
+                  "children": []
+                },
+                {
+                  "clause_id": "4.7.3.3",
+                  "clause_title": "Uplink Scheduling Latency",
+                  "level": 4,
+                  "id": "4-7-3-3-uplink-scheduling-latency",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "4.7.4",
+              "clause_title": "Signalling procedures",
+              "level": 3,
+              "id": "4-7-4-signalling-procedures",
+              "children": [
+                {
+                  "clause_id": "4.7.4.1",
+                  "clause_title": "IAB-node Integration",
+                  "level": 4,
+                  "id": "4-7-4-1-iab-node-integration",
+                  "children": []
+                },
+                {
+                  "clause_id": "4.7.4.2",
+                  "clause_title": "IAB-node Migration",
+                  "level": 4,
+                  "id": "4-7-4-2-iab-node-migration",
+                  "children": []
+                },
+                {
+                  "clause_id": "4.7.4.3",
+                  "clause_title": "Topological Redundancy",
+                  "level": 4,
+                  "id": "4-7-4-3-topological-redundancy",
+                  "children": []
+                },
+                {
+                  "clause_id": "4.7.4.4",
+                  "clause_title": "Backhaul RLF Recovery",
+                  "level": 4,
+                  "id": "4-7-4-4-backhaul-rlf-recovery",
+                  "children": []
+                },
+                {
+                  "clause_id": "4.7.4.5",
+                  "clause_title": "OTA timing synchronization",
+                  "level": 4,
+                  "id": "4-7-4-5-ota-timing-synchronization",
+                  "children": []
+                },
+                {
+                  "clause_id": "4.7.4.6",
+                  "clause_title": "Inter node discovery",
+                  "level": 4,
+                  "id": "4-7-4-6-inter-node-discovery",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "4.7.5",
+              "clause_title": "Mobile IAB",
+              "level": 3,
+              "id": "4-7-5-mobile-iab",
+              "children": [
+                {
+                  "clause_id": "4.7.5.1",
+                  "clause_title": "General",
+                  "level": 4,
+                  "id": "4-7-5-1-general",
+                  "children": []
+                },
+                {
+                  "clause_id": "4.7.5.2",
+                  "clause_title": "Void",
+                  "level": 4,
+                  "id": "4-7-5-2-void",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "clause_id": "4.8",
+          "clause_title": "Non-Public Networks",
+          "level": 2,
+          "id": "4-8-non-public-networks",
+          "children": []
+        },
+        {
+          "clause_id": "4.9",
+          "clause_title": "Network-Controlled Repeaters",
+          "level": 2,
+          "id": "4-9-network-controlled-repeaters",
+          "children": [
+            {
+              "clause_id": "4.9.1",
+              "clause_title": "Architecture",
+              "level": 3,
+              "id": "4-9-1-architecture",
+              "children": []
+            },
+            {
+              "clause_id": "4.9.2",
+              "clause_title": "Capabilities",
+              "level": 3,
+              "id": "4-9-2-capabilities",
+              "children": []
+            },
+            {
+              "clause_id": "4.9.3",
+              "clause_title": "Signalling procedures",
+              "level": 3,
+              "id": "4-9-3-signalling-procedures",
+              "children": []
+            },
+            {
+              "clause_id": "4.9.4",
+              "clause_title": "OAM aspects",
+              "level": 3,
+              "id": "4-9-4-oam-aspects",
+              "children": []
+            },
+            {
+              "clause_id": "4.9.5",
+              "clause_title": "Network-controlled repeater management",
+              "level": 3,
+              "id": "4-9-5-network-controlled-repeater-management",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "4.10",
+          "clause_title": "Support of NR Femto nodes",
+          "level": 2,
+          "id": "4-10-support-of-nr-femto-nodes",
+          "children": [
+            {
+              "clause_id": "4.10.1",
+              "clause_title": "Architecture",
+              "level": 3,
+              "id": "4-10-1-architecture",
+              "children": []
+            },
+            {
+              "clause_id": "4.10.2",
+              "clause_title": "Functional Split",
+              "level": 3,
+              "id": "4-10-2-functional-split",
+              "children": [
+                {
+                  "clause_id": "4.10.2.1",
+                  "clause_title": "NR Femto node",
+                  "level": 4,
+                  "id": "4-10-2-1-nr-femto-node",
+                  "children": []
+                },
+                {
+                  "clause_id": "4.10.2.2",
+                  "clause_title": "AMF",
+                  "level": 4,
+                  "id": "4-10-2-2-amf",
+                  "children": []
+                },
+                {
+                  "clause_id": "4.10.2.3",
+                  "clause_title": "NR Femto GW",
+                  "level": 4,
+                  "id": "4-10-2-3-nr-femto-gw",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "4.10.3",
+              "clause_title": "Interfaces",
+              "level": 3,
+              "id": "4-10-3-interfaces",
+              "children": [
+                {
+                  "clause_id": "4.10.3.1",
+                  "clause_title": "Protocol Stack for NG User Plane",
+                  "level": 4,
+                  "id": "4-10-3-1-protocol-stack-for-ng-user-plane",
+                  "children": []
+                },
+                {
+                  "clause_id": "4.10.3.2",
+                  "clause_title": "Protocol Stacks for NG Control Plane",
+                  "level": 4,
+                  "id": "4-10-3-2-protocol-stacks-for-ng-control-plane",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "4.10.4",
+              "clause_title": "Access Control",
+              "level": 3,
+              "id": "4-10-4-access-control",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "4.11",
+          "clause_title": "Wireless Access Backhaul",
+          "level": 2,
+          "id": "4-11-wireless-access-backhaul",
+          "children": []
+        }
+      ]
+    },
+    {
+      "clause_id": "5",
+      "clause_title": "Physical Layer",
+      "level": 1,
+      "id": "5-physical-layer",
+      "children": [
+        {
+          "clause_id": "5.1",
+          "clause_title": "Waveform, numerology and frame structure",
+          "level": 2,
+          "id": "5-1-waveform-numerology-and-frame-structure",
+          "children": []
+        },
+        {
+          "clause_id": "5.2",
+          "clause_title": "Downlink",
+          "level": 2,
+          "id": "5-2-downlink",
+          "children": [
+            {
+              "clause_id": "5.2.1",
+              "clause_title": "Downlink transmission scheme",
+              "level": 3,
+              "id": "5-2-1-downlink-transmission-scheme",
+              "children": []
+            },
+            {
+              "clause_id": "5.2.2",
+              "clause_title": "Physical-layer processing for physical downlink shared channel",
+              "level": 3,
+              "id": "5-2-2-physical-layer-processing-for-physical-downlink-shared-channel",
+              "children": []
+            },
+            {
+              "clause_id": "5.2.3",
+              "clause_title": "Physical downlink control channels",
+              "level": 3,
+              "id": "5-2-3-physical-downlink-control-channels",
+              "children": []
+            },
+            {
+              "clause_id": "5.2.4",
+              "clause_title": "Synchronization signal and PBCH block",
+              "level": 3,
+              "id": "5-2-4-synchronization-signal-and-pbch-block",
+              "children": []
+            },
+            {
+              "clause_id": "5.2.5",
+              "clause_title": "Physical layer procedures",
+              "level": 3,
+              "id": "5-2-5-physical-layer-procedures",
+              "children": [
+                {
+                  "clause_id": "5.2.5.1",
+                  "clause_title": "Link adaptation",
+                  "level": 4,
+                  "id": "5-2-5-1-link-adaptation",
+                  "children": []
+                },
+                {
+                  "clause_id": "5.2.5.2",
+                  "clause_title": "Power Control",
+                  "level": 4,
+                  "id": "5-2-5-2-power-control",
+                  "children": []
+                },
+                {
+                  "clause_id": "5.2.5.3",
+                  "clause_title": "Cell search",
+                  "level": 4,
+                  "id": "5-2-5-3-cell-search",
+                  "children": []
+                },
+                {
+                  "clause_id": "5.2.5.4",
+                  "clause_title": "HARQ",
+                  "level": 4,
+                  "id": "5-2-5-4-harq",
+                  "children": []
+                },
+                {
+                  "clause_id": "5.2.5.5",
+                  "clause_title": "Reception of SIB1",
+                  "level": 4,
+                  "id": "5-2-5-5-reception-of-sib1",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "5.2.6",
+              "clause_title": "Downlink Reference Signals and Measurements for Positioning",
+              "level": 3,
+              "id": "5-2-6-downlink-reference-signals-and-measurements-for-positioning",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "5.3",
+          "clause_title": "Uplink",
+          "level": 2,
+          "id": "5-3-uplink",
+          "children": [
+            {
+              "clause_id": "5.3.1",
+              "clause_title": "Uplink transmission scheme",
+              "level": 3,
+              "id": "5-3-1-uplink-transmission-scheme",
+              "children": []
+            },
+            {
+              "clause_id": "5.3.2",
+              "clause_title": "Physical-layer processing for physical uplink shared channel",
+              "level": 3,
+              "id": "5-3-2-physical-layer-processing-for-physical-uplink-shared-channel",
+              "children": []
+            },
+            {
+              "clause_id": "5.3.3",
+              "clause_title": "Physical uplink control channel",
+              "level": 3,
+              "id": "5-3-3-physical-uplink-control-channel",
+              "children": []
+            },
+            {
+              "clause_id": "5.3.4",
+              "clause_title": "Random access",
+              "level": 3,
+              "id": "5-3-4-random-access",
+              "children": []
+            },
+            {
+              "clause_id": "5.3.5",
+              "clause_title": "Physical layer procedures",
+              "level": 3,
+              "id": "5-3-5-physical-layer-procedures",
+              "children": [
+                {
+                  "clause_id": "5.3.5.1",
+                  "clause_title": "Link adaptation",
+                  "level": 4,
+                  "id": "5-3-5-1-link-adaptation",
+                  "children": []
+                },
+                {
+                  "clause_id": "5.3.5.2",
+                  "clause_title": "Uplink Power control",
+                  "level": 4,
+                  "id": "5-3-5-2-uplink-power-control",
+                  "children": []
+                },
+                {
+                  "clause_id": "5.3.5.3",
+                  "clause_title": "Uplink timing control",
+                  "level": 4,
+                  "id": "5-3-5-3-uplink-timing-control",
+                  "children": []
+                },
+                {
+                  "clause_id": "5.3.5.4",
+                  "clause_title": "HARQ",
+                  "level": 4,
+                  "id": "5-3-5-4-harq",
+                  "children": []
+                },
+                {
+                  "clause_id": "5.3.5.5",
+                  "clause_title": "Prioritization of overlapping transmissions",
+                  "level": 4,
+                  "id": "5-3-5-5-prioritization-of-overlapping-transmissions",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "5.3.6",
+              "clause_title": "Uplink Reference Signals and Measurements for Positioning",
+              "level": 3,
+              "id": "5-3-6-uplink-reference-signals-and-measurements-for-positioning",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "5.4",
+          "clause_title": "Carrier aggregation",
+          "level": 2,
+          "id": "5-4-carrier-aggregation",
+          "children": [
+            {
+              "clause_id": "5.4.1",
+              "clause_title": "Carrier aggregation",
+              "level": 3,
+              "id": "5-4-1-carrier-aggregation",
+              "children": []
+            },
+            {
+              "clause_id": "5.4.2",
+              "clause_title": "Supplementary Uplink",
+              "level": 3,
+              "id": "5-4-2-supplementary-uplink",
+              "children": []
+            },
+            {
+              "clause_id": "5.4.3",
+              "clause_title": "Uplink Tx switching",
+              "level": 3,
+              "id": "5-4-3-uplink-tx-switching",
+              "children": []
+            },
+            {
+              "clause_id": "5.4.4",
+              "clause_title": "Low band carrier aggregation via switching",
+              "level": 3,
+              "id": "5-4-4-low-band-carrier-aggregation-via-switching",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "5.5",
+          "clause_title": "Transport Channels",
+          "level": 2,
+          "id": "5-5-transport-channels",
+          "children": []
+        },
+        {
+          "clause_id": "5.6",
+          "clause_title": "Access to Shared Spectrum",
+          "level": 2,
+          "id": "5-6-access-to-shared-spectrum",
+          "children": [
+            {
+              "clause_id": "5.6.1",
+              "clause_title": "Overview",
+              "level": 3,
+              "id": "5-6-1-overview",
+              "children": []
+            },
+            {
+              "clause_id": "5.6.2",
+              "clause_title": "Channel Access Priority Classes",
+              "level": 3,
+              "id": "5-6-2-channel-access-priority-classes",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "5.7",
+          "clause_title": "Sidelink",
+          "level": 2,
+          "id": "5-7-sidelink",
+          "children": [
+            {
+              "clause_id": "5.7.1",
+              "clause_title": "General",
+              "level": 3,
+              "id": "5-7-1-general",
+              "children": []
+            },
+            {
+              "clause_id": "5.7.2",
+              "clause_title": "Sidelink resource allocation modes/schemes",
+              "level": 3,
+              "id": "5-7-2-sidelink-resource-allocation-modes-schemes",
+              "children": []
+            },
+            {
+              "clause_id": "5.7.3",
+              "clause_title": "Physical sidelink channels and signals",
+              "level": 3,
+              "id": "5-7-3-physical-sidelink-channels-and-signals",
+              "children": []
+            },
+            {
+              "clause_id": "5.7.4",
+              "clause_title": "Physical layer procedures for sidelink",
+              "level": 3,
+              "id": "5-7-4-physical-layer-procedures-for-sidelink",
+              "children": [
+                {
+                  "clause_id": "5.7.4.1",
+                  "clause_title": "HARQ feedback",
+                  "level": 4,
+                  "id": "5-7-4-1-harq-feedback",
+                  "children": []
+                },
+                {
+                  "clause_id": "5.7.4.2",
+                  "clause_title": "Power Control",
+                  "level": 4,
+                  "id": "5-7-4-2-power-control",
+                  "children": []
+                },
+                {
+                  "clause_id": "5.7.4.3",
+                  "clause_title": "CSI report",
+                  "level": 4,
+                  "id": "5-7-4-3-csi-report",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "5.7.5",
+              "clause_title": "Physical layer measurement definition",
+              "level": 3,
+              "id": "5-7-5-physical-layer-measurement-definition",
+              "children": []
+            },
+            {
+              "clause_id": "5.7.6",
+              "clause_title": "Sidelink Reference Signal and Measurements for Positioning",
+              "level": 3,
+              "id": "5-7-6-sidelink-reference-signal-and-measurements-for-positioning",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "clause_id": "6",
+      "clause_title": "Layer 2",
+      "level": 1,
+      "id": "6-layer-2",
+      "children": [
+        {
+          "clause_id": "6.1",
+          "clause_title": "Overview",
+          "level": 2,
+          "id": "6-1-overview",
+          "children": []
+        },
+        {
+          "clause_id": "6.2",
+          "clause_title": "MAC Sublayer",
+          "level": 2,
+          "id": "6-2-mac-sublayer",
+          "children": [
+            {
+              "clause_id": "6.2.1",
+              "clause_title": "Services and Functions",
+              "level": 3,
+              "id": "6-2-1-services-and-functions",
+              "children": []
+            },
+            {
+              "clause_id": "6.2.2",
+              "clause_title": "Logical Channels",
+              "level": 3,
+              "id": "6-2-2-logical-channels",
+              "children": []
+            },
+            {
+              "clause_id": "6.2.3",
+              "clause_title": "Mapping to Transport Channels",
+              "level": 3,
+              "id": "6-2-3-mapping-to-transport-channels",
+              "children": []
+            },
+            {
+              "clause_id": "6.2.4",
+              "clause_title": "HARQ",
+              "level": 3,
+              "id": "6-2-4-harq",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "6.3",
+          "clause_title": "RLC Sublayer",
+          "level": 2,
+          "id": "6-3-rlc-sublayer",
+          "children": [
+            {
+              "clause_id": "6.3.1",
+              "clause_title": "Transmission Modes",
+              "level": 3,
+              "id": "6-3-1-transmission-modes",
+              "children": []
+            },
+            {
+              "clause_id": "6.3.2",
+              "clause_title": "Services and Functions",
+              "level": 3,
+              "id": "6-3-2-services-and-functions",
+              "children": []
+            },
+            {
+              "clause_id": "6.3.3",
+              "clause_title": "ARQ",
+              "level": 3,
+              "id": "6-3-3-arq",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "6.4",
+          "clause_title": "PDCP Sublayer",
+          "level": 2,
+          "id": "6-4-pdcp-sublayer",
+          "children": [
+            {
+              "clause_id": "6.4.1",
+              "clause_title": "Services and Functions",
+              "level": 3,
+              "id": "6-4-1-services-and-functions",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "6.5",
+          "clause_title": "SDAP Sublayer",
+          "level": 2,
+          "id": "6-5-sdap-sublayer",
+          "children": []
+        },
+        {
+          "clause_id": "6.6",
+          "clause_title": "L2 Data Flow",
+          "level": 2,
+          "id": "6-6-l2-data-flow",
+          "children": []
+        },
+        {
+          "clause_id": "6.7",
+          "clause_title": "Carrier Aggregation",
+          "level": 2,
+          "id": "6-7-carrier-aggregation",
+          "children": []
+        },
+        {
+          "clause_id": "6.8",
+          "clause_title": "Dual Connectivity",
+          "level": 2,
+          "id": "6-8-dual-connectivity",
+          "children": []
+        },
+        {
+          "clause_id": "6.9",
+          "clause_title": "Supplementary Uplink",
+          "level": 2,
+          "id": "6-9-supplementary-uplink",
+          "children": []
+        },
+        {
+          "clause_id": "6.10",
+          "clause_title": "Bandwidth Adaptation",
+          "level": 2,
+          "id": "6-10-bandwidth-adaptation",
+          "children": []
+        },
+        {
+          "clause_id": "6.11",
+          "clause_title": "Backhaul Adaptation Protocol Sublayer",
+          "level": 2,
+          "id": "6-11-backhaul-adaptation-protocol-sublayer",
+          "children": [
+            {
+              "clause_id": "6.11.1",
+              "clause_title": "Services and Functions",
+              "level": 3,
+              "id": "6-11-1-services-and-functions",
+              "children": []
+            },
+            {
+              "clause_id": "6.11.2",
+              "clause_title": "Traffic Mapping from Upper Layers to Layer-2",
+              "level": 3,
+              "id": "6-11-2-traffic-mapping-from-upper-layers-to-layer-2",
+              "children": []
+            },
+            {
+              "clause_id": "6.11.3",
+              "clause_title": "Routing, BAP Header Rewriting and BH-RLC-channel Mapping on BAP sublayer",
+              "level": 3,
+              "id": "6-11-3-routing-bap-header-rewriting-and-bh-rlc-channel-mapping-on-bap-sublayer",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "6.12",
+          "clause_title": "Multiple Transmit/Receive Point Operation",
+          "level": 2,
+          "id": "6-12-multiple-transmit-receive-point-operation",
+          "children": [
+            {
+              "clause_id": "6.12.0",
+              "clause_title": "Overview",
+              "level": 3,
+              "id": "6-12-0-overview",
+              "children": []
+            },
+            {
+              "clause_id": "6.1",
+              "clause_title": "2.1    Asymmetric DL single-TRP and UL multi-TRP",
+              "level": 3,
+              "id": "6-1-2-1-asymmetric-dl-single-trp-and-ul-multi-trp",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "clause_id": "7",
+      "clause_title": "RRC",
+      "level": 1,
+      "id": "7-rrc",
+      "children": [
+        {
+          "clause_id": "7.1",
+          "clause_title": "Services and Functions",
+          "level": 2,
+          "id": "7-1-services-and-functions",
+          "children": []
+        },
+        {
+          "clause_id": "7.2",
+          "clause_title": "Protocol States",
+          "level": 2,
+          "id": "7-2-protocol-states",
+          "children": []
+        },
+        {
+          "clause_id": "7.3",
+          "clause_title": "System Information Handling",
+          "level": 2,
+          "id": "7-3-system-information-handling",
+          "children": [
+            {
+              "clause_id": "7.3.1",
+              "clause_title": "Overview",
+              "level": 3,
+              "id": "7-3-1-overview",
+              "children": []
+            },
+            {
+              "clause_id": "7.3.2",
+              "clause_title": "Scheduling",
+              "level": 3,
+              "id": "7-3-2-scheduling",
+              "children": []
+            },
+            {
+              "clause_id": "7.3.3",
+              "clause_title": "SI Modification",
+              "level": 3,
+              "id": "7-3-3-si-modification",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "7.4",
+          "clause_title": "Access Control",
+          "level": 2,
+          "id": "7-4-access-control",
+          "children": []
+        },
+        {
+          "clause_id": "7.5",
+          "clause_title": "UE Capability Retrieval framework",
+          "level": 2,
+          "id": "7-5-ue-capability-retrieval-framework",
+          "children": []
+        },
+        {
+          "clause_id": "7.6",
+          "clause_title": "Transport of NAS Messages",
+          "level": 2,
+          "id": "7-6-transport-of-nas-messages",
+          "children": []
+        },
+        {
+          "clause_id": "7.7",
+          "clause_title": "Carrier Aggregation",
+          "level": 2,
+          "id": "7-7-carrier-aggregation",
+          "children": []
+        },
+        {
+          "clause_id": "7.8",
+          "clause_title": "Bandwidth Adaptation",
+          "level": 2,
+          "id": "7-8-bandwidth-adaptation",
+          "children": []
+        },
+        {
+          "clause_id": "7.9",
+          "clause_title": "UE Assistance Information",
+          "level": 2,
+          "id": "7-9-ue-assistance-information",
+          "children": []
+        },
+        {
+          "clause_id": "7.10",
+          "clause_title": "Segmentation of RRC messages",
+          "level": 2,
+          "id": "7-10-segmentation-of-rrc-messages",
+          "children": []
+        }
+      ]
+    },
+    {
+      "clause_id": "8",
+      "clause_title": "NG Identities",
+      "level": 1,
+      "id": "8-ng-identities",
+      "children": [
+        {
+          "clause_id": "8.1",
+          "clause_title": "UE Identities",
+          "level": 2,
+          "id": "8-1-ue-identities",
+          "children": []
+        },
+        {
+          "clause_id": "8.2",
+          "clause_title": "Network Identities",
+          "level": 2,
+          "id": "8-2-network-identities",
+          "children": []
+        },
+        {
+          "clause_id": "8.3",
+          "clause_title": "User Data Transport on the CN-RAN Interface",
+          "level": 2,
+          "id": "8-3-user-data-transport-on-the-cn-ran-interface",
+          "children": []
+        },
+        {
+          "clause_id": "8.4",
+          "clause_title": "NR sidelink communication, V2X sidelink communication and Ranging/Sidelink positioning related identities",
+          "level": 2,
+          "id": "8-4-nr-sidelink-communication-v2x-sidelink-communication-and-ranging-sidelink-positioning-related-identities",
+          "children": []
+        }
+      ]
+    },
+    {
+      "clause_id": "9",
+      "clause_title": "Mobility and State Transitions",
+      "level": 1,
+      "id": "9-mobility-and-state-transitions",
+      "children": [
+        {
+          "clause_id": "9.1",
+          "clause_title": "Overview",
+          "level": 2,
+          "id": "9-1-overview",
+          "children": []
+        },
+        {
+          "clause_id": "9.2",
+          "clause_title": "Intra-NR",
+          "level": 2,
+          "id": "9-2-intra-nr",
+          "children": [
+            {
+              "clause_id": "9.2.1",
+              "clause_title": "Mobility in RRC_IDLE",
+              "level": 3,
+              "id": "9-2-1-mobility-in-rrc-idle",
+              "children": [
+                {
+                  "clause_id": "9.2.1.1",
+                  "clause_title": "Cell Selection",
+                  "level": 4,
+                  "id": "9-2-1-1-cell-selection",
+                  "children": []
+                },
+                {
+                  "clause_id": "9.2.1.2",
+                  "clause_title": "Cell Reselection",
+                  "level": 4,
+                  "id": "9-2-1-2-cell-reselection",
+                  "children": []
+                },
+                {
+                  "clause_id": "9.2.1.3",
+                  "clause_title": "State Transitions",
+                  "level": 4,
+                  "id": "9-2-1-3-state-transitions",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "9.2.2",
+              "clause_title": "Mobility in RRC_INACTIVE",
+              "level": 3,
+              "id": "9-2-2-mobility-in-rrc-inactive",
+              "children": [
+                {
+                  "clause_id": "9.2.2.1",
+                  "clause_title": "Overview",
+                  "level": 4,
+                  "id": "9-2-2-1-overview",
+                  "children": []
+                },
+                {
+                  "clause_id": "9.2.2.2",
+                  "clause_title": "Cell Reselection",
+                  "level": 4,
+                  "id": "9-2-2-2-cell-reselection",
+                  "children": []
+                },
+                {
+                  "clause_id": "9.2.2.3",
+                  "clause_title": "RAN-Based Notification Area",
+                  "level": 4,
+                  "id": "9-2-2-3-ran-based-notification-area",
+                  "children": []
+                },
+                {
+                  "clause_id": "9.2.2.4",
+                  "clause_title": "State Transitions",
+                  "level": 4,
+                  "id": "9-2-2-4-state-transitions",
+                  "children": [
+                    {
+                      "clause_id": "9.2.2.4.1",
+                      "clause_title": "UE triggered transition from RRC_INACTIVE to RRC_CONNECTED",
+                      "level": 5,
+                      "id": "9-2-2-4-1-ue-triggered-transition-from-rrc-inactive-to-rrc-connected",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "9.2.2.4.2",
+                      "clause_title": "Network triggered transition from RRC_INACTIVE to RRC_CONNECTED",
+                      "level": 5,
+                      "id": "9-2-2-4-2-network-triggered-transition-from-rrc-inactive-to-rrc-connected",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "clause_id": "9.2.2.5",
+                  "clause_title": "RNA update",
+                  "level": 4,
+                  "id": "9-2-2-5-rna-update",
+                  "children": []
+                },
+                {
+                  "clause_id": "9.2.2.6",
+                  "clause_title": "Resume request responded with Release with Redirect, with UE context relocation",
+                  "level": 4,
+                  "id": "9-2-2-6-resume-request-responded-with-release-with-redirect-with-ue-context-relocation",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "9.2.3",
+              "clause_title": "Mobility in RRC_CONNECTED",
+              "level": 3,
+              "id": "9-2-3-mobility-in-rrc-connected",
+              "children": [
+                {
+                  "clause_id": "9.2.3.1",
+                  "clause_title": "Overview",
+                  "level": 4,
+                  "id": "9-2-3-1-overview",
+                  "children": []
+                },
+                {
+                  "clause_id": "9.2.3.2",
+                  "clause_title": "Handover",
+                  "level": 4,
+                  "id": "9-2-3-2-handover",
+                  "children": [
+                    {
+                      "clause_id": "9.2.3.2.1",
+                      "clause_title": "C-Plane Handling",
+                      "level": 5,
+                      "id": "9-2-3-2-1-c-plane-handling",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "9.2.3.2.2",
+                      "clause_title": "U-Plane Handling",
+                      "level": 5,
+                      "id": "9-2-3-2-2-u-plane-handling",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "9.2.3.2.3",
+                      "clause_title": "Data Forwarding",
+                      "level": 5,
+                      "id": "9-2-3-2-3-data-forwarding",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "clause_id": "9.2.3.3",
+                  "clause_title": "Re-establishment procedure",
+                  "level": 4,
+                  "id": "9-2-3-3-re-establishment-procedure",
+                  "children": []
+                },
+                {
+                  "clause_id": "9.2.3.4",
+                  "clause_title": "Conditional Handover",
+                  "level": 4,
+                  "id": "9-2-3-4-conditional-handover",
+                  "children": [
+                    {
+                      "clause_id": "9.2.3.4.1",
+                      "clause_title": "General",
+                      "level": 5,
+                      "id": "9-2-3-4-1-general",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "9.2.3.4.2",
+                      "clause_title": "C-plane handling",
+                      "level": 5,
+                      "id": "9-2-3-4-2-c-plane-handling",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "9.2.3.4.3",
+                      "clause_title": "U-plane handling",
+                      "level": 5,
+                      "id": "9-2-3-4-3-u-plane-handling",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "9.2.3.4.4",
+                      "clause_title": "Data Forwarding",
+                      "level": 5,
+                      "id": "9-2-3-4-4-data-forwarding",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "clause_id": "9.2.3.5",
+                  "clause_title": "L1/L2 Triggered Mobility",
+                  "level": 4,
+                  "id": "9-2-3-5-l1-l2-triggered-mobility",
+                  "children": [
+                    {
+                      "clause_id": "9.2.3.5.1",
+                      "clause_title": "General",
+                      "level": 5,
+                      "id": "9-2-3-5-1-general",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "9.2.3.5.2",
+                      "clause_title": "C-Plane Handling",
+                      "level": 5,
+                      "id": "9-2-3-5-2-c-plane-handling",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "9.2.3.5.3",
+                      "clause_title": "U-Plane Handling",
+                      "level": 5,
+                      "id": "9-2-3-5-3-u-plane-handling",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "clause_id": "9.2.3.6",
+                  "clause_title": "RACH-less handover",
+                  "level": 4,
+                  "id": "9-2-3-6-rach-less-handover",
+                  "children": []
+                },
+                {
+                  "clause_id": "9.2.3.7",
+                  "clause_title": "Conditional L1/L2 Triggered Mobility",
+                  "level": 4,
+                  "id": "9-2-3-7-conditional-l1-l2-triggered-mobility",
+                  "children": [
+                    {
+                      "clause_id": "9.2.3.7.1",
+                      "clause_title": "General",
+                      "level": 5,
+                      "id": "9-2-3-7-1-general",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "clause_id": "9.2.4",
+              "clause_title": "Measurements",
+              "level": 3,
+              "id": "9-2-4-measurements",
+              "children": []
+            },
+            {
+              "clause_id": "9.2.5",
+              "clause_title": "Paging",
+              "level": 3,
+              "id": "9-2-5-paging",
+              "children": []
+            },
+            {
+              "clause_id": "9.2.6",
+              "clause_title": "Random Access Procedure",
+              "level": 3,
+              "id": "9-2-6-random-access-procedure",
+              "children": []
+            },
+            {
+              "clause_id": "9.2.7",
+              "clause_title": "Radio Link Failure",
+              "level": 3,
+              "id": "9-2-7-radio-link-failure",
+              "children": []
+            },
+            {
+              "clause_id": "9.2.8",
+              "clause_title": "Beam failure detection and recovery",
+              "level": 3,
+              "id": "9-2-8-beam-failure-detection-and-recovery",
+              "children": []
+            },
+            {
+              "clause_id": "9.2.9",
+              "clause_title": "Timing Advance",
+              "level": 3,
+              "id": "9-2-9-timing-advance",
+              "children": []
+            },
+            {
+              "clause_id": "9.2.10",
+              "clause_title": "Extended DRX for RRC_IDLE and RRC_INACTIVE",
+              "level": 3,
+              "id": "9-2-10-extended-drx-for-rrc-idle-and-rrc-inactive",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "9.3",
+          "clause_title": "Inter RAT",
+          "level": 2,
+          "id": "9-3-inter-rat",
+          "children": [
+            {
+              "clause_id": "9.3.1",
+              "clause_title": "NR-E-UTRA mobility: Intra 5GC",
+              "level": 3,
+              "id": "9-3-1-nr-e-utra-mobility-intra-5gc",
+              "children": [
+                {
+                  "clause_id": "9.3.1.1",
+                  "clause_title": "Cell Reselection",
+                  "level": 4,
+                  "id": "9-3-1-1-cell-reselection",
+                  "children": []
+                },
+                {
+                  "clause_id": "9.3.1.2",
+                  "clause_title": "Handover",
+                  "level": 4,
+                  "id": "9-3-1-2-handover",
+                  "children": []
+                },
+                {
+                  "clause_id": "9.3.1.3",
+                  "clause_title": "Measurements",
+                  "level": 4,
+                  "id": "9-3-1-3-measurements",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "9.3.2",
+              "clause_title": "NR-E-UTRA mobility: From 5GC to EPC",
+              "level": 3,
+              "id": "9-3-2-nr-e-utra-mobility-from-5gc-to-epc",
+              "children": [
+                {
+                  "clause_id": "9.3.2.1",
+                  "clause_title": "Cell Reselection",
+                  "level": 4,
+                  "id": "9-3-2-1-cell-reselection",
+                  "children": []
+                },
+                {
+                  "clause_id": "9.3.2.2",
+                  "clause_title": "Handover and redirection",
+                  "level": 4,
+                  "id": "9-3-2-2-handover-and-redirection",
+                  "children": []
+                },
+                {
+                  "clause_id": "9.3.2.3",
+                  "clause_title": "Measurements",
+                  "level": 4,
+                  "id": "9-3-2-3-measurements",
+                  "children": []
+                },
+                {
+                  "clause_id": "9.3.2.4",
+                  "clause_title": "Data Forwarding for the Control Plane",
+                  "level": 4,
+                  "id": "9-3-2-4-data-forwarding-for-the-control-plane",
+                  "children": []
+                },
+                {
+                  "clause_id": "9.3.2.5",
+                  "clause_title": "Data Forwarding for the User Plane",
+                  "level": 4,
+                  "id": "9-3-2-5-data-forwarding-for-the-user-plane",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "9.3.3",
+              "clause_title": "NR-E-UTRA mobility: From EPC to 5GC",
+              "level": 3,
+              "id": "9-3-3-nr-e-utra-mobility-from-epc-to-5gc",
+              "children": [
+                {
+                  "clause_id": "9.3.3.1",
+                  "clause_title": "Data Forwarding for the Control Plane",
+                  "level": 4,
+                  "id": "9-3-3-1-data-forwarding-for-the-control-plane",
+                  "children": []
+                },
+                {
+                  "clause_id": "9.3.3.2",
+                  "clause_title": "Data Forwarding for the User Plane",
+                  "level": 4,
+                  "id": "9-3-3-2-data-forwarding-for-the-user-plane",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "9.3.4",
+              "clause_title": "NR-UTRA mobility",
+              "level": 3,
+              "id": "9-3-4-nr-utra-mobility",
+              "children": [
+                {
+                  "clause_id": "9.3.4.1",
+                  "clause_title": "Handover with SRVCC operation",
+                  "level": 4,
+                  "id": "9-3-4-1-handover-with-srvcc-operation",
+                  "children": []
+                },
+                {
+                  "clause_id": "9.3.4.2",
+                  "clause_title": "Measurements",
+                  "level": 4,
+                  "id": "9-3-4-2-measurements",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "clause_id": "9.4",
+          "clause_title": "Roaming and Access Restrictions",
+          "level": 2,
+          "id": "9-4-roaming-and-access-restrictions",
+          "children": []
+        }
+      ]
+    },
+    {
+      "clause_id": "10",
+      "clause_title": "Scheduling",
+      "level": 1,
+      "id": "10-scheduling",
+      "children": [
+        {
+          "clause_id": "1",
+          "clause_title": "0.1    Basic Scheduler Operation",
+          "level": 2,
+          "id": "1-0-1-basic-scheduler-operation",
+          "children": []
+        },
+        {
+          "clause_id": "1",
+          "clause_title": "0.2    Downlink Scheduling",
+          "level": 2,
+          "id": "1-0-2-downlink-scheduling",
+          "children": []
+        },
+        {
+          "clause_id": "1",
+          "clause_title": "0.3    Uplink Scheduling",
+          "level": 2,
+          "id": "1-0-3-uplink-scheduling",
+          "children": []
+        },
+        {
+          "clause_id": "1",
+          "clause_title": "0.4    Measurements to Support Scheduler Operation",
+          "level": 2,
+          "id": "1-0-4-measurements-to-support-scheduler-operation",
+          "children": []
+        },
+        {
+          "clause_id": "1",
+          "clause_title": "0.5    Rate Control",
+          "level": 2,
+          "id": "1-0-5-rate-control",
+          "children": [
+            {
+              "clause_id": "10.5.1",
+              "clause_title": "Downlink",
+              "level": 3,
+              "id": "10-5-1-downlink",
+              "children": []
+            },
+            {
+              "clause_id": "10.5.2",
+              "clause_title": "Uplink",
+              "level": 3,
+              "id": "10-5-2-uplink",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "10.6",
+          "clause_title": "Activation/Deactivation Mechanism",
+          "level": 2,
+          "id": "10-6-activation-deactivation-mechanism",
+          "children": []
+        },
+        {
+          "clause_id": "10.7",
+          "clause_title": "E-UTRA-NR Cell Resource Coordination",
+          "level": 2,
+          "id": "10-7-e-utra-nr-cell-resource-coordination",
+          "children": []
+        },
+        {
+          "clause_id": "10.8",
+          "clause_title": "Cross Carrier Scheduling",
+          "level": 2,
+          "id": "10-8-cross-carrier-scheduling",
+          "children": []
+        },
+        {
+          "clause_id": "10.9",
+          "clause_title": "IAB Resource Configuration",
+          "level": 2,
+          "id": "10-9-iab-resource-configuration",
+          "children": []
+        },
+        {
+          "clause_id": "10.10",
+          "clause_title": "Autonomous Denial for IDC",
+          "level": 2,
+          "id": "10-10-autonomous-denial-for-idc",
+          "children": []
+        },
+        {
+          "clause_id": "10.11",
+          "clause_title": "Multi-cell scheduling by a single DCI",
+          "level": 2,
+          "id": "10-11-multi-cell-scheduling-by-a-single-dci",
+          "children": []
+        }
+      ]
+    },
+    {
+      "clause_id": "11",
+      "clause_title": "UE Power Saving",
+      "level": 1,
+      "id": "11-ue-power-saving",
+      "children": []
+    },
+    {
+      "clause_id": "12",
+      "clause_title": "QoS",
+      "level": 1,
+      "id": "12-qos",
+      "children": [
+        {
+          "clause_id": "12.1",
+          "clause_title": "Overview",
+          "level": 2,
+          "id": "12-1-overview",
+          "children": []
+        },
+        {
+          "clause_id": "12.2",
+          "clause_title": "Explicit Congestion Notification",
+          "level": 2,
+          "id": "12-2-explicit-congestion-notification",
+          "children": []
+        }
+      ]
+    },
+    {
+      "clause_id": "13",
+      "clause_title": "Security",
+      "level": 1,
+      "id": "13-security",
+      "children": [
+        {
+          "clause_id": "13.1",
+          "clause_title": "Overview and Principles",
+          "level": 2,
+          "id": "13-1-overview-and-principles",
+          "children": []
+        },
+        {
+          "clause_id": "13.2",
+          "clause_title": "Security Termination Points",
+          "level": 2,
+          "id": "13-2-security-termination-points",
+          "children": []
+        },
+        {
+          "clause_id": "13.3",
+          "clause_title": "State Transitions and Mobility",
+          "level": 2,
+          "id": "13-3-state-transitions-and-mobility",
+          "children": []
+        }
+      ]
+    },
+    {
+      "clause_id": "14",
+      "clause_title": "UE Capabilities",
+      "level": 1,
+      "id": "14-ue-capabilities",
+      "children": []
+    },
+    {
+      "clause_id": "15",
+      "clause_title": "Self-Configuration and Self-Optimisation",
+      "level": 1,
+      "id": "15-self-configuration-and-self-optimisation",
+      "children": [
+        {
+          "clause_id": "15.1",
+          "clause_title": "Definitions",
+          "level": 2,
+          "id": "15-1-definitions",
+          "children": []
+        },
+        {
+          "clause_id": "15.2",
+          "clause_title": "Void",
+          "level": 2,
+          "id": "15-2-void",
+          "children": []
+        },
+        {
+          "clause_id": "15.3",
+          "clause_title": "Self-configuration",
+          "level": 2,
+          "id": "15-3-self-configuration",
+          "children": [
+            {
+              "clause_id": "15.3.1",
+              "clause_title": "Dynamic configuration of the NG-C interface",
+              "level": 3,
+              "id": "15-3-1-dynamic-configuration-of-the-ng-c-interface",
+              "children": [
+                {
+                  "clause_id": "15.3.1.1",
+                  "clause_title": "Prerequisites",
+                  "level": 4,
+                  "id": "15-3-1-1-prerequisites",
+                  "children": []
+                },
+                {
+                  "clause_id": "15.3.1.2",
+                  "clause_title": "SCTP initialization",
+                  "level": 4,
+                  "id": "15-3-1-2-sctp-initialization",
+                  "children": []
+                },
+                {
+                  "clause_id": "15.3.1.3",
+                  "clause_title": "Application layer initialization",
+                  "level": 4,
+                  "id": "15-3-1-3-application-layer-initialization",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "15.3.2",
+              "clause_title": "Dynamic Configuration of the Xn interface",
+              "level": 3,
+              "id": "15-3-2-dynamic-configuration-of-the-xn-interface",
+              "children": [
+                {
+                  "clause_id": "15.3.2.1",
+                  "clause_title": "Prerequisites",
+                  "level": 4,
+                  "id": "15-3-2-1-prerequisites",
+                  "children": []
+                },
+                {
+                  "clause_id": "15.3.2.2",
+                  "clause_title": "SCTP initialization",
+                  "level": 4,
+                  "id": "15-3-2-2-sctp-initialization",
+                  "children": []
+                },
+                {
+                  "clause_id": "15.3.2.3",
+                  "clause_title": "Application layer initialization",
+                  "level": 4,
+                  "id": "15-3-2-3-application-layer-initialization",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "15.3.3",
+              "clause_title": "Automatic Neighbour Cell Relation Function",
+              "level": 3,
+              "id": "15-3-3-automatic-neighbour-cell-relation-function",
+              "children": [
+                {
+                  "clause_id": "15.3.3.1",
+                  "clause_title": "General",
+                  "level": 4,
+                  "id": "15-3-3-1-general",
+                  "children": []
+                },
+                {
+                  "clause_id": "15.3.3.2",
+                  "clause_title": "Intra-system Automatic Neighbour Cell Relation Function",
+                  "level": 4,
+                  "id": "15-3-3-2-intra-system-automatic-neighbour-cell-relation-function",
+                  "children": []
+                },
+                {
+                  "clause_id": "15.3.3.3",
+                  "clause_title": "Void",
+                  "level": 4,
+                  "id": "15-3-3-3-void",
+                  "children": []
+                },
+                {
+                  "clause_id": "15.3.3.4",
+                  "clause_title": "Void",
+                  "level": 4,
+                  "id": "15-3-3-4-void",
+                  "children": []
+                },
+                {
+                  "clause_id": "15.3.3.5",
+                  "clause_title": "Inter-system Automatic Neighbour Cell Relation Function",
+                  "level": 4,
+                  "id": "15-3-3-5-inter-system-automatic-neighbour-cell-relation-function",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "15.3.4",
+              "clause_title": "Xn-C TNL address discovery",
+              "level": 3,
+              "id": "15-3-4-xn-c-tnl-address-discovery",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "15.4",
+          "clause_title": "Support for Energy Saving",
+          "level": 2,
+          "id": "15-4-support-for-energy-saving",
+          "children": [
+            {
+              "clause_id": "15.4.1",
+              "clause_title": "General",
+              "level": 3,
+              "id": "15-4-1-general",
+              "children": []
+            },
+            {
+              "clause_id": "15.4.2",
+              "clause_title": "Solution description",
+              "level": 3,
+              "id": "15-4-2-solution-description",
+              "children": [
+                {
+                  "clause_id": "15.4.2.1",
+                  "clause_title": "Intra-system energy saving",
+                  "level": 4,
+                  "id": "15-4-2-1-intra-system-energy-saving",
+                  "children": []
+                },
+                {
+                  "clause_id": "15.4.2.2",
+                  "clause_title": "Inter-system energy saving",
+                  "level": 4,
+                  "id": "15-4-2-2-inter-system-energy-saving",
+                  "children": []
+                },
+                {
+                  "clause_id": "15.4.2.3",
+                  "clause_title": "Cell DTX/DRX",
+                  "level": 4,
+                  "id": "15-4-2-3-cell-dtx-drx",
+                  "children": []
+                },
+                {
+                  "clause_id": "15.4.2.4",
+                  "clause_title": "Conditional Handover",
+                  "level": 4,
+                  "id": "15-4-2-4-conditional-handover",
+                  "children": []
+                },
+                {
+                  "clause_id": "15.4.2.5",
+                  "clause_title": "Camping Restrictions",
+                  "level": 4,
+                  "id": "15-4-2-5-camping-restrictions",
+                  "children": []
+                },
+                {
+                  "clause_id": "15.4.2.6",
+                  "clause_title": "SSB-less SCell",
+                  "level": 4,
+                  "id": "15-4-2-6-ssb-less-scell",
+                  "children": []
+                },
+                {
+                  "clause_id": "15.4.2.7",
+                  "clause_title": "Spatial and power domain adaptation",
+                  "level": 4,
+                  "id": "15-4-2-7-spatial-and-power-domain-adaptation",
+                  "children": []
+                },
+                {
+                  "clause_id": "15.4.2.8",
+                  "clause_title": "On-demand SSB SCell",
+                  "level": 4,
+                  "id": "15-4-2-8-on-demand-ssb-scell",
+                  "children": []
+                },
+                {
+                  "clause_id": "15.4.2.9",
+                  "clause_title": "On-demand SIB1",
+                  "level": 4,
+                  "id": "15-4-2-9-on-demand-sib1",
+                  "children": []
+                },
+                {
+                  "clause_id": "15.4.2.10",
+                  "clause_title": "Common signal/channel transmissions adaptation",
+                  "level": 4,
+                  "id": "15-4-2-10-common-signal-channel-transmissions-adaptation",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "15.4.3",
+              "clause_title": "O&M requirements",
+              "level": 3,
+              "id": "15-4-3-o-m-requirements",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "15.5",
+          "clause_title": "Self-optimisation",
+          "level": 2,
+          "id": "15-5-self-optimisation",
+          "children": [
+            {
+              "clause_id": "15.5.1",
+              "clause_title": "Support for Mobility Load Balancing",
+              "level": 3,
+              "id": "15-5-1-support-for-mobility-load-balancing",
+              "children": [
+                {
+                  "clause_id": "15.5.1.1",
+                  "clause_title": "General",
+                  "level": 4,
+                  "id": "15-5-1-1-general",
+                  "children": []
+                },
+                {
+                  "clause_id": "15.5.1.2",
+                  "clause_title": "Load reporting for intra-RAT and intra-system inter-RAT load balancing",
+                  "level": 4,
+                  "id": "15-5-1-2-load-reporting-for-intra-rat-and-intra-system-inter-rat-load-balancing",
+                  "children": []
+                },
+                {
+                  "clause_id": "15.5.1.4",
+                  "clause_title": "Adapting handover and/or reselection configuration",
+                  "level": 4,
+                  "id": "15-5-1-4-adapting-handover-and-or-reselection-configuration",
+                  "children": []
+                },
+                {
+                  "clause_id": "15.5.1.5",
+                  "clause_title": "Load reporting for inter-system load balancing",
+                  "level": 4,
+                  "id": "15-5-1-5-load-reporting-for-inter-system-load-balancing",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "15.5.2",
+              "clause_title": "Support for Mobility Robustness Optimization",
+              "level": 3,
+              "id": "15-5-2-support-for-mobility-robustness-optimization",
+              "children": [
+                {
+                  "clause_id": "15.5.2.1",
+                  "clause_title": "General",
+                  "level": 4,
+                  "id": "15-5-2-1-general",
+                  "children": []
+                },
+                {
+                  "clause_id": "15.5.2.2",
+                  "clause_title": "Connection failure",
+                  "level": 4,
+                  "id": "15-5-2-2-connection-failure",
+                  "children": [
+                    {
+                      "clause_id": "15.5.2.2.1",
+                      "clause_title": "General",
+                      "level": 5,
+                      "id": "15-5-2-2-1-general",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "15.5.2.2.2",
+                      "clause_title": "Connection failure due to intra-system mobility",
+                      "level": 5,
+                      "id": "15-5-2-2-2-connection-failure-due-to-intra-system-mobility",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "15.5.2.2.3",
+                      "clause_title": "Connection failure due to inter-system mobility",
+                      "level": 5,
+                      "id": "15-5-2-2-3-connection-failure-due-to-inter-system-mobility",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "clause_id": "15.5.2.3",
+                  "clause_title": "Inter-system Unnecessary HO",
+                  "level": 4,
+                  "id": "15-5-2-3-inter-system-unnecessary-ho",
+                  "children": []
+                },
+                {
+                  "clause_id": "15.5.2.4",
+                  "clause_title": "Inter-system Ping-pong",
+                  "level": 4,
+                  "id": "15-5-2-4-inter-system-ping-pong",
+                  "children": []
+                },
+                {
+                  "clause_id": "15.5.2.5",
+                  "clause_title": "O&M Requirements",
+                  "level": 4,
+                  "id": "15-5-2-5-o-m-requirements",
+                  "children": []
+                },
+                {
+                  "clause_id": "15.5.2.6",
+                  "clause_title": "PSCell addition/change failure",
+                  "level": 4,
+                  "id": "15-5-2-6-pscell-addition-change-failure",
+                  "children": []
+                },
+                {
+                  "clause_id": "15.5.2.7",
+                  "clause_title": "Successful HO",
+                  "level": 4,
+                  "id": "15-5-2-7-successful-ho",
+                  "children": []
+                },
+                {
+                  "clause_id": "15.5.2.8",
+                  "clause_title": "Successful PSCell Addition/Change Report",
+                  "level": 4,
+                  "id": "15-5-2-8-successful-pscell-addition-change-report",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "15.5.3",
+              "clause_title": "Support for RACH Optimization",
+              "level": 3,
+              "id": "15-5-3-support-for-rach-optimization",
+              "children": []
+            },
+            {
+              "clause_id": "15.5.4",
+              "clause_title": "UE History Information",
+              "level": 3,
+              "id": "15-5-4-ue-history-information",
+              "children": []
+            },
+            {
+              "clause_id": "15.5.5",
+              "clause_title": "Support for Coverage and Capacity Optimisation",
+              "level": 3,
+              "id": "15-5-5-support-for-coverage-and-capacity-optimisation",
+              "children": [
+                {
+                  "clause_id": "15.5.5.1",
+                  "clause_title": "General",
+                  "level": 4,
+                  "id": "15-5-5-1-general",
+                  "children": []
+                },
+                {
+                  "clause_id": "15.5.5.2",
+                  "clause_title": "OAM requirements",
+                  "level": 4,
+                  "id": "15-5-5-2-oam-requirements",
+                  "children": []
+                },
+                {
+                  "clause_id": "15.5.5.3",
+                  "clause_title": "Dynamic coverage configuration changes",
+                  "level": 4,
+                  "id": "15-5-5-3-dynamic-coverage-configuration-changes",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "15.5.6",
+              "clause_title": "Support for PCI Optimisation",
+              "level": 3,
+              "id": "15-5-6-support-for-pci-optimisation",
+              "children": [
+                {
+                  "clause_id": "15.5.6.1",
+                  "clause_title": "Centralized PCI Assignment",
+                  "level": 4,
+                  "id": "15-5-6-1-centralized-pci-assignment",
+                  "children": []
+                },
+                {
+                  "clause_id": "15.5.6.2",
+                  "clause_title": "Distributed PCI Assignment",
+                  "level": 4,
+                  "id": "15-5-6-2-distributed-pci-assignment",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "clause_id": "16",
+      "clause_title": "Verticals Support",
+      "level": 1,
+      "id": "16-verticals-support",
+      "children": [
+        {
+          "clause_id": "16.1",
+          "clause_title": "URLLC",
+          "level": 2,
+          "id": "16-1-urllc",
+          "children": [
+            {
+              "clause_id": "16.1.1",
+              "clause_title": "Overview",
+              "level": 3,
+              "id": "16-1-1-overview",
+              "children": []
+            },
+            {
+              "clause_id": "16.1.2",
+              "clause_title": "LCP Restrictions",
+              "level": 3,
+              "id": "16-1-2-lcp-restrictions",
+              "children": []
+            },
+            {
+              "clause_id": "16.1.3",
+              "clause_title": "Packet Duplication",
+              "level": 3,
+              "id": "16-1-3-packet-duplication",
+              "children": []
+            },
+            {
+              "clause_id": "16.1.4",
+              "clause_title": "CQI and MCS",
+              "level": 3,
+              "id": "16-1-4-cqi-and-mcs",
+              "children": []
+            },
+            {
+              "clause_id": "16.1.5",
+              "clause_title": "DCI formats",
+              "level": 3,
+              "id": "16-1-5-dci-formats",
+              "children": []
+            },
+            {
+              "clause_id": "16.1.6",
+              "clause_title": "Higher layer multi-connectivity",
+              "level": 3,
+              "id": "16-1-6-higher-layer-multi-connectivity",
+              "children": [
+                {
+                  "clause_id": "16.1.6.1",
+                  "clause_title": "Redundant user plane paths based on dual connectivity",
+                  "level": 4,
+                  "id": "16-1-6-1-redundant-user-plane-paths-based-on-dual-connectivity",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.1.6.2",
+                  "clause_title": "Redundant data transmission via single UPF and single RAN node",
+                  "level": 4,
+                  "id": "16-1-6-2-redundant-data-transmission-via-single-upf-and-single-ran-node",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "16.1.7",
+              "clause_title": "URLLC in Unlicensed Controlled Environment",
+              "level": 3,
+              "id": "16-1-7-urllc-in-unlicensed-controlled-environment",
+              "children": []
+            },
+            {
+              "clause_id": "16.1.8",
+              "clause_title": "PUCCH cell switching for TDD cells",
+              "level": 3,
+              "id": "16-1-8-pucch-cell-switching-for-tdd-cells",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "16.2",
+          "clause_title": "IMS Voice",
+          "level": 2,
+          "id": "16-2-ims-voice",
+          "children": [
+            {
+              "clause_id": "16.2.0",
+              "clause_title": "Support for IMS voice",
+              "level": 3,
+              "id": "16-2-0-support-for-ims-voice",
+              "children": []
+            },
+            {
+              "clause_id": "16.2.1",
+              "clause_title": "Support for MMTEL IMS voice and video enhancements",
+              "level": 3,
+              "id": "16-2-1-support-for-mmtel-ims-voice-and-video-enhancements",
+              "children": [
+                {
+                  "clause_id": "16.2.1.1",
+                  "clause_title": "RAN-assisted codec adaptation",
+                  "level": 4,
+                  "id": "16-2-1-1-ran-assisted-codec-adaptation",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.2.1.2",
+                  "clause_title": "MMTEL voice quality/coverage enhancements",
+                  "level": 4,
+                  "id": "16-2-1-2-mmtel-voice-quality-coverage-enhancements",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "clause_id": "16.3",
+          "clause_title": "Network Slicing",
+          "level": 2,
+          "id": "16-3-network-slicing",
+          "children": [
+            {
+              "clause_id": "16.3.1",
+              "clause_title": "General Principles and Requirements",
+              "level": 3,
+              "id": "16-3-1-general-principles-and-requirements",
+              "children": []
+            },
+            {
+              "clause_id": "16.3.2",
+              "clause_title": "AMF and NW Slice Selection",
+              "level": 3,
+              "id": "16-3-2-amf-and-nw-slice-selection",
+              "children": [
+                {
+                  "clause_id": "16.3.2.1",
+                  "clause_title": "CN-RAN interaction and internal RAN aspects",
+                  "level": 4,
+                  "id": "16-3-2-1-cn-ran-interaction-and-internal-ran-aspects",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.3.2.2",
+                  "clause_title": "Radio Interface Aspects",
+                  "level": 4,
+                  "id": "16-3-2-2-radio-interface-aspects",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "16.3.3",
+              "clause_title": "Resource Isolation and Management",
+              "level": 3,
+              "id": "16-3-3-resource-isolation-and-management",
+              "children": [
+                {
+                  "clause_id": "16.3.3.1",
+                  "clause_title": "General",
+                  "level": 4,
+                  "id": "16-3-3-1-general",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.3.3.2",
+                  "clause_title": "Handling of Slice Resources",
+                  "level": 4,
+                  "id": "16-3-3-2-handling-of-slice-resources",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": null,
+              "clause_title": "16.3.3a     Slice-based cell reselection",
+              "level": 3,
+              "id": "16-3-3a-slice-based-cell-reselection",
+              "children": []
+            },
+            {
+              "clause_id": "16.3.4",
+              "clause_title": "Signalling Aspects",
+              "level": 3,
+              "id": "16-3-4-signalling-aspects",
+              "children": [
+                {
+                  "clause_id": "16.3.4.1",
+                  "clause_title": "General",
+                  "level": 4,
+                  "id": "16-3-4-1-general",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.3.4.2",
+                  "clause_title": "AMF and NW Slice Selection",
+                  "level": 4,
+                  "id": "16-3-4-2-amf-and-nw-slice-selection",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.3.4.3",
+                  "clause_title": "UE Context Handling",
+                  "level": 4,
+                  "id": "16-3-4-3-ue-context-handling",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.3.4.4",
+                  "clause_title": "PDU Session Setup Handling",
+                  "level": 4,
+                  "id": "16-3-4-4-pdu-session-setup-handling",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.3.4.5",
+                  "clause_title": "Mobility",
+                  "level": 4,
+                  "id": "16-3-4-5-mobility",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "clause_id": "16.4",
+          "clause_title": "Public Warning System",
+          "level": 2,
+          "id": "16-4-public-warning-system",
+          "children": []
+        },
+        {
+          "clause_id": "16.5",
+          "clause_title": "Emergency Services",
+          "level": 2,
+          "id": "16-5-emergency-services",
+          "children": [
+            {
+              "clause_id": "16.5.1",
+              "clause_title": "Overview",
+              "level": 3,
+              "id": "16-5-1-overview",
+              "children": []
+            },
+            {
+              "clause_id": "16.5.2",
+              "clause_title": "IMS Emergency call",
+              "level": 3,
+              "id": "16-5-2-ims-emergency-call",
+              "children": []
+            },
+            {
+              "clause_id": "16.5.3",
+              "clause_title": "eCall over IMS",
+              "level": 3,
+              "id": "16-5-3-ecall-over-ims",
+              "children": []
+            },
+            {
+              "clause_id": "16.5.4",
+              "clause_title": "Fallback",
+              "level": 3,
+              "id": "16-5-4-fallback",
+              "children": []
+            },
+            {
+              "clause_id": "16.5.5",
+              "clause_title": "Barring exemption for emergency calls",
+              "level": 3,
+              "id": "16-5-5-barring-exemption-for-emergency-calls",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "16.6",
+          "clause_title": "Stand-Alone NPN",
+          "level": 2,
+          "id": "16-6-stand-alone-npn",
+          "children": [
+            {
+              "clause_id": "16.6.1",
+              "clause_title": "General",
+              "level": 3,
+              "id": "16-6-1-general",
+              "children": []
+            },
+            {
+              "clause_id": "16.6.2",
+              "clause_title": "Mobility",
+              "level": 3,
+              "id": "16-6-2-mobility",
+              "children": [
+                {
+                  "clause_id": "16.6.2.1",
+                  "clause_title": "General",
+                  "level": 4,
+                  "id": "16-6-2-1-general",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.6.2.2",
+                  "clause_title": "Inactive Mode",
+                  "level": 4,
+                  "id": "16-6-2-2-inactive-mode",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.6.2.3",
+                  "clause_title": "Connected Mode",
+                  "level": 4,
+                  "id": "16-6-2-3-connected-mode",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "clause_id": "16.7",
+          "clause_title": "Public Network Integrated NPN",
+          "level": 2,
+          "id": "16-7-public-network-integrated-npn",
+          "children": [
+            {
+              "clause_id": "16.7.1",
+              "clause_title": "General",
+              "level": 3,
+              "id": "16-7-1-general",
+              "children": []
+            },
+            {
+              "clause_id": "16.7.2",
+              "clause_title": "Mobility",
+              "level": 3,
+              "id": "16-7-2-mobility",
+              "children": [
+                {
+                  "clause_id": "16.7.2.1",
+                  "clause_title": "General",
+                  "level": 4,
+                  "id": "16-7-2-1-general",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.7.2.2",
+                  "clause_title": "Inactive Mode",
+                  "level": 4,
+                  "id": "16-7-2-2-inactive-mode",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.7.2.3",
+                  "clause_title": "Connected Mode",
+                  "level": 4,
+                  "id": "16-7-2-3-connected-mode",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "16.7.3",
+              "clause_title": "Self-Configuration for PNI-NPN",
+              "level": 3,
+              "id": "16-7-3-self-configuration-for-pni-npn",
+              "children": []
+            },
+            {
+              "clause_id": "16.7.4",
+              "clause_title": "Access Control",
+              "level": 3,
+              "id": "16-7-4-access-control",
+              "children": []
+            },
+            {
+              "clause_id": "16.7.5",
+              "clause_title": "Paging",
+              "level": 3,
+              "id": "16-7-5-paging",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "16.8",
+          "clause_title": "Support for Time Sensitive Communications",
+          "level": 2,
+          "id": "16-8-support-for-time-sensitive-communications",
+          "children": [
+            {
+              "clause_id": "16.8.1",
+              "clause_title": "General",
+              "level": 3,
+              "id": "16-8-1-general",
+              "children": []
+            },
+            {
+              "clause_id": "16.8.2",
+              "clause_title": "Network timing synchronization status monitoring",
+              "level": 3,
+              "id": "16-8-2-network-timing-synchronization-status-monitoring",
+              "children": [
+                {
+                  "clause_id": "16.8.2.1",
+                  "clause_title": "General",
+                  "level": 4,
+                  "id": "16-8-2-1-general",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.8.2.2",
+                  "clause_title": "Network timing synchronization status monitoring towards CN",
+                  "level": 4,
+                  "id": "16-8-2-2-network-timing-synchronization-status-monitoring-towards-cn",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.8.2.3",
+                  "clause_title": "Network timing synchronization status monitoring towards UE",
+                  "level": 4,
+                  "id": "16-8-2-3-network-timing-synchronization-status-monitoring-towards-ue",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "16.8.3",
+              "clause_title": "RAN feedback for adaptation of Burst Arrival Time and Periodicity",
+              "level": 3,
+              "id": "16-8-3-ran-feedback-for-adaptation-of-burst-arrival-time-and-periodicity",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "16.9",
+          "clause_title": "Sidelink",
+          "level": 2,
+          "id": "16-9-sidelink",
+          "children": [
+            {
+              "clause_id": "16.9.1",
+              "clause_title": "General",
+              "level": 3,
+              "id": "16-9-1-general",
+              "children": []
+            },
+            {
+              "clause_id": "16.9.2",
+              "clause_title": "Radio Protocol Architecture for NR sidelink communication",
+              "level": 3,
+              "id": "16-9-2-radio-protocol-architecture-for-nr-sidelink-communication",
+              "children": [
+                {
+                  "clause_id": "16.9.2.1",
+                  "clause_title": "Overview",
+                  "level": 4,
+                  "id": "16-9-2-1-overview",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.9.2.2",
+                  "clause_title": "MAC",
+                  "level": 4,
+                  "id": "16-9-2-2-mac",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.9.2.3",
+                  "clause_title": "RLC",
+                  "level": 4,
+                  "id": "16-9-2-3-rlc",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.9.2.4",
+                  "clause_title": "PDCP",
+                  "level": 4,
+                  "id": "16-9-2-4-pdcp",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.9.2.5",
+                  "clause_title": "SDAP",
+                  "level": 4,
+                  "id": "16-9-2-5-sdap",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.9.2.6",
+                  "clause_title": "RRC",
+                  "level": 4,
+                  "id": "16-9-2-6-rrc",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "16.9.3",
+              "clause_title": "Radio Resource Allocation",
+              "level": 3,
+              "id": "16-9-3-radio-resource-allocation",
+              "children": [
+                {
+                  "clause_id": "16.9.3.1",
+                  "clause_title": "General",
+                  "level": 4,
+                  "id": "16-9-3-1-general",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.9.3.2",
+                  "clause_title": "Scheduled Resource Allocation",
+                  "level": 4,
+                  "id": "16-9-3-2-scheduled-resource-allocation",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.9.3.3",
+                  "clause_title": "UE Autonomous Resource Selection",
+                  "level": 4,
+                  "id": "16-9-3-3-ue-autonomous-resource-selection",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.9.3.4",
+                  "clause_title": "LTE and NR Sidelink co-channel coexistence",
+                  "level": 4,
+                  "id": "16-9-3-4-lte-and-nr-sidelink-co-channel-coexistence",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "16.9.4",
+              "clause_title": "Uu Control",
+              "level": 3,
+              "id": "16-9-4-uu-control",
+              "children": [
+                {
+                  "clause_id": "16.9.4.1",
+                  "clause_title": "General",
+                  "level": 4,
+                  "id": "16-9-4-1-general",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.9.4.2",
+                  "clause_title": "Control of connected UEs",
+                  "level": 4,
+                  "id": "16-9-4-2-control-of-connected-ues",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.9.4.3",
+                  "clause_title": "Control of idle/inactive UEs",
+                  "level": 4,
+                  "id": "16-9-4-3-control-of-idle-inactive-ues",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "16.9.5",
+              "clause_title": "Sidelink Discovery",
+              "level": 3,
+              "id": "16-9-5-sidelink-discovery",
+              "children": []
+            },
+            {
+              "clause_id": "16.9.6",
+              "clause_title": "SL DRX",
+              "level": 3,
+              "id": "16-9-6-sl-drx",
+              "children": [
+                {
+                  "clause_id": "16.9.6.1",
+                  "clause_title": "General",
+                  "level": 4,
+                  "id": "16-9-6-1-general",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.9.6.2",
+                  "clause_title": "Unicast",
+                  "level": 4,
+                  "id": "16-9-6-2-unicast",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.9.6.3",
+                  "clause_title": "Groupcast/Broadcast",
+                  "level": 4,
+                  "id": "16-9-6-3-groupcast-broadcast",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.9.6.4",
+                  "clause_title": "Alignment between Uu DRX and SL DRX",
+                  "level": 4,
+                  "id": "16-9-6-4-alignment-between-uu-drx-and-sl-drx",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "16.9.7",
+              "clause_title": "Power Savings Resource Allocation",
+              "level": 3,
+              "id": "16-9-7-power-savings-resource-allocation",
+              "children": []
+            },
+            {
+              "clause_id": "16.9.8",
+              "clause_title": "Inter-UE Coordination (IUC)",
+              "level": 3,
+              "id": "16-9-8-inter-ue-coordination-iuc",
+              "children": []
+            },
+            {
+              "clause_id": "16.9.9",
+              "clause_title": "Sidelink in Shared Spectrum (SL-U)",
+              "level": 3,
+              "id": "16-9-9-sidelink-in-shared-spectrum-sl-u",
+              "children": [
+                {
+                  "clause_id": "16.9.9.1",
+                  "clause_title": "Overview",
+                  "level": 4,
+                  "id": "16-9-9-1-overview",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.9.9.2",
+                  "clause_title": "Channel Access Priority Classes for Sidelink (SL-CAPC)",
+                  "level": 4,
+                  "id": "16-9-9-2-channel-access-priority-classes-for-sidelink-sl-capc",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.9.9.3",
+                  "clause_title": "Sidelink Specific Consistent LBT Failure",
+                  "level": 4,
+                  "id": "16-9-9-3-sidelink-specific-consistent-lbt-failure",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.9.9.4",
+                  "clause_title": "COT Sharing",
+                  "level": 4,
+                  "id": "16-9-9-4-cot-sharing",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.9.9.5",
+                  "clause_title": "Resource Allocation",
+                  "level": 4,
+                  "id": "16-9-9-5-resource-allocation",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "16.9.10",
+              "clause_title": "Sidelink CA",
+              "level": 3,
+              "id": "16-9-10-sidelink-ca",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "16.10",
+          "clause_title": "Multicast and Broadcast Services",
+          "level": 2,
+          "id": "16-10-multicast-and-broadcast-services",
+          "children": [
+            {
+              "clause_id": "16.10.1",
+              "clause_title": "General",
+              "level": 3,
+              "id": "16-10-1-general",
+              "children": []
+            },
+            {
+              "clause_id": "16.10.2",
+              "clause_title": "Network Architecture",
+              "level": 3,
+              "id": "16-10-2-network-architecture",
+              "children": []
+            },
+            {
+              "clause_id": "16.10.3",
+              "clause_title": "Protocol Architecture",
+              "level": 3,
+              "id": "16-10-3-protocol-architecture",
+              "children": []
+            },
+            {
+              "clause_id": "16.10.4",
+              "clause_title": "Group Scheduling",
+              "level": 3,
+              "id": "16-10-4-group-scheduling",
+              "children": []
+            },
+            {
+              "clause_id": "16.10.5",
+              "clause_title": "Multicast Handling",
+              "level": 3,
+              "id": "16-10-5-multicast-handling",
+              "children": [
+                {
+                  "clause_id": "16.10.5.1",
+                  "clause_title": "Session Management",
+                  "level": 4,
+                  "id": "16-10-5-1-session-management",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.10.5.2",
+                  "clause_title": "Configuration",
+                  "level": 4,
+                  "id": "16-10-5-2-configuration",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.10.5.3",
+                  "clause_title": "Service Continuity",
+                  "level": 4,
+                  "id": "16-10-5-3-service-continuity",
+                  "children": [
+                    {
+                      "clause_id": "16.10.5.3.1",
+                      "clause_title": "General",
+                      "level": 5,
+                      "id": "16-10-5-3-1-general",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "16.10.5.3.2",
+                      "clause_title": "Handover between Multicast supporting cells",
+                      "level": 5,
+                      "id": "16-10-5-3-2-handover-between-multicast-supporting-cells",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "16.10.5.3.3",
+                      "clause_title": "Handover between Multicast-supporting cell and Multicast non-supporting cell",
+                      "level": 5,
+                      "id": "16-10-5-3-3-handover-between-multicast-supporting-cell-and-multicast-non-supporting-cell",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "16.10.5.3.4",
+                      "clause_title": "MRB reconfiguration",
+                      "level": 5,
+                      "id": "16-10-5-3-4-mrb-reconfiguration",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "16.10.5.3.5",
+                      "clause_title": "Service Continuity in RRC_INACTIVE",
+                      "level": 5,
+                      "id": "16-10-5-3-5-service-continuity-in-rrc-inactive",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "clause_id": "16.10.5.4",
+                  "clause_title": "Reception of MBS Multicast data",
+                  "level": 4,
+                  "id": "16-10-5-4-reception-of-mbs-multicast-data",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.10.5.5",
+                  "clause_title": "Support of CA",
+                  "level": 4,
+                  "id": "16-10-5-5-support-of-ca",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.10.5.6",
+                  "clause_title": "DRX",
+                  "level": 4,
+                  "id": "16-10-5-6-drx",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.10.5.7",
+                  "clause_title": "Physical Layer",
+                  "level": 4,
+                  "id": "16-10-5-7-physical-layer",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "16.10.6",
+              "clause_title": "Broadcast Handling",
+              "level": 3,
+              "id": "16-10-6-broadcast-handling",
+              "children": [
+                {
+                  "clause_id": "16.10.6.1",
+                  "clause_title": "Session Management",
+                  "level": 4,
+                  "id": "16-10-6-1-session-management",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.10.6.2",
+                  "clause_title": "Configuration",
+                  "level": 4,
+                  "id": "16-10-6-2-configuration",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.10.6.3",
+                  "clause_title": "Support of CA",
+                  "level": 4,
+                  "id": "16-10-6-3-support-of-ca",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.10.6.4",
+                  "clause_title": "DRX",
+                  "level": 4,
+                  "id": "16-10-6-4-drx",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.10.6.5",
+                  "clause_title": "Service Continuity",
+                  "level": 4,
+                  "id": "16-10-6-5-service-continuity",
+                  "children": [
+                    {
+                      "clause_id": "16.10.6.5.0",
+                      "clause_title": "General",
+                      "level": 5,
+                      "id": "16-10-6-5-0-general",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "16.10.6.5.1",
+                      "clause_title": "Service Continuity in RRC_IDLE or RRC_INACTIVE",
+                      "level": 5,
+                      "id": "16-10-6-5-1-service-continuity-in-rrc-idle-or-rrc-inactive",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "16.10.6.5.2",
+                      "clause_title": "Service Continuity in RRC_CONNECTED",
+                      "level": 5,
+                      "id": "16-10-6-5-2-service-continuity-in-rrc-connected",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "clause_id": null,
+                  "clause_title": "16.10.6.5A     Reception of MBS Broadcast data",
+                  "level": 4,
+                  "id": "16-10-6-5a-reception-of-mbs-broadcast-data",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.10.6.6",
+                  "clause_title": "Physical Layer",
+                  "level": 4,
+                  "id": "16-10-6-6-physical-layer",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.10.6.7",
+                  "clause_title": "Shared processing for MBS broadcast and unicast reception",
+                  "level": 4,
+                  "id": "16-10-6-7-shared-processing-for-mbs-broadcast-and-unicast-reception",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "clause_id": "16.11",
+          "clause_title": "Minimization of Service Interruption",
+          "level": 2,
+          "id": "16-11-minimization-of-service-interruption",
+          "children": []
+        },
+        {
+          "clause_id": "16.12",
+          "clause_title": "Sidelink Relay",
+          "level": 2,
+          "id": "16-12-sidelink-relay",
+          "children": [
+            {
+              "clause_id": "16.12.1",
+              "clause_title": "General",
+              "level": 3,
+              "id": "16-12-1-general",
+              "children": []
+            },
+            {
+              "clause_id": "16.12.2",
+              "clause_title": "Protocol Architecture",
+              "level": 3,
+              "id": "16-12-2-protocol-architecture",
+              "children": [
+                {
+                  "clause_id": "16.12.2.1",
+                  "clause_title": "L2 UE-to-Network Relay",
+                  "level": 4,
+                  "id": "16-12-2-1-l2-ue-to-network-relay",
+                  "children": []
+                },
+                {
+                  "clause_id": "1",
+                  "clause_title": "6.12.2.2    L2 UE-to-UE Relay",
+                  "level": 4,
+                  "id": "1-6-12-2-2-l2-ue-to-ue-relay",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "16.12.3",
+              "clause_title": "Relay Discovery",
+              "level": 3,
+              "id": "16-12-3-relay-discovery",
+              "children": []
+            },
+            {
+              "clause_id": "16.12.4",
+              "clause_title": "Relay Selection/Reselection",
+              "level": 3,
+              "id": "16-12-4-relay-selection-reselection",
+              "children": []
+            },
+            {
+              "clause_id": "16.12.5",
+              "clause_title": "Control plane procedures for L2 U2N Relay",
+              "level": 3,
+              "id": "16-12-5-control-plane-procedures-for-l2-u2n-relay",
+              "children": [
+                {
+                  "clause_id": "16.12.5.1",
+                  "clause_title": "RRC Connection Management",
+                  "level": 4,
+                  "id": "16-12-5-1-rrc-connection-management",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.12.5.2",
+                  "clause_title": "Radio Link Failure",
+                  "level": 4,
+                  "id": "16-12-5-2-radio-link-failure",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.12.5.3",
+                  "clause_title": "RRC Connection Re-establishment",
+                  "level": 4,
+                  "id": "16-12-5-3-rrc-connection-re-establishment",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.12.5.4",
+                  "clause_title": "RRC Connection Resume",
+                  "level": 4,
+                  "id": "16-12-5-4-rrc-connection-resume",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.12.5.5",
+                  "clause_title": "System Information",
+                  "level": 4,
+                  "id": "16-12-5-5-system-information",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.12.5.6",
+                  "clause_title": "Paging",
+                  "level": 4,
+                  "id": "16-12-5-6-paging",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.12.5.7",
+                  "clause_title": "Access Control",
+                  "level": 4,
+                  "id": "16-12-5-7-access-control",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.12.5.8",
+                  "clause_title": "Mobility Registration Update and RAN Area Update",
+                  "level": 4,
+                  "id": "16-12-5-8-mobility-registration-update-and-ran-area-update",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "16.12.6",
+              "clause_title": "Service Continuity for L2 U2N relay",
+              "level": 3,
+              "id": "16-12-6-service-continuity-for-l2-u2n-relay",
+              "children": [
+                {
+                  "clause_id": "16.12.6.0",
+                  "clause_title": "General",
+                  "level": 4,
+                  "id": "16-12-6-0-general",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.12.6.1",
+                  "clause_title": "Switching from single/multi-hop indirect to direct path",
+                  "level": 4,
+                  "id": "16-12-6-1-switching-from-single-multi-hop-indirect-to-direct-path",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.12.6.2",
+                  "clause_title": "Switching from direct to indirect path",
+                  "level": 4,
+                  "id": "16-12-6-2-switching-from-direct-to-indirect-path",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.12.6.3",
+                  "clause_title": "Switching from multi/single-hop indirect to multi/single-hop indirect path",
+                  "level": 4,
+                  "id": "16-12-6-3-switching-from-multi-single-hop-indirect-to-multi-single-hop-indirect-path",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "16.12.7",
+              "clause_title": "Control plane procedures for L2 U2U Relay",
+              "level": 3,
+              "id": "16-12-7-control-plane-procedures-for-l2-u2u-relay",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "16.13",
+          "clause_title": "Support of Reduced Capability (RedCap) and enhanced Reduced Capability (eRedCap) NR devices",
+          "level": 2,
+          "id": "16-13-support-of-reduced-capability-redcap-and-enhanced-reduced-capability-eredcap-nr-devices",
+          "children": [
+            {
+              "clause_id": "16.13.1",
+              "clause_title": "Introduction",
+              "level": 3,
+              "id": "16-13-1-introduction",
+              "children": []
+            },
+            {
+              "clause_id": "16.13.2",
+              "clause_title": "Capabilities",
+              "level": 3,
+              "id": "16-13-2-capabilities",
+              "children": []
+            },
+            {
+              "clause_id": "16.13.3",
+              "clause_title": "Identification, access and camping restrictions",
+              "level": 3,
+              "id": "16-13-3-identification-access-and-camping-restrictions",
+              "children": []
+            },
+            {
+              "clause_id": "16.13.4",
+              "clause_title": "RRM measurement relaxations",
+              "level": 3,
+              "id": "16-13-4-rrm-measurement-relaxations",
+              "children": []
+            },
+            {
+              "clause_id": "16.13.5",
+              "clause_title": "BWP operation",
+              "level": 3,
+              "id": "16-13-5-bwp-operation",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "16.14",
+          "clause_title": "Non-Terrestrial Networks",
+          "level": 2,
+          "id": "16-14-non-terrestrial-networks",
+          "children": [
+            {
+              "clause_id": "16.14.1",
+              "clause_title": "Overview",
+              "level": 3,
+              "id": "16-14-1-overview",
+              "children": []
+            },
+            {
+              "clause_id": "16.14.2",
+              "clause_title": "Timing and Synchronization",
+              "level": 3,
+              "id": "16-14-2-timing-and-synchronization",
+              "children": [
+                {
+                  "clause_id": "16.14.2.1",
+                  "clause_title": "Scheduling and Timing",
+                  "level": 4,
+                  "id": "16-14-2-1-scheduling-and-timing",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.14.2.2",
+                  "clause_title": "Timing Advance and Frequency Pre-compensation",
+                  "level": 4,
+                  "id": "16-14-2-2-timing-advance-and-frequency-pre-compensation",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "16.14.3",
+              "clause_title": "Mobility and State transition",
+              "level": 3,
+              "id": "16-14-3-mobility-and-state-transition",
+              "children": [
+                {
+                  "clause_id": "16.14.3.1",
+                  "clause_title": "Mobility in RRC_IDLE and RRC_INACTIVE",
+                  "level": 4,
+                  "id": "16-14-3-1-mobility-in-rrc-idle-and-rrc-inactive",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.14.3.2",
+                  "clause_title": "Mobility in RRC_CONNECTED",
+                  "level": 4,
+                  "id": "16-14-3-2-mobility-in-rrc-connected",
+                  "children": [
+                    {
+                      "clause_id": "16.14.3.2.1",
+                      "clause_title": "Handover",
+                      "level": 5,
+                      "id": "16-14-3-2-1-handover",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "16.14.3.2.2",
+                      "clause_title": "Conditional Handover",
+                      "level": 5,
+                      "id": "16-14-3-2-2-conditional-handover",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "16.14.3.2.3",
+                      "clause_title": "Satellite switch with re-synchronization",
+                      "level": 5,
+                      "id": "16-14-3-2-3-satellite-switch-with-re-synchronization",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "clause_id": "16.14.3.3",
+                  "clause_title": "Measurements",
+                  "level": 4,
+                  "id": "16-14-3-3-measurements",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "16.14.4",
+              "clause_title": "Switchover",
+              "level": 3,
+              "id": "16-14-4-switchover",
+              "children": [
+                {
+                  "clause_id": "16.14.4.1",
+                  "clause_title": "Definitions",
+                  "level": 4,
+                  "id": "16-14-4-1-definitions",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.14.4.2",
+                  "clause_title": "Assumptions",
+                  "level": 4,
+                  "id": "16-14-4-2-assumptions",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.14.4.3",
+                  "clause_title": "Procedures",
+                  "level": 4,
+                  "id": "16-14-4-3-procedures",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "16.14.5",
+              "clause_title": "NG-RAN signalling",
+              "level": 3,
+              "id": "16-14-5-ng-ran-signalling",
+              "children": []
+            },
+            {
+              "clause_id": "16.14.6",
+              "clause_title": "AMF (Re-)Selection",
+              "level": 3,
+              "id": "16-14-6-amf-re-selection",
+              "children": []
+            },
+            {
+              "clause_id": "16.14.7",
+              "clause_title": "O&M Requirements",
+              "level": 3,
+              "id": "16-14-7-o-m-requirements",
+              "children": []
+            },
+            {
+              "clause_id": "16.14.8",
+              "clause_title": "Coarse UE location reporting",
+              "level": 3,
+              "id": "16-14-8-coarse-ue-location-reporting",
+              "children": []
+            },
+            {
+              "clause_id": "16.14.9",
+              "clause_title": "Support for NR NTN coverage enhancements",
+              "level": 3,
+              "id": "16-14-9-support-for-nr-ntn-coverage-enhancements",
+              "children": []
+            },
+            {
+              "clause_id": "16.14.10",
+              "clause_title": "Verification of UE location",
+              "level": 3,
+              "id": "16-14-10-verification-of-ue-location",
+              "children": []
+            },
+            {
+              "clause_id": "16.14.11",
+              "clause_title": "Support for NR NTN capacity enhancements",
+              "level": 3,
+              "id": "16-14-11-support-for-nr-ntn-capacity-enhancements",
+              "children": []
+            },
+            {
+              "clause_id": "16.14.12",
+              "clause_title": "Support of ISA for MBS Broadcast in NTN",
+              "level": 3,
+              "id": "16-14-12-support-of-isa-for-mbs-broadcast-in-ntn",
+              "children": []
+            },
+            {
+              "clause_id": "16.14.13",
+              "clause_title": "Support of Half-Duplex UE in NR NTN",
+              "level": 3,
+              "id": "16-14-13-support-of-half-duplex-ue-in-nr-ntn",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "16.15",
+          "clause_title": "eXtended Reality Services",
+          "level": 2,
+          "id": "16-15-extended-reality-services",
+          "children": [
+            {
+              "clause_id": "16.15.1",
+              "clause_title": "General",
+              "level": 3,
+              "id": "16-15-1-general",
+              "children": []
+            },
+            {
+              "clause_id": "16.15.2",
+              "clause_title": "Awareness",
+              "level": 3,
+              "id": "16-15-2-awareness",
+              "children": []
+            },
+            {
+              "clause_id": "16.15.3",
+              "clause_title": "Power Saving",
+              "level": 3,
+              "id": "16-15-3-power-saving",
+              "children": []
+            },
+            {
+              "clause_id": "16.15.4",
+              "clause_title": "Capacity",
+              "level": 3,
+              "id": "16-15-4-capacity",
+              "children": [
+                {
+                  "clause_id": "16.15.4.1",
+                  "clause_title": "Physical Layer Enhancements",
+                  "level": 4,
+                  "id": "16-15-4-1-physical-layer-enhancements",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.15.4.2",
+                  "clause_title": "Layer 2 Enhancements",
+                  "level": 4,
+                  "id": "16-15-4-2-layer-2-enhancements",
+                  "children": [
+                    {
+                      "clause_id": "16.15.4.2.1",
+                      "clause_title": "Assistance Information",
+                      "level": 5,
+                      "id": "16-15-4-2-1-assistance-information",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "16.15.4.2.2",
+                      "clause_title": "Discard",
+                      "level": 5,
+                      "id": "16-15-4-2-2-discard",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "16.15.4.2.3",
+                      "clause_title": "Logical Channel Priority Adjustment",
+                      "level": 5,
+                      "id": "16-15-4-2-3-logical-channel-priority-adjustment",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "16.15.4.2.4",
+                      "clause_title": "RLC Retransmissions",
+                      "level": 5,
+                      "id": "16-15-4-2-4-rlc-retransmissions",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "16.15.4.2.5",
+                      "clause_title": "Uplink Rate Control",
+                      "level": 5,
+                      "id": "16-15-4-2-5-uplink-rate-control",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "clause_id": "16.15.5",
+              "clause_title": "Non-Homogeneous support of PDU set based handling in NG-RAN",
+              "level": 3,
+              "id": "16-15-5-non-homogeneous-support-of-pdu-set-based-handling-in-ng-ran",
+              "children": []
+            },
+            {
+              "clause_id": "16.15.6",
+              "clause_title": "Measurement Gaps",
+              "level": 3,
+              "id": "16-15-6-measurement-gaps",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "16.16",
+          "clause_title": "ECN marking for L4S and congestion information exposure",
+          "level": 2,
+          "id": "16-16-ecn-marking-for-l4s-and-congestion-information-exposure",
+          "children": []
+        },
+        {
+          "clause_id": "16.17",
+          "clause_title": "Support for TSN enabled Transport Network",
+          "level": 2,
+          "id": "16-17-support-for-tsn-enabled-transport-network",
+          "children": []
+        },
+        {
+          "clause_id": "16.18",
+          "clause_title": "Support for Aerial UE Communication",
+          "level": 2,
+          "id": "16-18-support-for-aerial-ue-communication",
+          "children": [
+            {
+              "clause_id": "16.18.1",
+              "clause_title": "General",
+              "level": 3,
+              "id": "16-18-1-general",
+              "children": []
+            },
+            {
+              "clause_id": "16.18.2",
+              "clause_title": "Subscription-based Identification of Aerial UE",
+              "level": 3,
+              "id": "16-18-2-subscription-based-identification-of-aerial-ue",
+              "children": []
+            },
+            {
+              "clause_id": "16.18.3",
+              "clause_title": "Altitude-based Reporting for Aerial UE Communication",
+              "level": 3,
+              "id": "16-18-3-altitude-based-reporting-for-aerial-ue-communication",
+              "children": []
+            },
+            {
+              "clause_id": "16.18.4",
+              "clause_title": "Altitude-dependent Configurations for Aerial UE Communication",
+              "level": 3,
+              "id": "16-18-4-altitude-dependent-configurations-for-aerial-ue-communication",
+              "children": []
+            },
+            {
+              "clause_id": "16.18.5",
+              "clause_title": "Interference Detection and Mitigation for Aerial UE Communication",
+              "level": 3,
+              "id": "16-18-5-interference-detection-and-mitigation-for-aerial-ue-communication",
+              "children": []
+            },
+            {
+              "clause_id": "16.18.6",
+              "clause_title": "Flight Path Information Reporting for Aerial UE Communication",
+              "level": 3,
+              "id": "16-18-6-flight-path-information-reporting-for-aerial-ue-communication",
+              "children": []
+            },
+            {
+              "clause_id": "16.18.7",
+              "clause_title": "Location Reporting for Aerial UE Communication",
+              "level": 3,
+              "id": "16-18-7-location-reporting-for-aerial-ue-communication",
+              "children": []
+            },
+            {
+              "clause_id": "16.18.8",
+              "clause_title": "BRID and DAA Support via A2X Communication",
+              "level": 3,
+              "id": "16-18-8-brid-and-daa-support-via-a2x-communication",
+              "children": []
+            },
+            {
+              "clause_id": "16.18.9",
+              "clause_title": "Altitude-based CHO for Aerial UE Communication",
+              "level": 3,
+              "id": "16-18-9-altitude-based-cho-for-aerial-ue-communication",
+              "children": []
+            },
+            {
+              "clause_id": "16.18.10",
+              "clause_title": "UAV prioritized frequency for Aerial UE cell reselection",
+              "level": 3,
+              "id": "16-18-10-uav-prioritized-frequency-for-aerial-ue-cell-reselection",
+              "children": []
+            },
+            {
+              "clause_id": "16.18.11",
+              "clause_title": "Flight Information Reporting for Aerial UE",
+              "level": 3,
+              "id": "16-18-11-flight-information-reporting-for-aerial-ue",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "16.19",
+          "clause_title": "Support for Air to Ground Networks",
+          "level": 2,
+          "id": "16-19-support-for-air-to-ground-networks",
+          "children": [
+            {
+              "clause_id": "16.19.1",
+              "clause_title": "Overview",
+              "level": 3,
+              "id": "16-19-1-overview",
+              "children": []
+            },
+            {
+              "clause_id": "16.19.2",
+              "clause_title": "Timing and Synchronization",
+              "level": 3,
+              "id": "16-19-2-timing-and-synchronization",
+              "children": [
+                {
+                  "clause_id": "16.19.2.1",
+                  "clause_title": "Scheduling and Timing",
+                  "level": 4,
+                  "id": "16-19-2-1-scheduling-and-timing",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.19.2.2",
+                  "clause_title": "Timing Advance",
+                  "level": 4,
+                  "id": "16-19-2-2-timing-advance",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "16.19.3",
+              "clause_title": "Mobility",
+              "level": 3,
+              "id": "16-19-3-mobility",
+              "children": [
+                {
+                  "clause_id": "16.19.3.1",
+                  "clause_title": "Mobility in RRC_IDLE and RRC_INACTIVE",
+                  "level": 4,
+                  "id": "16-19-3-1-mobility-in-rrc-idle-and-rrc-inactive",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.19.3.2",
+                  "clause_title": "Mobility in RRC_CONNECTED",
+                  "level": 4,
+                  "id": "16-19-3-2-mobility-in-rrc-connected",
+                  "children": [
+                    {
+                      "clause_id": "16.19.3.2.1",
+                      "clause_title": "Handover",
+                      "level": 5,
+                      "id": "16-19-3-2-1-handover",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "16.19.3.2.2",
+                      "clause_title": "Conditional Handover",
+                      "level": 5,
+                      "id": "16-19-3-2-2-conditional-handover",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "clause_id": "16.19.3.3",
+                  "clause_title": "Measurements",
+                  "level": 4,
+                  "id": "16-19-3-3-measurements",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "clause_id": "16.20",
+          "clause_title": "Support of AI/ML for NG-RAN",
+          "level": 2,
+          "id": "16-20-support-of-ai-ml-for-ng-ran",
+          "children": [
+            {
+              "clause_id": "16.20.1",
+              "clause_title": "General",
+              "level": 3,
+              "id": "16-20-1-general",
+              "children": []
+            },
+            {
+              "clause_id": "16.20.2",
+              "clause_title": "Principles",
+              "level": 3,
+              "id": "16-20-2-principles",
+              "children": []
+            },
+            {
+              "clause_id": "16.20.3",
+              "clause_title": "Data Collection and Reporting",
+              "level": 3,
+              "id": "16-20-3-data-collection-and-reporting",
+              "children": []
+            },
+            {
+              "clause_id": "16.20.4",
+              "clause_title": "OAM Requirements",
+              "level": 3,
+              "id": "16-20-4-oam-requirements",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "16.21",
+          "clause_title": "Multi-path Relay",
+          "level": 2,
+          "id": "16-21-multi-path-relay",
+          "children": [
+            {
+              "clause_id": "16.21.1",
+              "clause_title": "General",
+              "level": 3,
+              "id": "16-21-1-general",
+              "children": []
+            },
+            {
+              "clause_id": "16.21.2",
+              "clause_title": "Protocol Architecture",
+              "level": 3,
+              "id": "16-21-2-protocol-architecture",
+              "children": [
+                {
+                  "clause_id": "16.21.2.1",
+                  "clause_title": "L2 MP Relay using SL indirect path",
+                  "level": 4,
+                  "id": "16-21-2-1-l2-mp-relay-using-sl-indirect-path",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.21.2.2",
+                  "clause_title": "L2 MP Relay using N3C indirect path",
+                  "level": 4,
+                  "id": "16-21-2-2-l2-mp-relay-using-n3c-indirect-path",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "16.21.3",
+              "clause_title": "Control plane procedure for multi-path relaying",
+              "level": 3,
+              "id": "16-21-3-control-plane-procedure-for-multi-path-relaying",
+              "children": [
+                {
+                  "clause_id": "16.21.3.1",
+                  "clause_title": "Path Management",
+                  "level": 4,
+                  "id": "16-21-3-1-path-management",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.21.3.2",
+                  "clause_title": "Path Failure Report",
+                  "level": 4,
+                  "id": "16-21-3-2-path-failure-report",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "clause_id": "16.22",
+          "clause_title": "Support of 2Rx XR devices",
+          "level": 2,
+          "id": "16-22-support-of-2rx-xr-devices",
+          "children": [
+            {
+              "clause_id": "16.22.1",
+              "clause_title": "Introduction",
+              "level": 3,
+              "id": "16-22-1-introduction",
+              "children": []
+            },
+            {
+              "clause_id": "16.22.2",
+              "clause_title": "Identification, access and camping restrictions",
+              "level": 3,
+              "id": "16-22-2-identification-access-and-camping-restrictions",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "16.23",
+          "clause_title": "Support of Ambient IoT",
+          "level": 2,
+          "id": "16-23-support-of-ambient-iot",
+          "children": [
+            {
+              "clause_id": "16.23.1",
+              "clause_title": "General",
+              "level": 3,
+              "id": "16-23-1-general",
+              "children": []
+            },
+            {
+              "clause_id": "16.23.2",
+              "clause_title": "Architecture",
+              "level": 3,
+              "id": "16-23-2-architecture",
+              "children": []
+            },
+            {
+              "clause_id": "16.23.3",
+              "clause_title": "Radio Protocol Architecture for A-IoT Communication",
+              "level": 3,
+              "id": "16-23-3-radio-protocol-architecture-for-a-iot-communication",
+              "children": []
+            },
+            {
+              "clause_id": "16.23.4",
+              "clause_title": "A-IoT Physical Layer Functions",
+              "level": 3,
+              "id": "16-23-4-a-iot-physical-layer-functions",
+              "children": [
+                {
+                  "clause_id": "16.23.4.1",
+                  "clause_title": "Waveform, numerology, time and frequency domain structure",
+                  "level": 4,
+                  "id": "16-23-4-1-waveform-numerology-time-and-frequency-domain-structure",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.23.4.2",
+                  "clause_title": "R2D",
+                  "level": 4,
+                  "id": "16-23-4-2-r2d",
+                  "children": [
+                    {
+                      "clause_id": "16.23.4.2.1",
+                      "clause_title": "Physical reader-to-device channel",
+                      "level": 5,
+                      "id": "16-23-4-2-1-physical-reader-to-device-channel",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "16.23.4.2.2",
+                      "clause_title": "Timing acquisition signal",
+                      "level": 5,
+                      "id": "16-23-4-2-2-timing-acquisition-signal",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "16.23.4.2.3",
+                      "clause_title": "Postamble",
+                      "level": 5,
+                      "id": "16-23-4-2-3-postamble",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "clause_id": "16.23.4.3",
+                  "clause_title": "D2R",
+                  "level": 4,
+                  "id": "16-23-4-3-d2r",
+                  "children": [
+                    {
+                      "clause_id": "16.23.4.3.1",
+                      "clause_title": "Physical device-to-reader channel",
+                      "level": 5,
+                      "id": "16-23-4-3-1-physical-device-to-reader-channel",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "16.23.4.3.2",
+                      "clause_title": "D2R amble signals",
+                      "level": 5,
+                      "id": "16-23-4-3-2-d2r-amble-signals",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "clause_id": "16.23.5",
+              "clause_title": "A-IoT MAC Layer Functions",
+              "level": 3,
+              "id": "16-23-5-a-iot-mac-layer-functions",
+              "children": [
+                {
+                  "clause_id": "16.23.5.1",
+                  "clause_title": "Services and functions",
+                  "level": 4,
+                  "id": "16-23-5-1-services-and-functions",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.23.5.2",
+                  "clause_title": "A-IoT Paging",
+                  "level": 4,
+                  "id": "16-23-5-2-a-iot-paging",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.23.5.3",
+                  "clause_title": "A-IoT Access Procedure",
+                  "level": 4,
+                  "id": "16-23-5-3-a-iot-access-procedure",
+                  "children": []
+                },
+                {
+                  "clause_id": "16.23.5.4",
+                  "clause_title": "A-IoT Upper-layer Data Transmission",
+                  "level": 4,
+                  "id": "16-23-5-4-a-iot-upper-layer-data-transmission",
+                  "children": [
+                    {
+                      "clause_id": "16.23.5.4.1",
+                      "clause_title": "R2D and D2R data transmission",
+                      "level": 5,
+                      "id": "16-23-5-4-1-r2d-and-d2r-data-transmission",
+                      "children": []
+                    },
+                    {
+                      "clause_id": "16.23.5.4.2",
+                      "clause_title": "Segmentation",
+                      "level": 5,
+                      "id": "16-23-5-4-2-segmentation",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "clause_id": "16.23.5.5",
+                  "clause_title": "AS ID",
+                  "level": 4,
+                  "id": "16-23-5-5-as-id",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "clause_id": "16.23.6",
+              "clause_title": "Inventory Procedure",
+              "level": 3,
+              "id": "16-23-6-inventory-procedure",
+              "children": []
+            },
+            {
+              "clause_id": "16.23.7",
+              "clause_title": "Command Procedure",
+              "level": 3,
+              "id": "16-23-7-command-procedure",
+              "children": []
+            },
+            {
+              "clause_id": "16.23.8",
+              "clause_title": "A-IoT CN node initiated A-IoT Session Release procedure",
+              "level": 3,
+              "id": "16-23-8-a-iot-cn-node-initiated-a-iot-session-release-procedure",
+              "children": []
+            },
+            {
+              "clause_id": "16.23.9",
+              "clause_title": "gNB initiated A-IoT Session Release procedure",
+              "level": 3,
+              "id": "16-23-9-gnb-initiated-a-iot-session-release-procedure",
+              "children": []
+            },
+            {
+              "clause_id": "16.23.10",
+              "clause_title": "Locating A-IoT devices",
+              "level": 3,
+              "id": "16-23-10-locating-a-iot-devices",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "clause_id": "17",
+      "clause_title": "Interference Management",
+      "level": 1,
+      "id": "17-interference-management",
+      "children": [
+        {
+          "clause_id": "17.1",
+          "clause_title": "Remote Interference Management",
+          "level": 2,
+          "id": "17-1-remote-interference-management",
+          "children": []
+        },
+        {
+          "clause_id": "17.2",
+          "clause_title": "Cross-Link Interference Management",
+          "level": 2,
+          "id": "17-2-cross-link-interference-management",
+          "children": []
+        }
+      ]
+    },
+    {
+      "clause_id": "18",
+      "clause_title": "Small Data Transmission",
+      "level": 1,
+      "id": "18-small-data-transmission",
+      "children": [
+        {
+          "clause_id": "18.0",
+          "clause_title": "General",
+          "level": 2,
+          "id": "18-0-general",
+          "children": []
+        },
+        {
+          "clause_id": "18.1",
+          "clause_title": "Support of SDT procedure over RACH",
+          "level": 2,
+          "id": "18-1-support-of-sdt-procedure-over-rach",
+          "children": []
+        },
+        {
+          "clause_id": "18.2",
+          "clause_title": "SDT with UE context relocation",
+          "level": 2,
+          "id": "18-2-sdt-with-ue-context-relocation",
+          "children": []
+        },
+        {
+          "clause_id": "18.3",
+          "clause_title": "SDT without UE context relocation",
+          "level": 2,
+          "id": "18-3-sdt-without-ue-context-relocation",
+          "children": []
+        },
+        {
+          "clause_id": "18.4",
+          "clause_title": "MT-SDT with/without UE context relocation",
+          "level": 2,
+          "id": "18-4-mt-sdt-with-without-ue-context-relocation",
+          "children": []
+        }
+      ]
+    },
+    {
+      "clause_id": "19",
+      "clause_title": "Support for NR coverage enhancements",
+      "level": 1,
+      "id": "19-support-for-nr-coverage-enhancements",
+      "children": []
+    },
+    {
+      "clause_id": "20",
+      "clause_title": "Support for Multi-USIM devices",
+      "level": 1,
+      "id": "20-support-for-multi-usim-devices",
+      "children": [
+        {
+          "clause_id": "20.1",
+          "clause_title": "General",
+          "level": 2,
+          "id": "20-1-general",
+          "children": []
+        },
+        {
+          "clause_id": "20.2",
+          "clause_title": "Paging Collision Avoidance",
+          "level": 2,
+          "id": "20-2-paging-collision-avoidance",
+          "children": []
+        },
+        {
+          "clause_id": "20.3",
+          "clause_title": "UE notification on Network Switching",
+          "level": 2,
+          "id": "20-3-ue-notification-on-network-switching",
+          "children": []
+        },
+        {
+          "clause_id": "20.4",
+          "clause_title": "Temporary UE capability restriction and removal of restriction",
+          "level": 2,
+          "id": "20-4-temporary-ue-capability-restriction-and-removal-of-restriction",
+          "children": []
+        }
+      ]
+    },
+    {
+      "clause_id": "21",
+      "clause_title": "Application Layer Measurement Collection",
+      "level": 1,
+      "id": "21-application-layer-measurement-collection",
+      "children": [
+        {
+          "clause_id": "21.1",
+          "clause_title": "Overview",
+          "level": 2,
+          "id": "21-1-overview",
+          "children": []
+        },
+        {
+          "clause_id": "21.2",
+          "clause_title": "QoE Measurement Configuration",
+          "level": 2,
+          "id": "21-2-qoe-measurement-configuration",
+          "children": [
+            {
+              "clause_id": "21.2.1",
+              "clause_title": "QoE Measurement Collection Activation and Reporting",
+              "level": 3,
+              "id": "21-2-1-qoe-measurement-collection-activation-and-reporting",
+              "children": []
+            },
+            {
+              "clause_id": "21.2.2",
+              "clause_title": "QoE Measurement Collection Deactivation",
+              "level": 3,
+              "id": "21-2-2-qoe-measurement-collection-deactivation",
+              "children": []
+            },
+            {
+              "clause_id": "21.2.3",
+              "clause_title": "Handling of QMC during RAN Overload",
+              "level": 3,
+              "id": "21-2-3-handling-of-qmc-during-ran-overload",
+              "children": []
+            },
+            {
+              "clause_id": "21.2.4",
+              "clause_title": "QoE Measurement Handling in RRC_IDLE and RRC_INACTIVE States",
+              "level": 3,
+              "id": "21-2-4-qoe-measurement-handling-in-rrc-idle-and-rrc-inactive-states",
+              "children": []
+            },
+            {
+              "clause_id": "21.2.5",
+              "clause_title": "Per-slice QoE Measurement",
+              "level": 3,
+              "id": "21-2-5-per-slice-qoe-measurement",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "21.3",
+          "clause_title": "QoE Measurement Continuity for Mobility",
+          "level": 2,
+          "id": "21-3-qoe-measurement-continuity-for-mobility",
+          "children": []
+        },
+        {
+          "clause_id": "21.4",
+          "clause_title": "RAN Visible QoE Measurements",
+          "level": 2,
+          "id": "21-4-ran-visible-qoe-measurements",
+          "children": []
+        },
+        {
+          "clause_id": "21.5",
+          "clause_title": "Alignment of MDT and QoE Measurements",
+          "level": 2,
+          "id": "21-5-alignment-of-mdt-and-qoe-measurements",
+          "children": []
+        }
+      ]
+    },
+    {
+      "clause_id": "22",
+      "clause_title": "Support of AI/ML for NR Air Interface",
+      "level": 1,
+      "id": "22-support-of-ai-ml-for-nr-air-interface",
+      "children": [
+        {
+          "clause_id": "22.1",
+          "clause_title": "Overview",
+          "level": 2,
+          "id": "22-1-overview",
+          "children": []
+        },
+        {
+          "clause_id": "22.2",
+          "clause_title": "AI/ML-based Beam Management",
+          "level": 2,
+          "id": "22-2-ai-ml-based-beam-management",
+          "children": [
+            {
+              "clause_id": "22.2.1",
+              "clause_title": "Introduction",
+              "level": 3,
+              "id": "22-2-1-introduction",
+              "children": []
+            },
+            {
+              "clause_id": "22.2.2",
+              "clause_title": "Data Collection for Offline Model Training",
+              "level": 3,
+              "id": "22-2-2-data-collection-for-offline-model-training",
+              "children": []
+            },
+            {
+              "clause_id": "22.2.3",
+              "clause_title": "Applicability Reporting",
+              "level": 3,
+              "id": "22-2-3-applicability-reporting",
+              "children": []
+            },
+            {
+              "clause_id": "22.2.4",
+              "clause_title": "Inference, Monitoring and Management",
+              "level": 3,
+              "id": "22-2-4-inference-monitoring-and-management",
+              "children": []
+            }
+          ]
+        },
+        {
+          "clause_id": "22.3",
+          "clause_title": "AI/ML-based CSI prediction",
+          "level": 2,
+          "id": "22-3-ai-ml-based-csi-prediction",
+          "children": []
+        },
+        {
+          "clause_id": "22.4",
+          "clause_title": "AI/ML-based Positioning",
+          "level": 2,
+          "id": "22-4-ai-ml-based-positioning",
+          "children": []
+        }
+      ]
+    },
+    {
+      "clause_id": "23",
+      "clause_title": "SBFD",
+      "level": 1,
+      "id": "23-sbfd",
+      "children": [
+        {
+          "clause_id": "23.1",
+          "clause_title": "General",
+          "level": 2,
+          "id": "23-1-general",
+          "children": []
+        },
+        {
+          "clause_id": "23.2",
+          "clause_title": "SBFD Random Access",
+          "level": 2,
+          "id": "23-2-sbfd-random-access",
+          "children": [
+            {
+              "clause_id": null,
+              "clause_title": "<br>Annex A (informative): QoS Handling in RAN<br>",
+              "level": 6,
+              "id": "br-annex-a-informative-qos-handling-in-ran-br",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "clause_id": null,
+      "clause_title": "A.1     PDU Session Establishment",
+      "level": 1,
+      "id": "a-1-pdu-session-establishment",
+      "children": []
+    },
+    {
+      "clause_id": null,
+      "clause_title": "A.2     New QoS Flow with RQoS",
+      "level": 1,
+      "id": "a-2-new-qos-flow-with-rqos",
+      "children": []
+    },
+    {
+      "clause_id": null,
+      "clause_title": "A.3     New QoS Flow with Explicit RRC Signalling",
+      "level": 1,
+      "id": "a-3-new-qos-flow-with-explicit-rrc-signalling",
+      "children": []
+    },
+    {
+      "clause_id": null,
+      "clause_title": "A.4     New QoS Flow with Explicit NAS Signalling",
+      "level": 1,
+      "id": "a-4-new-qos-flow-with-explicit-nas-signalling",
+      "children": []
+    },
+    {
+      "clause_id": null,
+      "clause_title": "A.5     Release of QoS Flow with Explicit Signalling",
+      "level": 1,
+      "id": "a-5-release-of-qos-flow-with-explicit-signalling",
+      "children": []
+    },
+    {
+      "clause_id": null,
+      "clause_title": "A.6     UE Initiated UL QoS Flow",
+      "level": 1,
+      "id": "a-6-ue-initiated-ul-qos-flow",
+      "children": [
+        {
+          "clause_id": null,
+          "clause_title": "<br>Annex B (informative): Deployment Scenarios<br>",
+          "level": 6,
+          "id": "br-annex-b-informative-deployment-scenarios-br",
+          "children": []
+        }
+      ]
+    },
+    {
+      "clause_id": null,
+      "clause_title": "B.1     Supplementary Uplink",
+      "level": 1,
+      "id": "b-1-supplementary-uplink",
+      "children": []
+    },
+    {
+      "clause_id": null,
+      "clause_title": "B.2     Multiple SSBs in a carrier",
+      "level": 1,
+      "id": "b-2-multiple-ssbs-in-a-carrier",
+      "children": []
+    },
+    {
+      "clause_id": null,
+      "clause_title": "B.3     NR Operation with Shared Spectrum",
+      "level": 1,
+      "id": "b-3-nr-operation-with-shared-spectrum",
+      "children": []
+    },
+    {
+      "clause_id": null,
+      "clause_title": "B.4     Example implementation of Non-Terrestrial Networks",
+      "level": 1,
+      "id": "b-4-example-implementation-of-non-terrestrial-networks",
+      "children": [
+        {
+          "clause_id": null,
+          "clause_title": "<br>Annex C (informative): I-RNTI Reference Profiles<br>",
+          "level": 6,
+          "id": "br-annex-c-informative-i-rnti-reference-profiles-br",
+          "children": []
+        },
+        {
+          "clause_id": null,
+          "clause_title": "<br>Annex D (informative): SPID ranges and mapping of SPID values to cell reselection and inter-RAT/inter frequency handover priorities<br>",
+          "level": 6,
+          "id": "br-annex-d-informative-spid-ranges-and-mapping-of-spid-values-to-cell-reselection-and-inter-rat-inter-frequency-handover-priorities-br",
+          "children": []
+        },
+        {
+          "clause_id": null,
+          "clause_title": "<br>Annex E  (informative):<br>NG-RAN Architecture for Radio Access Network Sharing with multiple=\"multiple\" cell ID broadcast",
+          "level": 6,
+          "id": "br-annex-e-informative-br-ng-ran-architecture-for-radio-access-network-sharing-with-multiple-cell-id-broadcast",
+          "children": []
+        },
+        {
+          "clause_id": "Annex F",
+          "clause_title": "<br>Use and structure of the I-RNTI",
+          "level": 6,
+          "id": "annex-f-normative-br-use-and-structure-of-the-i-rnti",
+          "children": []
+        },
+        {
+          "clause_id": "Annex G",
+          "clause_title": "Components of Mobility Latency<br>",
+          "level": 6,
+          "id": "annex-g-informative-components-of-mobility-latency-br",
+          "children": []
+        },
+        {
+          "clause_id": "Annex  H",
+          "clause_title": "<br>Change history",
+          "level": 6,
+          "id": "annex-h-informative-br-change-history",
+          "children": []
+        }
+      ]
+    }
+  ]
+}

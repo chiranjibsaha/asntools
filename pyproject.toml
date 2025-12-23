@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "asntools"
+version = "0.1.0"
+description = "NR-RRC ASN.1 tooling built on pycrate"
+readme = "project.md"
+requires-python = ">=3.10"
+authors = [
+  {name = "Chiranjib"}
+]
+license = {text = "MIT"}
+dependencies = [
+  "pycrate>=0.7.11",
+  "requests>=2.31",
+  "click>=8.1",
+  "fastapi>=0.115",
+  "uvicorn>=0.30",
+  "httpx>=0.27",
+  "fastmcp>=2.14",
+  "beautifulsoup4>=4.12",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "pytest-cov>=4.1"
+]
+
+[project.scripts]
+asntools = "asntools.__main__:main"
+asntools-rrc = "asntools.cli:main"
+asntools-fetch-asn1 = "asntools.fetch_asn1:main"
+asntools-compile-rrc = "asntools.compile_rrc:main"
+asntools-rrc-tree = "asntools.cli_tree:main"
+asntools-fastmcp = "asntools.mcp_server:main"
+asntools-spec-toc = "asntools.spec_cli:toc"
+asntools-spec-extract = "asntools.spec_cli:extract"
+asntools-spec-api = "asntools.spec_server:main"
+asntools-spec-mcp = "asntools.spec_mcp_server:main"
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.setuptools.packages.find]
+include = ["asntools", "pycrate_asn1dir"]
