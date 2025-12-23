@@ -51,6 +51,12 @@ from .search_asn import search_asn_text
     help="Optional field description JSON files to merge alongside compilation.",
 )
 @click.option(
+    "--compile-setup",
+    "compile_setup_path",
+    type=click.Path(path_type=Path),
+    help="JSON file describing ASN.1 and field-description inputs (keys: asnfiles, field_descriptions).",
+)
+@click.option(
     "--input-dir",
     "input_dirs",
     type=click.Path(path_type=None),
@@ -179,6 +185,7 @@ def main(
     compile_flag: bool,
     asnfiles: tuple[str, ...],
     description_files: tuple[str, ...],
+    compile_setup_path: Path | None,
     input_dirs: tuple[str, ...],
     scan_subdirs: tuple[str, ...],
     serve_flag: bool,
@@ -279,6 +286,8 @@ def main(
             return
 
         if compile_flag:
+            setup_asn, setup_desc = _load_compile_setup(compile_setup_path) if compile_setup_path else ([], [])
+
             discovered_asn: list[Path] = []
             discovered_desc: list[Path] = []
             for root in input_dirs:
@@ -288,13 +297,15 @@ def main(
 
             explicit_sources = list(asnfiles) or list(asn1_files)
             all_asn_sources = _deduplicate_paths(
-                [*discovered_asn, *map(Path, explicit_sources)]
+                [*setup_asn, *discovered_asn, *map(Path, explicit_sources)]
             )
             if not all_asn_sources:
-                raise click.UsageError("Provide at least one ASN.1 file (via positional args, --asnfiles, or --input-dir).")
+                raise click.UsageError(
+                    "Provide at least one ASN.1 file (via positional args, --asnfiles, --compile-setup, or --input-dir)."
+                )
 
             desc_sources = _deduplicate_paths(
-                [*map(Path, description_files), *discovered_desc]
+                [*setup_desc, *map(Path, description_files), *discovered_desc]
             )
             try:
                 artifacts = rebuild_rrc_modules(
@@ -358,6 +369,34 @@ def _handle_describe_ie(ie_name: str) -> None:
         "variants": store.related_ie_versions(ie_name, match),
     }
     click.echo(json.dumps(payload, indent=2, ensure_ascii=False))
+
+
+def _load_compile_setup(config_path: Path) -> tuple[list[Path], list[Path]]:
+    """Read a JSON config file with ASN.1 and description paths."""
+
+    if not config_path.exists():
+        raise click.ClickException(f"Compile setup file not found: {config_path}")
+    try:
+        data = json.loads(config_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:  # pragma: no cover - user error
+        raise click.ClickException(f"Compile setup file is not valid JSON: {config_path}") from exc
+
+    def _coerce_paths(value: Any, key: str) -> list[Path]:
+        if value is None:
+            return []
+        if isinstance(value, (str, Path)):
+            return [Path(value)]
+        if isinstance(value, (list, tuple)):
+            if all(isinstance(item, (str, Path)) for item in value):
+                return [Path(item) for item in value]
+        raise click.ClickException(f"Expected '{key}' to be a string or list of strings in {config_path}")
+
+    asn_paths = _coerce_paths(data.get("asnfiles") or data.get("asn_files"), "asnfiles")
+    desc_paths = _coerce_paths(
+        data.get("field_descriptions") or data.get("asnfielddescriptions"),
+        "field_descriptions",
+    )
+    return asn_paths, desc_paths
 
 
 def _raise_field_not_found(store: FieldDescriptionStore, field_name: str) -> None:

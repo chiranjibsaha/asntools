@@ -123,6 +123,45 @@ def test_compile_accepts_option_lists(monkeypatch):
         assert merged.read_text(encoding="utf-8") == "AAA\nBBB"
 
 
+def test_compile_reads_setup_file(monkeypatch):
+    runner = CliRunner()
+
+    def fake_compile(asn1_path: Path, output_dir: Path, emit_json: bool = True) -> Path:  # noqa: ARG001
+        output_dir.mkdir(parents=True, exist_ok=True)
+        generated = output_dir / "NR_RRC_Definitions.py"
+        generated.write_text("# generated\n", encoding="utf-8")
+        return generated
+
+    monkeypatch.setattr(rebuild, "compile_nr_rrc", fake_compile)
+
+    with runner.isolated_filesystem():
+        first = Path("first.asn")
+        second = Path("second.asn")
+        first.write_text("ONE", encoding="utf-8")
+        second.write_text("TWO", encoding="utf-8")
+        desc = Path("fields.json")
+        desc.write_text('{"field_descriptions": {"Foo": "Bar"}}', encoding="utf-8")
+
+        setup = Path("compile_setup.json")
+        setup.write_text(
+            json.dumps(
+                {
+                    "asnfiles": [str(first), str(second)],
+                    "field_descriptions": [str(desc)],
+                }
+            ),
+            encoding="utf-8",
+        )
+
+        result = runner.invoke(cli_main.main, ["--compile", "--compile-setup", str(setup)])
+        assert result.exit_code == 0, result.output
+
+        merged = Path("asn1/NR-RRC-Definitions.asn").read_text(encoding="utf-8")
+        assert merged == "ONE\nTWO"
+        merged_desc = json.loads(Path("asn1/field_descriptions.json").read_text(encoding="utf-8"))
+        assert merged_desc["ies"]["_global"]["Foo"] == "Bar"
+
+
 def test_serve_invokes_server(monkeypatch):
     runner = CliRunner()
     called = {}
