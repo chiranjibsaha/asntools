@@ -1,10 +1,10 @@
 from __future__ import annotations
 
+import importlib
 import json
 from pathlib import Path
 import sys
 import types
-import importlib
 import pytest
 
 from fastapi.testclient import TestClient
@@ -13,26 +13,28 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-# Stub pycrate deps so import of asntools.* succeeds without pycrate installed.
-stub_asnproc = types.ModuleType("pycrate_asn1c.asnproc")
-stub_asnproc.GLOBAL = {}
-stub_asnproc.JSONDepGraphGenerator = object
-stub_asnproc.PycrateGenerator = object
-stub_asnproc.compile_text = lambda *args, **kwargs: None
-stub_asnproc.generate_modules = lambda *args, **kwargs: None
-sys.modules.setdefault("pycrate_asn1c", types.ModuleType("pycrate_asn1c"))
-sys.modules["pycrate_asn1c"].asnproc = stub_asnproc
-sys.modules["pycrate_asn1c.asnproc"] = stub_asnproc
+# Stub pycrate deps only when the real dependency is unavailable.
+if importlib.util.find_spec("pycrate_asn1c") is None:
+    stub_asnproc = types.ModuleType("pycrate_asn1c.asnproc")
+    stub_asnproc.GLOBAL = {}
+    stub_asnproc.JSONDepGraphGenerator = object
+    stub_asnproc.PycrateGenerator = object
+    stub_asnproc.compile_text = lambda *args, **kwargs: None
+    stub_asnproc.generate_modules = lambda *args, **kwargs: None
+    sys.modules.setdefault("pycrate_asn1c", types.ModuleType("pycrate_asn1c"))
+    sys.modules["pycrate_asn1c"].asnproc = stub_asnproc
+    sys.modules["pycrate_asn1c.asnproc"] = stub_asnproc
 
-stub_dictobj = types.ModuleType("pycrate_asn1rt.dictobj")
-stub_dictobj.ASN1Dict = dict
-stub_setobj = types.ModuleType("pycrate_asn1rt.setobj")
-stub_setobj.ASN1Set = set
-sys.modules.setdefault("pycrate_asn1rt", types.ModuleType("pycrate_asn1rt"))
-sys.modules["pycrate_asn1rt"].dictobj = stub_dictobj
-sys.modules["pycrate_asn1rt"].setobj = stub_setobj
-sys.modules["pycrate_asn1rt.dictobj"] = stub_dictobj
-sys.modules["pycrate_asn1rt.setobj"] = stub_setobj
+if importlib.util.find_spec("pycrate_asn1rt") is None:
+    stub_dictobj = types.ModuleType("pycrate_asn1rt.dictobj")
+    stub_dictobj.ASN1Dict = dict
+    stub_setobj = types.ModuleType("pycrate_asn1rt.setobj")
+    stub_setobj.ASN1Set = set
+    sys.modules.setdefault("pycrate_asn1rt", types.ModuleType("pycrate_asn1rt"))
+    sys.modules["pycrate_asn1rt"].dictobj = stub_dictobj
+    sys.modules["pycrate_asn1rt"].setobj = stub_setobj
+    sys.modules["pycrate_asn1rt.dictobj"] = stub_dictobj
+    sys.modules["pycrate_asn1rt.setobj"] = stub_setobj
 
 from asntools.spec_server import app
 

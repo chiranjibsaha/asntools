@@ -1,0 +1,13 @@
+"""Test configuration."""
+
+from __future__ import annotations
+
+import sys
+from pathlib import Path
+
+# Ensure the project root is on sys.path so `import asntools` works when the
+# package is not installed in the current environment.
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+

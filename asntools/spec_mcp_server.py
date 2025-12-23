@@ -46,7 +46,7 @@ ROUTE_MAPS: Sequence[RouteMap] = (
 def build_spec_fastmcp_server() -> FastMCP:
     """Create a FastMCP server backed by the spec FastAPI app."""
 
-    return FastMCP.from_fastapi(
+    server = FastMCP.from_fastapi(
         fastapi_app,
         name="asntools-spec",
         version=__version__,
@@ -55,6 +55,9 @@ def build_spec_fastmcp_server() -> FastMCP:
         mcp_names=OPERATION_NAME_MAP,
         tags={"spec_doc_tools"},
     )
+    # Provide a stable attribute expected by tests/consumers.
+    server.tool_names = tuple(OPERATION_NAME_MAP.keys())
+    return server
 
 
 def main(argv: Sequence[str] | None = None) -> None:
