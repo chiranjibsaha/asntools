@@ -1,0 +1,669 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "asntools",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/health": {
+      "get": {
+        "summary": "Health",
+        "operationId": "asntools_health",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Health Health Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/help": {
+      "get": {
+        "summary": "Help Endpoint",
+        "operationId": "asntools_help",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Help Endpoint Help Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/grep": {
+      "get": {
+        "summary": "Grep Endpoint",
+        "operationId": "asntools_grep",
+        "parameters": [
+          {
+            "name": "pattern",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "title": "Pattern"
+            }
+          },
+          {
+            "name": "asn1_path",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Asn1 Path"
+            }
+          },
+          {
+            "name": "regex",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "description": "Treat pattern as regex (case-insensitive).",
+              "default": false,
+              "title": "Regex"
+            },
+            "description": "Treat pattern as regex (case-insensitive)."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Asntools Grep"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/compile": {
+      "post": {
+        "summary": "Compile Endpoint",
+        "operationId": "asntools_compile",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CompileRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Compile Endpoint Compile Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ies/{ie_name}": {
+      "get": {
+        "summary": "Describe Endpoint",
+        "operationId": "asntools_show_ie",
+        "parameters": [
+          {
+            "name": "ie_name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Ie Name"
+            }
+          },
+          {
+            "name": "compile",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "description": "Compile default ASN.1 if the module is missing.",
+              "default": true,
+              "title": "Compile"
+            },
+            "description": "Compile default ASN.1 if the module is missing."
+          },
+          {
+            "name": "asn1_path",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Optional ASN.1 path to compile when needed.",
+              "title": "Asn1 Path"
+            },
+            "description": "Optional ASN.1 path to compile when needed."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Describe Endpoint Ies  Ie Name  Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ies/search": {
+      "get": {
+        "summary": "Search Endpoint",
+        "operationId": "asntools_search_ie",
+        "parameters": [
+          {
+            "name": "pattern",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "Substring or pattern to match IE names.",
+              "title": "Pattern"
+            },
+            "description": "Substring or pattern to match IE names."
+          },
+          {
+            "name": "compile",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "description": "Compile default ASN.1 if the module is missing.",
+              "default": true,
+              "title": "Compile"
+            },
+            "description": "Compile default ASN.1 if the module is missing."
+          },
+          {
+            "name": "asn1_path",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Optional ASN.1 path to compile when needed.",
+              "title": "Asn1 Path"
+            },
+            "description": "Optional ASN.1 path to compile when needed."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Search Endpoint Ies Search Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/trees": {
+      "post": {
+        "summary": "Tree Endpoint",
+        "operationId": "asntools_tree",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TreeRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Tree Endpoint Trees Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/field-descriptions/fields/{field_name}": {
+      "get": {
+        "summary": "Field Description Endpoint",
+        "operationId": "asntools_describe_field_alias",
+        "parameters": [
+          {
+            "name": "field_name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Field Name"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Field Description Endpoint Field Descriptions Fields  Field Name  Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/fields/{field_name}": {
+      "get": {
+        "summary": "Field Description Endpoint",
+        "operationId": "asntools_describe_field",
+        "parameters": [
+          {
+            "name": "field_name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Field Name"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Field Description Endpoint Fields  Field Name  Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/field-descriptions/ies/{ie_name}": {
+      "get": {
+        "summary": "Ie Field Description Endpoint",
+        "operationId": "asntools_describe_ie",
+        "parameters": [
+          {
+            "name": "ie_name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Ie Name"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Ie Field Description Endpoint Field Descriptions Ies  Ie Name  Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CompileRequest": {
+        "properties": {
+          "asn1_files": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Asn1 Files",
+            "description": "Absolute or relative paths to the ASN.1 files to merge and compile."
+          },
+          "description_files": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Description Files",
+            "description": "Optional JSON files containing field descriptions to merge."
+          },
+          "discover_dirs": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Discover Dirs",
+            "description": "Directories to scan recursively for ASN.1/description files."
+          },
+          "subdirs": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Subdirs",
+            "description": "Optional subfolder filters (relative to each discover directory)."
+          }
+        },
+        "type": "object",
+        "title": "CompileRequest"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "TreeRequest": {
+        "properties": {
+          "leaf_ie_name": {
+            "type": "string",
+            "title": "Leaf Ie Name"
+          },
+          "roots": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Roots"
+          },
+          "all_roots": {
+            "type": "boolean",
+            "title": "All Roots",
+            "default": false
+          },
+          "allow_version_aggregation": {
+            "type": "boolean",
+            "title": "Allow Version Aggregation",
+            "default": false
+          },
+          "include_tree": {
+            "type": "boolean",
+            "title": "Include Tree",
+            "default": true
+          },
+          "include_mermaid": {
+            "type": "boolean",
+            "title": "Include Mermaid",
+            "default": false
+          },
+          "include_tree_json": {
+            "type": "boolean",
+            "title": "Include Tree Json",
+            "default": true
+          },
+          "include_markdown": {
+            "type": "boolean",
+            "title": "Include Markdown",
+            "default": false
+          },
+          "wrap_markdown": {
+            "type": "boolean",
+            "title": "Wrap Markdown",
+            "default": true
+          },
+          "pretty_file": {
+            "type": "boolean",
+            "title": "Pretty File",
+            "default": false
+          },
+          "markdown_path": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Markdown Path"
+          },
+          "compile": {
+            "type": "boolean",
+            "title": "Compile",
+            "default": true
+          },
+          "asn1_path": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Asn1 Path"
+          }
+        },
+        "type": "object",
+        "required": [
+          "leaf_ie_name"
+        ],
+        "title": "TreeRequest"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}
