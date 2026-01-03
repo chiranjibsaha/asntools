@@ -73,6 +73,23 @@ Core CLI Usage
   asntools --serve --host 0.0.0.0 --port 8080
   ```
 
+Run MCP server
+--------------
+- Prep once: compile defaults so MCP tools have inputs ready.
+  ```
+  asntools --compile --input-dir asn1
+  ```
+- Start FastMCP wrapper (exposes all API endpoints as MCP tools):
+  ```
+  asntools-fastmcp --host 0.0.0.0 --port 8765 --path /mcp
+  ```
+- Point your MCP client (e.g., LiteLLM) to the spec: use `openapi-deref.yaml` or `openapi.json` in this repo, or the live doc at `http://localhost:4011/openapi.json` if you run the API separately.
+- Discover tools from a client (example with fastmcp CLI):
+  ```
+  fastmcp client connect streamable-http http://localhost:8765/mcp list-tools
+  fastmcp client connect streamable-http http://localhost:8765/mcp read-resource asntools_help
+  ```
+
 Project Layout
 --------------
 - `asntools/` library code
