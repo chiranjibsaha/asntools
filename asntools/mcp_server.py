@@ -10,14 +10,12 @@ from fastmcp.server.openapi.routing import MCPType, RouteMap
 from . import __version__
 from .server import app as fastapi_app
 
-INSTRUCTIONS = """MCP interface for NR-RRC ASN.1 tooling. Call `asntools_compile` to rebuild
-pycrate artifacts, `asntools_show` to fetch an IE JSON definition, `asntools_tree`
+INSTRUCTIONS = """MCP interface for NR-RRC ASN.1 tooling. Use `asntools_show` to fetch an IE JSON definition, `asntools_tree`
 for ancestry trees/markdown, `asntools_grep` to search ASN.1 text, and the describe
 tools for field narratives. Use the `asntools_help` resource (GET /help) for
 up-to-date payload examples."""
 
 OPERATION_NAME_MAP = {
-    "compile_endpoint_compile_post": "asntools_compile",
     "describe_endpoint_ies__ie_name__get": "asntools_show",
     "search_endpoint_ies_search_get": "asntools_search",
     "tree_endpoint_trees_post": "asntools_tree",
@@ -31,6 +29,11 @@ ROUTE_MAPS: Sequence[RouteMap] = (
     RouteMap(
         methods=["GET"],
         pattern=r"^/health$",
+        mcp_type=MCPType.EXCLUDE,
+    ),
+    RouteMap(
+        methods=["POST"],
+        pattern=r"^/compile$",
         mcp_type=MCPType.EXCLUDE,
     ),
     RouteMap(
