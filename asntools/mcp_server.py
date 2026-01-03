@@ -8,17 +8,18 @@ from fastmcp import FastMCP
 from fastmcp.server.openapi.routing import MCPType, RouteMap
 
 from . import __version__
-from .server import app as fastapi_app
+from .server import TreeRequest, app as fastapi_app
+from .server import tree_endpoint as _tree_endpoint
 
 INSTRUCTIONS = """MCP interface for NR-RRC ASN.1 tooling. Use `asntools_show` to fetch an IE JSON definition, `asntools_tree`
-for ancestry trees/markdown, `asntools_grep` to search ASN.1 text, and the describe
+for ancestry trees (JSON only), `asntools_grep` to search ASN.1 text, and the describe
 tools for field narratives. Use the `asntools_help` resource (GET /help) for
 up-to-date payload examples."""
 
 OPERATION_NAME_MAP = {
     "describe_endpoint_ies__ie_name__get": "asntools_show",
     "search_endpoint_ies_search_get": "asntools_search",
-    "tree_endpoint_trees_post": "asntools_tree",
+    "asntools_tree_json": "asntools_tree",
     "field_description_endpoint_fields__field_name__get": "asntools_describe_field",
     "ie_field_description_endpoint_field_descriptions_ies__ie_name__get": "asntools_describe_ie",
     "asntools_grep": "asntools_grep",
@@ -37,6 +38,11 @@ ROUTE_MAPS: Sequence[RouteMap] = (
         mcp_type=MCPType.EXCLUDE,
     ),
     RouteMap(
+        methods=["POST"],
+        pattern=r"^/trees$",
+        mcp_type=MCPType.EXCLUDE,
+    ),
+    RouteMap(
         methods=["GET"],
         pattern=r"^/field-descriptions/fields/.*$",
         mcp_type=MCPType.EXCLUDE,
@@ -47,6 +53,28 @@ ROUTE_MAPS: Sequence[RouteMap] = (
         mcp_type=MCPType.RESOURCE,
     ),
 )
+
+
+# MCP-safe tree endpoint: forces JSON-only output (no ASCII/Markdown/Mermaid files)
+@fastapi_app.post(
+    "/trees/json",
+    name="asntools_tree_json",
+    operation_id="asntools_tree_json",
+    summary="Tree endpoint (JSON only, MCP-safe)",
+)
+def tree_json_endpoint(request: TreeRequest) -> dict:
+    sanitized = TreeRequest(
+        **{
+            **request.dict(),
+            "include_tree": False,
+            "include_mermaid": False,
+            "include_tree_json": True,
+            "include_markdown": False,
+            "wrap_markdown": False,
+            "pretty_file": False,
+        }
+    )
+    return _tree_endpoint(sanitized)
 
 
 def build_fastmcp_server() -> FastMCP:

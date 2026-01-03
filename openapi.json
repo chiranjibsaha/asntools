@@ -302,7 +302,7 @@
     "/trees": {
       "post": {
         "summary": "Tree Endpoint",
-        "operationId": "asntools_tree",
+        "operationId": "asntools_tree_raw",
         "requestBody": {
           "content": {
             "application/json": {
@@ -445,6 +445,46 @@
                   "type": "object",
                   "additionalProperties": true,
                   "title": "Response Ie Field Description Endpoint Field Descriptions Ies  Ie Name  Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/trees/json": {
+      "post": {
+        "summary": "Tree endpoint (JSON only, MCP-safe)",
+        "operationId": "asntools_tree",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TreeRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Asntools Tree Json"
                 }
               }
             }

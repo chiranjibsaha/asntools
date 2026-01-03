@@ -329,7 +329,7 @@ paths:
   /trees:
     post:
       summary: Tree Endpoint
-      operationId: asntools_tree
+      operationId: asntools_tree_raw
       requestBody:
         content:
           application/json:
@@ -561,6 +561,117 @@ paths:
                 type: object
                 additionalProperties: true
                 title: Response Ie Field Description Endpoint Field Descriptions Ies  Ie Name  Get
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                properties:
+                  detail:
+                    items:
+                      properties:
+                        loc:
+                          items:
+                            anyOf:
+                              - type: string
+                              - type: integer
+                          type: array
+                          title: Location
+                        msg:
+                          type: string
+                          title: Message
+                        type:
+                          type: string
+                          title: Error Type
+                      type: object
+                      required:
+                        - loc
+                        - msg
+                        - type
+                      title: ValidationError
+                    type: array
+                    title: Detail
+                type: object
+                title: HTTPValidationError
+  /trees/json:
+    post:
+      summary: 'Tree endpoint (JSON only, MCP-safe)'
+      operationId: asntools_tree
+      requestBody:
+        content:
+          application/json:
+            schema:
+              properties:
+                leaf_ie_name:
+                  type: string
+                  title: Leaf Ie Name
+                roots:
+                  anyOf:
+                    - items:
+                        type: string
+                      type: array
+                    - type: 'null'
+                  title: Roots
+                all_roots:
+                  type: boolean
+                  title: All Roots
+                  default: false
+                allow_version_aggregation:
+                  type: boolean
+                  title: Allow Version Aggregation
+                  default: false
+                include_tree:
+                  type: boolean
+                  title: Include Tree
+                  default: true
+                include_mermaid:
+                  type: boolean
+                  title: Include Mermaid
+                  default: false
+                include_tree_json:
+                  type: boolean
+                  title: Include Tree Json
+                  default: true
+                include_markdown:
+                  type: boolean
+                  title: Include Markdown
+                  default: false
+                wrap_markdown:
+                  type: boolean
+                  title: Wrap Markdown
+                  default: true
+                pretty_file:
+                  type: boolean
+                  title: Pretty File
+                  default: false
+                markdown_path:
+                  anyOf:
+                    - type: string
+                    - type: 'null'
+                  title: Markdown Path
+                compile:
+                  type: boolean
+                  title: Compile
+                  default: true
+                asn1_path:
+                  anyOf:
+                    - type: string
+                    - type: 'null'
+                  title: Asn1 Path
+              type: object
+              required:
+                - leaf_ie_name
+              title: TreeRequest
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                additionalProperties: true
+                type: object
+                title: Response Asntools Tree Json
         '422':
           description: Validation Error
           content:
